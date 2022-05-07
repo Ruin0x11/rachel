@@ -284,6 +284,32 @@ function util.connect(...)
    end
 end
 
+function util.connect_self(...)
+   local t = {...}
+   local emitter, id, event_id, receiver, cb
+   if #t == 5 then
+      emitter = t[1]
+      id = t[2]
+      event_id = t[3]
+      receiver = t[4]
+      cb = t[5]
+   elseif #t == 4 then
+      id = nil
+      emitter = t[1]
+      event_id = t[2]
+      receiver = t[3]
+      cb = t[4]
+   else
+      error("connect must receive 4 or 5 arguments, got " .. tostring(#t))
+   end
+
+   if id == nil then
+      emitter:Connect(event_id, function(event) receiver[cb](emitter, event) end)
+   else
+      emitter:Connect(id, event_id, function(event) receiver[cb](emitter, event) end)
+   end
+end
+
 function util.read_file(file)
    local f = assert(io.open(file, "rb"))
    local content = f:read("*all")
@@ -346,6 +372,15 @@ function util.ordered_pairs(t)
     -- Equivalent of the pairs() function on tables. Allows to iterate
     -- in order
     return ordered_next, t, nil
+end
+
+function util.subclass(inst, tbl)
+   for k, v in pairs(tbl) do
+      if type(v) == "function" then
+         inst[k] = function(...) return tbl[k](...) end
+      end
+   end
+   return inst
 end
 
 return util

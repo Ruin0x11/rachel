@@ -122,7 +122,7 @@ function app:print_error(fmt, ...)
 end
 
 function app:show_error(str)
-      wx.wxMessageBox(str "wxLua Error",
+      wx.wxMessageBox(str, "wxLua Error",
          wx.wxOK + wx.wxCENTRE + wx.wxICON_ERROR, self.frame)
 end
 
@@ -167,6 +167,7 @@ function app:try_save_config(path)
    f:write("return " .. inspect(page.regions))
    f:close()
 
+   page.config_modified = false
    self.frame:SetStatusText("Saved config to " .. path)
 end
 
@@ -184,6 +185,12 @@ function app:on_menu_open(_)
 end
 
 function app:on_menu_save(_)
+   local page = self.widget_atlas:get_current_page()
+   if page == nil then
+      return
+   end
+
+   self.widget_atlas:set_modified(page, false)
 end
 
 function app:on_menu_save_config(_)

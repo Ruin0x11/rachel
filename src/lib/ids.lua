@@ -43,6 +43,7 @@ local ids = {
    ID_STATUS_BAR       = NewID(),
 
    ID_ATLAS_WINDOW     = NewID(),
+   ID_ATLAS_RESET      = NewID(),
 }
 
 return setmetatable({}, {

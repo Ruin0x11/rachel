@@ -1,3 +1,5 @@
+local wx = require("wx")
+
 local fs = {}
 
 local dir_sep = package.config:sub(1,1)
@@ -48,10 +50,19 @@ local function join_two_paths(base, path)
    end
 end
 
+fs.get_working_directory = wx.wxGetCwd
+
+function fs.to_relative(filepath, parent)
+   parent = fs.normalize(parent or fs.get_working_directory())
+   filepath = fs.normalize(filepath)
+   filepath = string.strip_prefix(filepath, parent .. dir_sep)
+   return filepath
+end
+
 function fs.normalize(path)
-   -- if is_windows then
-   --    path = path:lower()
-   -- end
+   if is_windows then
+      path = path:lower()
+   end
    path = path:gsub("[/\\]", dir_sep)
    local base, rest = fs.split_base(path)
 

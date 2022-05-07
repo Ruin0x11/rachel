@@ -23,6 +23,12 @@ function wxT(s)
    return s
 end
 
+if ffi.os == "Windows" then
+   -- Do not buffer stdout for Emacs compatibility.
+   io.stdout:setvbuf("no")
+   io.stderr:setvbuf("no")
+end
+
 require("thirdparty.strict")
 
 app = require("app"):new()

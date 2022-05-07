@@ -44,6 +44,8 @@ function properties:update_properties(region)
       return
    end
 
+   local data = self.app.widget_atlas:get_data(region)
+
    self.grid:Append(wx.wxPropertyCategory(("Chip (%s)"):format("chara")))
 
    local prop = wx.wxFloatProperty("Index", wx.wxPG_LABEL, region.index)
@@ -55,6 +57,9 @@ function properties:update_properties(region)
    self.grid:Append(prop)
    self.grid:DisableProperty(prop)
    prop = wx.wxStringProperty("Size", wx.wxPG_LABEL, ("(%d, %d)"):format(region.w, region.h))
+   self.grid:Append(prop)
+   self.grid:DisableProperty(prop)
+   prop = wx.wxStringProperty("Replacement", wx.wxPG_LABEL, (data and data.replacement_path) or "")
    self.grid:Append(prop)
    self.grid:DisableProperty(prop)
 end
@@ -69,11 +74,13 @@ function properties:on_property_grid_changed(event)
    if prop then
       self.app:print("OnPropertyGridChange(%s, value=%s)", prop:GetName(), prop:GetValueAsString())
 
+      local page = self.app.widget_atlas:get_current_page()
       local region = self.app.widget_atlas:get_current_region()
       if region then
          if prop:GetName() == "Name" then
             region.name = prop:GetValueAsString()
-            region.has_name = true
+            region.has_name = nil
+            page.config_modified = true
          end
       end
    else
