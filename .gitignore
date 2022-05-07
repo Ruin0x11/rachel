@@ -3,3 +3,4 @@ tools/JMdict_e
 tools/JMdict_e.gz
 dict.db
 /repl_history.txt
+resources/chips/*

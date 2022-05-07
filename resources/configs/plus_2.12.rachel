@@ -1,0 +1,6926 @@
+return { {
+    h = 48,
+    index = 1,
+    name = "human male",
+    w = 48,
+    x = 48,
+    y = 0
+  }, {
+    h = 48,
+    index = 2,
+    name = "human female",
+    w = 48,
+    x = 96,
+    y = 0
+  }, {
+    h = 48,
+    index = 3,
+    name = "elea male",
+    w = 48,
+    x = 144,
+    y = 0
+  }, {
+    h = 48,
+    index = 4,
+    name = "elea female",
+    w = 48,
+    x = 192,
+    y = 0
+  }, {
+    h = 48,
+    index = 5,
+    name = "eulderna male",
+    w = 48,
+    x = 240,
+    y = 0
+  }, {
+    h = 48,
+    index = 6,
+    name = "eulderna female",
+    w = 48,
+    x = 288,
+    y = 0
+  }, {
+    h = 48,
+    index = 7,
+    name = "trainer male",
+    w = 48,
+    x = 336,
+    y = 0
+  }, {
+    h = 48,
+    index = 8,
+    name = "<Miches> the apprentice",
+    w = 48,
+    x = 384,
+    y = 0
+  }, {
+    h = 48,
+    index = 9,
+    name = "juere male",
+    w = 48,
+    x = 432,
+    y = 0
+  }, {
+    h = 48,
+    index = 10,
+    name = "juere female",
+    w = 48,
+    x = 480,
+    y = 0
+  }, {
+    h = 48,
+    index = 11,
+    name = "adventurer male 1",
+    w = 48,
+    x = 528,
+    y = 0
+  }, {
+    h = 48,
+    index = 12,
+    name = "adventurer female 1",
+    w = 48,
+    x = 576,
+    y = 0
+  }, {
+    h = 48,
+    index = 13,
+    name = "wizard male",
+    w = 48,
+    x = 624,
+    y = 0
+  }, {
+    h = 48,
+    index = 14,
+    name = "wizard female",
+    w = 48,
+    x = 672,
+    y = 0
+  }, {
+    h = 48,
+    index = 15,
+    name = "informer male",
+    w = 48,
+    x = 720,
+    y = 0
+  }, {
+    h = 48,
+    index = 16,
+    name = "informer female",
+    w = 48,
+    x = 768,
+    y = 0
+  }, {
+    h = 48,
+    index = 17,
+    name = "adventurer male 2",
+    w = 48,
+    x = 816,
+    y = 0
+  }, {
+    h = 48,
+    index = 18,
+    name = "adventurer female 2",
+    w = 48,
+    x = 864,
+    y = 0
+  }, {
+    h = 48,
+    index = 19,
+    name = "adventurer male 3",
+    w = 48,
+    x = 912,
+    y = 0
+  }, {
+    h = 48,
+    index = 20,
+    name = "warrior female",
+    w = 48,
+    x = 960,
+    y = 0
+  }, {
+    h = 48,
+    index = 21,
+    name = "warrior male",
+    w = 48,
+    x = 1008,
+    y = 0
+  }, {
+    h = 48,
+    index = 22,
+    name = "adventurer female 3",
+    w = 48,
+    x = 1056,
+    y = 0
+  }, {
+    h = 48,
+    index = 23,
+    name = "<Moyer> the crooked",
+    w = 48,
+    x = 1104,
+    y = 0
+  }, {
+    h = 48,
+    index = 24,
+    name = "adventurer female 4",
+    w = 48,
+    x = 1152,
+    y = 0
+  }, {
+    h = 48,
+    index = 25,
+    name = "guard",
+    w = 48,
+    x = 1200,
+    y = 0
+  }, {
+    h = 48,
+    index = 26,
+    name = "adventurer female 5",
+    w = 48,
+    x = 1248,
+    y = 0
+  }, {
+    h = 48,
+    index = 27,
+    name = "punk female",
+    w = 48,
+    x = 1296,
+    y = 0
+  }, {
+    h = 48,
+    index = 28,
+    name = "adventurer female 6",
+    w = 48,
+    x = 1344,
+    y = 0
+  }, {
+    h = 48,
+    index = 29,
+    name = "adventurer male 4",
+    w = 48,
+    x = 1392,
+    y = 0
+  }, {
+    h = 48,
+    index = 30,
+    name = "adventurer female 7",
+    w = 48,
+    x = 1440,
+    y = 0
+  }, {
+    h = 48,
+    index = 31,
+    name = "gangster male",
+    w = 48,
+    x = 1488,
+    y = 0
+  }, {
+    h = 48,
+    index = 32,
+    name = "adventurer female 8",
+    w = 48,
+    x = 1536,
+    y = 0
+  }, {
+    h = 48,
+    index = 33,
+    name = "adventurer male 5",
+    w = 48,
+    x = 0,
+    y = 48
+  }, {
+    h = 48,
+    index = 34,
+    name = "warrior of elea female",
+    w = 48,
+    x = 48,
+    y = 48
+  }, {
+    h = 48,
+    index = 35,
+    name = "adventurer male 6",
+    w = 48,
+    x = 96,
+    y = 48
+  }, {
+    h = 48,
+    index = 36,
+    name = "gangster female",
+    w = 48,
+    x = 144,
+    y = 48
+  }, {
+    h = 48,
+    index = 37,
+    name = "fallen soldier",
+    w = 48,
+    x = 192,
+    y = 48
+  }, {
+    h = 48,
+    index = 38,
+    name = "adventurer female 9",
+    w = 48,
+    x = 240,
+    y = 48
+  }, {
+    h = 48,
+    index = 39,
+    name = "adventurer male 7",
+    w = 48,
+    x = 288,
+    y = 48
+  }, {
+    h = 48,
+    index = 40,
+    name = "adventurer female 10",
+    w = 48,
+    x = 336,
+    y = 48
+  }, {
+    h = 48,
+    index = 41,
+    name = "arena master",
+    w = 48,
+    x = 384,
+    y = 48
+  }, {
+    h = 48,
+    index = 42,
+    name = "wizard of elea female",
+    w = 48,
+    x = 432,
+    y = 48
+  }, {
+    h = 48,
+    index = 43,
+    name = "adventurer male 8",
+    w = 48,
+    x = 480,
+    y = 48
+  }, {
+    h = 48,
+    index = 44,
+    name = "adventurer female 11",
+    w = 48,
+    x = 528,
+    y = 48
+  }, {
+    h = 48,
+    index = 45,
+    name = "adventurer male 9",
+    w = 48,
+    x = 576,
+    y = 48
+  }, {
+    h = 48,
+    index = 46,
+    name = "adventurer female 12",
+    w = 48,
+    x = 624,
+    y = 48
+  }, {
+    h = 48,
+    index = 47,
+    name = "wizard of elea male",
+    w = 48,
+    x = 672,
+    y = 48
+  }, {
+    h = 48,
+    index = 48,
+    name = "adventurer female 13",
+    w = 48,
+    x = 720,
+    y = 48
+  }, {
+    h = 48,
+    index = 49,
+    name = "adventurer male 10",
+    w = 48,
+    x = 768,
+    y = 48
+  }, {
+    h = 48,
+    index = 50,
+    name = "adventurer female 14",
+    w = 48,
+    x = 816,
+    y = 48
+  }, {
+    h = 48,
+    index = 51,
+    name = "adventurer male 11",
+    w = 48,
+    x = 864,
+    y = 48
+  }, {
+    h = 48,
+    index = 52,
+    name = "adventurer female 15",
+    w = 48,
+    x = 912,
+    y = 48
+  }, {
+    h = 48,
+    index = 53,
+    name = "adventurer male 12",
+    w = 48,
+    x = 960,
+    y = 48
+  }, {
+    h = 48,
+    index = 54,
+    name = "adventurer female 16",
+    w = 48,
+    x = 1008,
+    y = 48
+  }, {
+    h = 48,
+    index = 55,
+    name = "adventurer male 13",
+    w = 48,
+    x = 1056,
+    y = 48
+  }, {
+    h = 48,
+    index = 56,
+    name = "adventurer female 17",
+    w = 48,
+    x = 1104,
+    y = 48
+  }, {
+    h = 48,
+    index = 57,
+    name = "mercenary archer",
+    w = 48,
+    x = 1152,
+    y = 48
+  }, {
+    h = 48,
+    index = 58,
+    name = "adventurer female 18",
+    w = 48,
+    x = 1200,
+    y = 48
+  }, {
+    h = 48,
+    index = 59,
+    name = "adventurer male 14",
+    w = 48,
+    x = 1248,
+    y = 48
+  }, {
+    h = 48,
+    index = 60,
+    name = "adventurer female 19",
+    w = 48,
+    x = 1296,
+    y = 48
+  }, {
+    h = 48,
+    index = 61,
+    name = "adventurer male 15",
+    w = 48,
+    x = 1344,
+    y = 48
+  }, {
+    h = 48,
+    index = 62,
+    name = "adventurer female 20",
+    w = 48,
+    x = 1392,
+    y = 48
+  }, {
+    h = 48,
+    index = 63,
+    name = "adventurer male 16",
+    w = 48,
+    x = 1440,
+    y = 48
+  }, {
+    h = 48,
+    index = 64,
+    name = "adventurer female 21",
+    w = 48,
+    x = 1488,
+    y = 48
+  }, {
+    h = 48,
+    index = 65,
+    name = "adventurer male 17",
+    w = 48,
+    x = 1536,
+    y = 48
+  }, {
+    h = 48,
+    index = 66,
+    name = "dwarf",
+    w = 48,
+    x = 0,
+    y = 96
+  }, {
+    h = 48,
+    index = 67,
+    name = "dwarf",
+    w = 48,
+    x = 48,
+    y = 96
+  }, {
+    h = 48,
+    has_name = false,
+    index = 68,
+    name = "chara68",
+    w = 48,
+    x = 96,
+    y = 96
+  }, {
+    h = 48,
+    index = 69,
+    name = "healer",
+    w = 48,
+    x = 144,
+    y = 96
+  }, {
+    h = 48,
+    index = 70,
+    name = "rich person female",
+    w = 48,
+    x = 192,
+    y = 96
+  }, {
+    h = 48,
+    index = 71,
+    name = "rich person male",
+    w = 48,
+    x = 240,
+    y = 96
+  }, {
+    h = 48,
+    index = 72,
+    name = "noble child female",
+    w = 48,
+    x = 288,
+    y = 96
+  }, {
+    h = 48,
+    index = 73,
+    name = "noble child male",
+    w = 48,
+    x = 336,
+    y = 96
+  }, {
+    h = 48,
+    index = 74,
+    name = "palmian elite soldier male",
+    w = 48,
+    x = 384,
+    y = 96
+  }, {
+    h = 48,
+    index = 75,
+    name = "palmian elite soldier female",
+    w = 48,
+    x = 432,
+    y = 96
+  }, {
+    h = 48,
+    index = 76,
+    name = "thief guild member male",
+    w = 48,
+    x = 480,
+    y = 96
+  }, {
+    h = 48,
+    index = 77,
+    name = "thief guild member female",
+    w = 48,
+    x = 528,
+    y = 96
+  }, {
+    h = 48,
+    index = 78,
+    name = "fighter guild member male",
+    w = 48,
+    x = 576,
+    y = 96
+  }, {
+    h = 48,
+    index = 79,
+    name = "fighter guild member female",
+    w = 48,
+    x = 624,
+    y = 96
+  }, {
+    h = 48,
+    index = 80,
+    name = "<Fray> the fighter guildmaster",
+    w = 48,
+    x = 672,
+    y = 96
+  }, {
+    h = 48,
+    has_name = false,
+    index = 81,
+    name = "chara81",
+    w = 48,
+    x = 720,
+    y = 96
+  }, {
+    h = 48,
+    index = 82,
+    name = "ninja",
+    w = 48,
+    x = 768,
+    y = 96
+  }, {
+    h = 48,
+    has_name = false,
+    index = 83,
+    name = "chara83",
+    w = 48,
+    x = 816,
+    y = 96
+  }, {
+    h = 48,
+    index = 84,
+    name = "refugee",
+    w = 48,
+    x = 864,
+    y = 96
+  }, {
+    h = 48,
+    index = 85,
+    name = "traveler",
+    w = 48,
+    x = 912,
+    y = 96
+  }, {
+    h = 48,
+    has_name = false,
+    index = 86,
+    name = "chara86",
+    w = 48,
+    x = 960,
+    y = 96
+  }, {
+    h = 48,
+    has_name = false,
+    index = 87,
+    name = "chara87",
+    w = 48,
+    x = 1008,
+    y = 96
+  }, {
+    h = 48,
+    index = 88,
+    name = "<Siraha> the white cloth",
+    w = 48,
+    x = 1056,
+    y = 96
+  }, {
+    h = 48,
+    index = 89,
+    name = "<Kuron> the black cloth",
+    w = 48,
+    x = 1104,
+    y = 96
+  }, {
+    h = 48,
+    index = 90,
+    name = "Alchemist <Naplus>",
+    w = 48,
+    x = 1152,
+    y = 96
+  }, {
+    h = 48,
+    index = 91,
+    name = "<Getuei> the ninja master",
+    w = 48,
+    x = 1200,
+    y = 96
+  }, {
+    h = 48,
+    index = 92,
+    name = "<Eila> the fugitive Kunoichi",
+    w = 48,
+    x = 1248,
+    y = 96
+  }, {
+    h = 48,
+    index = 93,
+    name = "white young lady",
+    w = 48,
+    x = 1296,
+    y = 96
+  }, {
+    h = 48,
+    index = 94,
+    name = "abyss dweller",
+    w = 48,
+    x = 1344,
+    y = 96
+  }, {
+    h = 48,
+    has_name = false,
+    index = 95,
+    name = "chara95",
+    w = 48,
+    x = 1392,
+    y = 96
+  }, {
+    h = 48,
+    index = 96,
+    name = "gun spirit male",
+    w = 48,
+    x = 1440,
+    y = 96
+  }, {
+    h = 48,
+    index = 97,
+    name = "gun spirit female",
+    w = 48,
+    x = 1488,
+    y = 96
+  }, {
+    h = 48,
+    index = 98,
+    name = "abyss animal",
+    w = 48,
+    x = 1536,
+    y = 96
+  }, {
+    h = 48,
+    index = 99,
+    name = "<Karam> the lonely wolf of Karune",
+    w = 48,
+    x = 0,
+    y = 144
+  }, {
+    h = 48,
+    index = 100,
+    name = "<Churruin> the mercenary wizard",
+    w = 48,
+    x = 48,
+    y = 144
+  }, {
+    h = 48,
+    index = 101,
+    name = "<Jin> the machine rebel",
+    w = 48,
+    x = 96,
+    y = 144
+  }, {
+    h = 48,
+    index = 102,
+    name = "beggar male",
+    w = 48,
+    x = 144,
+    y = 144
+  }, {
+    h = 48,
+    index = 103,
+    name = "beggar female",
+    w = 48,
+    x = 192,
+    y = 144
+  }, {
+    h = 48,
+    index = 104,
+    name = "stray soul",
+    w = 48,
+    x = 240,
+    y = 144
+  }, {
+    h = 48,
+    index = 105,
+    name = "<H sister>",
+    w = 48,
+    x = 288,
+    y = 144
+  }, {
+    h = 48,
+    index = 106,
+    name = "old person male",
+    w = 48,
+    x = 336,
+    y = 144
+  }, {
+    h = 48,
+    index = 107,
+    name = "old person female",
+    w = 48,
+    x = 384,
+    y = 144
+  }, {
+    h = 48,
+    has_name = false,
+    index = 108,
+    name = "chara108",
+    w = 48,
+    x = 432,
+    y = 144
+  }, {
+    h = 48,
+    index = 109,
+    name = "<Shena> the draw",
+    w = 48,
+    x = 480,
+    y = 144
+  }, {
+    h = 48,
+    has_name = false,
+    index = 110,
+    name = "chara110",
+    w = 48,
+    x = 528,
+    y = 144
+  }, {
+    h = 48,
+    index = 111,
+    name = "staff",
+    w = 48,
+    x = 576,
+    y = 144
+  }, {
+    h = 48,
+    index = 112,
+    name = "punk male",
+    w = 48,
+    x = 624,
+    y = 144
+  }, {
+    h = 48,
+    has_name = false,
+    index = 113,
+    name = "chara113",
+    w = 48,
+    x = 672,
+    y = 144
+  }, {
+    h = 48,
+    has_name = false,
+    index = 114,
+    name = "chara114",
+    w = 48,
+    x = 720,
+    y = 144
+  }, {
+    h = 48,
+    index = 115,
+    name = "citizen",
+    w = 48,
+    x = 768,
+    y = 144
+  }, {
+    h = 48,
+    index = 116,
+    name = "<Xabi> the king of Palmia",
+    w = 48,
+    x = 816,
+    y = 144
+  }, {
+    h = 48,
+    index = 117,
+    name = "<Stersha> the queen of Palmia",
+    w = 48,
+    x = 864,
+    y = 144
+  }, {
+    h = 48,
+    has_name = false,
+    index = 118,
+    name = "chara118",
+    w = 48,
+    x = 912,
+    y = 144
+  }, {
+    h = 48,
+    index = 119,
+    name = "captain",
+    w = 48,
+    x = 960,
+    y = 144
+  }, {
+    h = 48,
+    index = 120,
+    name = "sailor male",
+    w = 48,
+    x = 1008,
+    y = 144
+  }, {
+    h = 48,
+    index = 121,
+    name = "sailor female",
+    w = 48,
+    x = 1056,
+    y = 144
+  }, {
+    h = 48,
+    index = 122,
+    name = "chara122",
+    w = 48,
+    x = 1104,
+    y = 144
+  }, {
+    h = 48,
+    index = 123,
+    name = "seraph",
+    w = 48,
+    x = 1152,
+    y = 144
+  }, {
+    h = 48,
+    index = 124,
+    name = "memory empty man",
+    w = 48,
+    x = 1200,
+    y = 144
+  }, {
+    h = 48,
+    index = 125,
+    name = "dominion male",
+    w = 48,
+    x = 1248,
+    y = 144
+  }, {
+    h = 48,
+    index = 126,
+    name = "dominion female",
+    w = 48,
+    x = 1296,
+    y = 144
+  }, {
+    h = 48,
+    index = 127,
+    name = "citizen of cyber dome male",
+    w = 48,
+    x = 1344,
+    y = 144
+  }, {
+    h = 48,
+    index = 128,
+    name = "citizen of cyber dome male 2",
+    w = 48,
+    x = 1392,
+    y = 144
+  }, {
+    h = 48,
+    index = 129,
+    name = "citizen of cyber dome female",
+    w = 48,
+    x = 1440,
+    y = 144
+  }, {
+    h = 48,
+    index = 130,
+    name = "<Milos> Of The Forgotten World",
+    w = 48,
+    x = 1488,
+    y = 144
+  }, {
+    h = 48,
+    index = 131,
+    name = "citizen of cyber dome female 2",
+    w = 48,
+    x = 1536,
+    y = 144
+  }, {
+    h = 48,
+    index = 132,
+    name = "child male",
+    w = 48,
+    x = 0,
+    y = 192
+  }, {
+    h = 48,
+    index = 133,
+    name = "child female",
+    w = 48,
+    x = 48,
+    y = 192
+  }, {
+    h = 48,
+    index = 134,
+    name = "citizen male",
+    w = 48,
+    x = 96,
+    y = 192
+  }, {
+    h = 48,
+    index = 135,
+    name = "citizen female",
+    w = 48,
+    x = 144,
+    y = 192
+  }, {
+    h = 48,
+    index = 136,
+    name = "citizen male 2",
+    w = 48,
+    x = 192,
+    y = 192
+  }, {
+    h = 48,
+    index = 137,
+    name = "citizen female 2",
+    w = 48,
+    x = 240,
+    y = 192
+  }, {
+    h = 48,
+    index = 138,
+    name = "baker",
+    w = 48,
+    x = 288,
+    y = 192
+  }, {
+    h = 48,
+    index = 139,
+    name = "mercenary male",
+    w = 48,
+    x = 336,
+    y = 192
+  }, {
+    h = 48,
+    index = 140,
+    name = "shopkeeper male",
+    w = 48,
+    x = 384,
+    y = 192
+  }, {
+    h = 48,
+    index = 141,
+    name = "shopkeeper female",
+    w = 48,
+    x = 432,
+    y = 192
+  }, {
+    h = 48,
+    index = 142,
+    name = "elder male",
+    w = 48,
+    x = 480,
+    y = 192
+  }, {
+    h = 48,
+    index = 143,
+    name = "elder female",
+    w = 48,
+    x = 528,
+    y = 192
+  }, {
+    h = 48,
+    index = 144,
+    name = "bartender male",
+    w = 48,
+    x = 576,
+    y = 192
+  }, {
+    h = 48,
+    index = 145,
+    name = "bartender female",
+    w = 48,
+    x = 624,
+    y = 192
+  }, {
+    h = 48,
+    index = 146,
+    name = "sales person male",
+    w = 48,
+    x = 672,
+    y = 192
+  }, {
+    h = 48,
+    index = 147,
+    name = "sales person female",
+    w = 48,
+    x = 720,
+    y = 192
+  }, {
+    h = 48,
+    index = 148,
+    name = "bard",
+    w = 48,
+    x = 768,
+    y = 192
+  }, {
+    h = 48,
+    has_name = false,
+    index = 149,
+    name = "chara149",
+    w = 48,
+    x = 816,
+    y = 192
+  }, {
+    h = 48,
+    index = 150,
+    name = "rogue boss male",
+    w = 48,
+    x = 864,
+    y = 192
+  }, {
+    h = 48,
+    index = 151,
+    name = "<Marka> the silver bear",
+    w = 48,
+    x = 912,
+    y = 192
+  }, {
+    h = 48,
+    index = 152,
+    name = "<Aikage> the shinobi mask",
+    w = 48,
+    x = 960,
+    y = 192
+  }, {
+    h = 48,
+    has_name = false,
+    index = 153,
+    name = "chara153",
+    w = 48,
+    x = 1008,
+    y = 192
+  }, {
+    h = 48,
+    has_name = false,
+    index = 154,
+    name = "chara154",
+    w = 48,
+    x = 1056,
+    y = 192
+  }, {
+    h = 48,
+    has_name = false,
+    index = 155,
+    name = "chara155",
+    w = 48,
+    x = 1104,
+    y = 192
+  }, {
+    h = 48,
+    has_name = false,
+    index = 156,
+    name = "chara156",
+    w = 48,
+    x = 1152,
+    y = 192
+  }, {
+    h = 48,
+    index = 157,
+    name = "rogue wizard",
+    w = 48,
+    x = 1200,
+    y = 192
+  }, {
+    h = 48,
+    index = 158,
+    name = "rogue archer",
+    w = 48,
+    x = 1248,
+    y = 192
+  }, {
+    h = 48,
+    index = 159,
+    name = "mercenary warrior",
+    w = 48,
+    x = 1296,
+    y = 192
+  }, {
+    h = 48,
+    index = 160,
+    name = "<Lend> the taker",
+    w = 48,
+    x = 1344,
+    y = 192
+  }, {
+    h = 48,
+    index = 161,
+    name = "<Mary> the insect master",
+    w = 48,
+    x = 1392,
+    y = 192
+  }, {
+    h = 48,
+    index = 162,
+    name = "<Melget> the informer",
+    w = 48,
+    x = 1440,
+    y = 192
+  }, {
+    h = 48,
+    index = 163,
+    name = "sister",
+    w = 48,
+    x = 1488,
+    y = 192
+  }, {
+    h = 48,
+    has_name = false,
+    index = 164,
+    name = "chara164",
+    w = 48,
+    x = 1536,
+    y = 192
+  }, {
+    h = 48,
+    index = 165,
+    name = "orc warrior",
+    w = 48,
+    x = 0,
+    y = 240
+  }, {
+    h = 48,
+    index = 166,
+    name = "thief",
+    w = 48,
+    x = 48,
+    y = 240
+  }, {
+    h = 48,
+    index = 167,
+    name = "zombie",
+    w = 48,
+    x = 96,
+    y = 240
+  }, {
+    h = 48,
+    index = 168,
+    name = "putit",
+    w = 48,
+    x = 144,
+    y = 240
+  }, {
+    h = 48,
+    index = 169,
+    name = "rabbit",
+    w = 48,
+    x = 192,
+    y = 240
+  }, {
+    h = 48,
+    index = 170,
+    name = "wild sheep",
+    w = 48,
+    x = 240,
+    y = 240
+  }, {
+    h = 48,
+    index = 171,
+    name = "kobold",
+    w = 48,
+    x = 288,
+    y = 240
+  }, {
+    h = 48,
+    index = 172,
+    name = "flying frog",
+    w = 48,
+    x = 336,
+    y = 240
+  }, {
+    h = 48,
+    index = 173,
+    name = "centipede",
+    w = 48,
+    x = 384,
+    y = 240
+  }, {
+    h = 48,
+    index = 174,
+    name = "snail",
+    w = 48,
+    x = 432,
+    y = 240
+  }, {
+    h = 48,
+    index = 175,
+    name = "mandrake",
+    w = 48,
+    x = 480,
+    y = 240
+  }, {
+    h = 48,
+    index = 176,
+    name = "beetle",
+    w = 48,
+    x = 528,
+    y = 240
+  }, {
+    h = 48,
+    index = 177,
+    name = "mushroom",
+    w = 48,
+    x = 576,
+    y = 240
+  }, {
+    h = 48,
+    index = 178,
+    name = "mercenary female",
+    w = 48,
+    x = 624,
+    y = 240
+  }, {
+    h = 48,
+    index = 179,
+    name = "farmer male",
+    w = 48,
+    x = 672,
+    y = 240
+  }, {
+    h = 48,
+    index = 180,
+    name = "farmer female",
+    w = 48,
+    x = 720,
+    y = 240
+  }, {
+    h = 48,
+    index = 181,
+    name = "nun male",
+    w = 48,
+    x = 768,
+    y = 240
+  }, {
+    h = 48,
+    index = 182,
+    name = "nun female",
+    w = 48,
+    x = 816,
+    y = 240
+  }, {
+    h = 48,
+    index = 183,
+    name = "rogue male",
+    w = 48,
+    x = 864,
+    y = 240
+  }, {
+    h = 48,
+    index = 184,
+    name = "rogue female",
+    w = 48,
+    x = 912,
+    y = 240
+  }, {
+    h = 48,
+    index = 185,
+    name = "artist male",
+    w = 48,
+    x = 960,
+    y = 240
+  }, {
+    h = 48,
+    index = 186,
+    name = "artist female",
+    w = 48,
+    x = 1008,
+    y = 240
+  }, {
+    h = 48,
+    index = 187,
+    name = "miner male",
+    w = 48,
+    x = 1056,
+    y = 240
+  }, {
+    h = 48,
+    index = 188,
+    name = "miner female",
+    w = 48,
+    x = 1104,
+    y = 240
+  }, {
+    h = 48,
+    index = 189,
+    name = "noble male",
+    w = 48,
+    x = 1152,
+    y = 240
+  }, {
+    h = 48,
+    index = 190,
+    name = "noble female",
+    w = 48,
+    x = 1200,
+    y = 240
+  }, {
+    h = 48,
+    index = 191,
+    name = "mutant",
+    w = 48,
+    x = 1248,
+    y = 240
+  }, {
+    h = 48,
+    index = 192,
+    name = "<Balzak> the janitor",
+    w = 48,
+    x = 1296,
+    y = 240
+  }, {
+    h = 48,
+    index = 193,
+    name = "<Revlus> the mage guildmaster",
+    w = 48,
+    x = 1344,
+    y = 240
+  }, {
+    h = 48,
+    index = 194,
+    name = "mage guild member female",
+    w = 48,
+    x = 1392,
+    y = 240
+  }, {
+    h = 48,
+    index = 195,
+    name = "mage guild member male",
+    w = 48,
+    x = 1440,
+    y = 240
+  }, {
+    h = 48,
+    index = 196,
+    name = "<Doria> the fighter watchman",
+    w = 48,
+    x = 1488,
+    y = 240
+  }, {
+    h = 48,
+    index = 197,
+    name = "<Sin> the thief guildmaster",
+    w = 48,
+    x = 1536,
+    y = 240
+  }, {
+    h = 48,
+    index = 198,
+    name = "iron maiden",
+    w = 48,
+    x = 0,
+    y = 288
+  }, {
+    h = 48,
+    index = 199,
+    name = "<Noel> the bomber",
+    w = 48,
+    x = 48,
+    y = 288
+  }, {
+    h = 48,
+    index = 200,
+    name = "bat",
+    w = 48,
+    x = 96,
+    y = 288
+  }, {
+    h = 96,
+    index = 201,
+    name = "ent",
+    w = 48,
+    x = 144,
+    y = 288
+  }, {
+    h = 48,
+    index = 202,
+    name = "lich",
+    w = 48,
+    x = 192,
+    y = 288
+  }, {
+    h = 48,
+    index = 203,
+    name = "hound",
+    w = 48,
+    x = 240,
+    y = 288
+  }, {
+    h = 48,
+    index = 204,
+    name = "giant squirrel",
+    w = 48,
+    x = 288,
+    y = 288
+  }, {
+    h = 48,
+    index = 205,
+    name = "ghost",
+    w = 48,
+    x = 336,
+    y = 288
+  }, {
+    h = 48,
+    index = 206,
+    name = "spirit",
+    w = 48,
+    x = 384,
+    y = 288
+  }, {
+    h = 48,
+    index = 207,
+    name = "floating eye",
+    w = 48,
+    x = 432,
+    y = 288
+  }, {
+    h = 48,
+    index = 208,
+    name = "nurse",
+    w = 48,
+    x = 480,
+    y = 288
+  }, {
+    h = 48,
+    index = 209,
+    name = "puppet",
+    w = 48,
+    x = 528,
+    y = 288
+  }, {
+    h = 48,
+    index = 210,
+    name = "wasp",
+    w = 48,
+    x = 576,
+    y = 288
+  }, {
+    h = 48,
+    index = 211,
+    name = "black cat",
+    w = 48,
+    x = 624,
+    y = 288
+  }, {
+    h = 48,
+    index = 212,
+    name = "imp",
+    w = 48,
+    x = 672,
+    y = 288
+  }, {
+    h = 48,
+    index = 213,
+    name = "hand",
+    w = 48,
+    x = 720,
+    y = 288
+  }, {
+    h = 48,
+    index = 214,
+    name = "nymph",
+    w = 48,
+    x = 768,
+    y = 288
+  }, {
+    h = 48,
+    index = 215,
+    name = "chaos flower",
+    w = 48,
+    x = 816,
+    y = 288
+  }, {
+    h = 48,
+    index = 216,
+    name = "snake",
+    w = 48,
+    x = 864,
+    y = 288
+  }, {
+    h = 48,
+    index = 217,
+    name = "fairy",
+    w = 48,
+    x = 912,
+    y = 288
+  }, {
+    h = 48,
+    index = 218,
+    name = "android",
+    w = 48,
+    x = 960,
+    y = 288
+  }, {
+    h = 48,
+    index = 219,
+    name = "mummy",
+    w = 48,
+    x = 1008,
+    y = 288
+  }, {
+    h = 48,
+    index = 220,
+    name = "goblin",
+    w = 48,
+    x = 1056,
+    y = 288
+  }, {
+    h = 48,
+    index = 221,
+    name = "baptist",
+    w = 48,
+    x = 1104,
+    y = 288
+  }, {
+    h = 48,
+    index = 222,
+    name = "bear",
+    w = 48,
+    x = 1152,
+    y = 288
+  }, {
+    h = 48,
+    index = 223,
+    name = "armor",
+    w = 48,
+    x = 1200,
+    y = 288
+  }, {
+    h = 48,
+    index = 224,
+    name = "medusa",
+    w = 48,
+    x = 1248,
+    y = 288
+  }, {
+    h = 48,
+    index = 225,
+    name = "cupid",
+    w = 48,
+    x = 1296,
+    y = 288
+  }, {
+    h = 48,
+    index = 226,
+    name = "phantom",
+    w = 48,
+    x = 1344,
+    y = 288
+  }, {
+    h = 48,
+    index = 227,
+    name = "harpy",
+    w = 48,
+    x = 1392,
+    y = 288
+  }, {
+    h = 96,
+    index = 228,
+    name = "dragon",
+    w = 48,
+    x = 1440,
+    y = 288
+  }, {
+    h = 48,
+    index = 229,
+    name = "cerberus",
+    w = 48,
+    x = 1488,
+    y = 288
+  }, {
+    h = 48,
+    index = 230,
+    name = "spider",
+    w = 48,
+    x = 1536,
+    y = 288
+  }, {
+    h = 96,
+    index = 231,
+    name = "golem",
+    w = 48,
+    x = 0,
+    y = 336
+  }, {
+    h = 96,
+    index = 232,
+    name = "giant",
+    w = 48,
+    x = 48,
+    y = 336
+  }, {
+    h = 96,
+    index = 233,
+    name = "drake",
+    w = 48,
+    x = 96,
+    y = 336
+  }, {
+    h = 96,
+    index = 235,
+    name = "wyvern",
+    w = 48,
+    x = 192,
+    y = 336
+  }, {
+    h = 48,
+    index = 236,
+    name = "black angel",
+    w = 48,
+    x = 240,
+    y = 336
+  }, {
+    h = 48,
+    index = 237,
+    name = "crab",
+    w = 48,
+    x = 288,
+    y = 336
+  }, {
+    h = 48,
+    index = 238,
+    name = "wisp",
+    w = 48,
+    x = 336,
+    y = 336
+  }, {
+    h = 48,
+    index = 239,
+    name = "fire centipede",
+    w = 48,
+    x = 384,
+    y = 336
+  }, {
+    h = 48,
+    index = 240,
+    name = "cultist of fire",
+    w = 48,
+    x = 432,
+    y = 336
+  }, {
+    h = 48,
+    index = 241,
+    name = "skeleton",
+    w = 48,
+    x = 480,
+    y = 336
+  }, {
+    h = 48,
+    index = 242,
+    name = "defender",
+    w = 48,
+    x = 528,
+    y = 336
+  }, {
+    h = 48,
+    index = 243,
+    name = "missionary of darkness",
+    w = 48,
+    x = 576,
+    y = 336
+  }, {
+    h = 48,
+    index = 244,
+    name = "<Pawn>",
+    w = 48,
+    x = 624,
+    y = 336
+  }, {
+    h = 48,
+    index = 245,
+    name = "<Rook>",
+    w = 48,
+    x = 672,
+    y = 336
+  }, {
+    h = 48,
+    index = 246,
+    name = "<Bishop>",
+    w = 48,
+    x = 720,
+    y = 336
+  }, {
+    h = 48,
+    index = 247,
+    name = "<Knight>",
+    w = 48,
+    x = 768,
+    y = 336
+  }, {
+    h = 48,
+    index = 248,
+    name = "<Queen>",
+    w = 48,
+    x = 816,
+    y = 336
+  }, {
+    h = 48,
+    index = 249,
+    name = "<King>",
+    w = 48,
+    x = 864,
+    y = 336
+  }, {
+    h = 48,
+    index = 250,
+    name = "Yerles machine infantry",
+    w = 48,
+    x = 912,
+    y = 336
+  }, {
+    h = 48,
+    index = 251,
+    name = "rock thrower",
+    w = 48,
+    x = 960,
+    y = 336
+  }, {
+    h = 48,
+    index = 252,
+    name = "metal",
+    w = 48,
+    x = 1008,
+    y = 336
+  }, {
+    h = 48,
+    index = 253,
+    name = "cat",
+    w = 48,
+    x = 1056,
+    y = 336
+  }, {
+    h = 48,
+    index = 254,
+    name = "dog",
+    w = 48,
+    x = 1104,
+    y = 336
+  }, {
+    h = 48,
+    index = 255,
+    name = "rat",
+    w = 48,
+    x = 1152,
+    y = 336
+  }, {
+    h = 48,
+    index = 256,
+    name = "shell",
+    w = 48,
+    x = 1200,
+    y = 336
+  }, {
+    h = 48,
+    index = 257,
+    name = "slime",
+    w = 48,
+    x = 1248,
+    y = 336
+  }, {
+    h = 48,
+    index = 258,
+    name = "public performer",
+    w = 48,
+    x = 1296,
+    y = 336
+  }, {
+    h = 48,
+    index = 259,
+    name = "twintail",
+    w = 48,
+    x = 1344,
+    y = 336
+  }, {
+    h = 48,
+    index = 260,
+    name = "silver wolf",
+    w = 48,
+    x = 1392,
+    y = 336
+  }, {
+    h = 48,
+    index = 262,
+    name = "horse",
+    w = 48,
+    x = 1488,
+    y = 336
+  }, {
+    h = 48,
+    index = 263,
+    name = "<Icolle> the biologist",
+    w = 48,
+    x = 1536,
+    y = 336
+  }, {
+    h = 48,
+    index = 267,
+    name = "golden knight",
+    w = 48,
+    x = 144,
+    y = 384
+  }, {
+    h = 48,
+    index = 269,
+    name = "exile",
+    w = 48,
+    x = 240,
+    y = 384
+  }, {
+    h = 48,
+    index = 270,
+    name = "machine",
+    w = 48,
+    x = 288,
+    y = 384
+  }, {
+    h = 48,
+    index = 271,
+    name = "deformed eye",
+    w = 48,
+    x = 336,
+    y = 384
+  }, {
+    h = 48,
+    index = 272,
+    name = "wisp",
+    w = 48,
+    x = 384,
+    y = 384
+  }, {
+    h = 48,
+    index = 273,
+    name = "shining hedgehog",
+    w = 48,
+    x = 432,
+    y = 384
+  }, {
+    h = 48,
+    index = 274,
+    name = "chicken",
+    w = 48,
+    x = 480,
+    y = 384
+  }, {
+    h = 48,
+    index = 275,
+    name = "pumpkin",
+    w = 48,
+    x = 528,
+    y = 384
+  }, {
+    h = 48,
+    index = 276,
+    name = "stalker",
+    w = 48,
+    x = 576,
+    y = 384
+  }, {
+    h = 48,
+    index = 277,
+    name = "Shub-Niggurath",
+    w = 48,
+    x = 624,
+    y = 384
+  }, {
+    h = 48,
+    index = 278,
+    name = "gagu",
+    w = 48,
+    x = 672,
+    y = 384
+  }, {
+    h = 48,
+    index = 279,
+    name = "silver eyed witch",
+    w = 48,
+    x = 720,
+    y = 384
+  }, {
+    h = 96,
+    index = 280,
+    name = "shade",
+    w = 48,
+    x = 768,
+    y = 384
+  }, {
+    h = 48,
+    index = 281,
+    name = "quickling",
+    w = 48,
+    x = 816,
+    y = 384
+  }, {
+    h = 48,
+    index = 282,
+    name = "cube",
+    w = 48,
+    x = 864,
+    y = 384
+  }, {
+    h = 48,
+    index = 283,
+    name = "alien",
+    w = 48,
+    x = 912,
+    y = 384
+  }, {
+    h = 48,
+    index = 284,
+    name = "fanatic female",
+    w = 48,
+    x = 960,
+    y = 384
+  }, {
+    h = 48,
+    index = 285,
+    name = "fanatic male",
+    w = 48,
+    x = 1008,
+    y = 384
+  }, {
+    h = 48,
+    has_name = false,
+    index = 286,
+    name = "chara286",
+    w = 48,
+    x = 1056,
+    y = 384
+  }, {
+    h = 48,
+    index = 287,
+    name = "older sister",
+    w = 48,
+    x = 1104,
+    y = 384
+  }, {
+    h = 48,
+    index = 288,
+    name = "older dog sister",
+    w = 48,
+    x = 1152,
+    y = 384
+  }, {
+    h = 48,
+    index = 289,
+    name = "<Heinrich> the iron colonel",
+    w = 48,
+    x = 1200,
+    y = 384
+  }, {
+    h = 48,
+    index = 290,
+    name = "<Zernard> the capable mercenary",
+    w = 48,
+    x = 1248,
+    y = 384
+  }, {
+    h = 48,
+    index = 291,
+    name = "<Milis> Captain of the Special Forces",
+    w = 48,
+    x = 1296,
+    y = 384
+  }, {
+    h = 48,
+    index = 292,
+    name = "Security Officer <Orville>",
+    w = 48,
+    x = 1344,
+    y = 384
+  }, {
+    h = 48,
+    index = 293,
+    name = "Naive <Kyle>",
+    w = 48,
+    x = 1392,
+    y = 384
+  }, {
+    h = 48,
+    index = 294,
+    name = "<Mefan> the bard",
+    w = 48,
+    x = 1440,
+    y = 384
+  }, {
+    h = 48,
+    index = 295,
+    name = "<Caim> the mad rich",
+    w = 48,
+    x = 1488,
+    y = 384
+  }, {
+    h = 48,
+    index = 296,
+    name = "<Murder Knight>",
+    w = 48,
+    x = 1536,
+    y = 384
+  }, {
+    h = 96,
+    index = 297,
+    name = "<Zeome> the false prophet",
+    w = 48,
+    x = 0,
+    y = 432
+  }, {
+    h = 48,
+    index = 298,
+    name = "swimmer",
+    w = 48,
+    x = 48,
+    y = 432
+  }, {
+    h = 48,
+    index = 299,
+    name = "military putit",
+    w = 48,
+    x = 96,
+    y = 432
+  }, {
+    h = 48,
+    index = 300,
+    name = "gambler male",
+    w = 48,
+    x = 144,
+    y = 432
+  }, {
+    h = 48,
+    index = 301,
+    name = "gambler female",
+    w = 48,
+    x = 192,
+    y = 432
+  }, {
+    h = 48,
+    index = 302,
+    name = "infected yerles soldier",
+    w = 48,
+    x = 240,
+    y = 432
+  }, {
+    h = 48,
+    index = 303,
+    name = "war spirit male",
+    w = 48,
+    x = 288,
+    y = 432
+  }, {
+    h = 48,
+    index = 304,
+    name = "war spirit female",
+    w = 48,
+    x = 336,
+    y = 432
+  }, {
+    h = 48,
+    index = 305,
+    name = "magic spirit male",
+    w = 48,
+    x = 384,
+    y = 432
+  }, {
+    h = 48,
+    index = 306,
+    name = "magic spirit female",
+    w = 48,
+    x = 432,
+    y = 432
+  }, {
+    h = 48,
+    has_name = false,
+    index = 307,
+    name = "chara307",
+    w = 48,
+    x = 480,
+    y = 432
+  }, {
+    h = 48,
+    index = 308,
+    name = "Lead Developer <Dr. Gavela>",
+    w = 48,
+    x = 528,
+    y = 432
+  }, {
+    h = 48,
+    index = 309,
+    name = "chupacabura",
+    w = 48,
+    x = 576,
+    y = 432
+  }, {
+    h = 48,
+    index = 310,
+    name = "carmilla",
+    w = 48,
+    x = 624,
+    y = 432
+  }, {
+    h = 48,
+    index = 311,
+    name = "vampire",
+    w = 48,
+    x = 672,
+    y = 432
+  }, {
+    h = 48,
+    index = 312,
+    name = "fire dragon child",
+    w = 48,
+    x = 720,
+    y = 432
+  }, {
+    h = 48,
+    index = 314,
+    name = "<Arma> the tour guide",
+    w = 48,
+    x = 816,
+    y = 432
+  }, {
+    h = 48,
+    index = 315,
+    name = "Big sister",
+    w = 48,
+    x = 864,
+    y = 432
+  }, {
+    h = 48,
+    index = 316,
+    name = "mimic",
+    w = 48,
+    x = 912,
+    y = 432
+  }, {
+    h = 48,
+    index = 317,
+    name = "mimic 2",
+    w = 48,
+    x = 960,
+    y = 432
+  }, {
+    h = 48,
+    index = 318,
+    name = "fisherman male",
+    w = 48,
+    x = 1008,
+    y = 432
+  }, {
+    h = 48,
+    index = 319,
+    name = "fisherman female",
+    w = 48,
+    x = 1056,
+    y = 432
+  }, {
+    h = 48,
+    index = 320,
+    name = "citizen female 3",
+    w = 48,
+    x = 1104,
+    y = 432
+  }, {
+    h = 48,
+    index = 321,
+    name = "H sister",
+    w = 48,
+    x = 1152,
+    y = 432
+  }, {
+    h = 48,
+    index = 322,
+    name = "gokiburi",
+    w = 48,
+    x = 1200,
+    y = 432
+  }, {
+    h = 48,
+    index = 323,
+    name = "Yerles combat plane",
+    w = 48,
+    x = 1248,
+    y = 432
+  }, {
+    h = 48,
+    index = 324,
+    name = "Quantum creature",
+    w = 48,
+    x = 1296,
+    y = 432
+  }, {
+    h = 48,
+    index = 325,
+    name = "<Siva> the destruction",
+    w = 48,
+    x = 1344,
+    y = 432
+  }, {
+    h = 48,
+    index = 326,
+    name = "goose",
+    w = 48,
+    x = 1392,
+    y = 432
+  }, {
+    h = 48,
+    index = 327,
+    name = "<Lune> the maid chief",
+    w = 48,
+    x = 1440,
+    y = 432
+  }, {
+    h = 48,
+    index = 328,
+    name = "maidsann",
+    w = 48,
+    x = 1488,
+    y = 432
+  }, {
+    h = 48,
+    index = 329,
+    name = "maidsann 2",
+    w = 48,
+    x = 1536,
+    y = 432
+  }, {
+    h = 48,
+    index = 331,
+    name = "<Orphe> the prince of lost kingdom",
+    w = 48,
+    x = 48,
+    y = 480
+  }, {
+    h = 48,
+    index = 332,
+    name = "<Mad scientist>",
+    w = 48,
+    x = 96,
+    y = 480
+  }, {
+    h = 48,
+    index = 333,
+    name = "<Isca> the fallen angel",
+    w = 48,
+    x = 144,
+    y = 480
+  }, {
+    h = 48,
+    index = 334,
+    name = "<Bethel> the white hawk",
+    w = 48,
+    x = 192,
+    y = 480
+  }, {
+    h = 48,
+    has_name = false,
+    index = 335,
+    name = "chara335",
+    w = 48,
+    x = 240,
+    y = 480
+  }, {
+    h = 48,
+    has_name = false,
+    index = 336,
+    name = "chara336",
+    w = 48,
+    x = 288,
+    y = 480
+  }, {
+    h = 48,
+    index = 337,
+    name = "<Loyter> the crimson of Zanan",
+    w = 48,
+    x = 336,
+    y = 480
+  }, {
+    h = 96,
+    index = 338,
+    name = "<Vesda> the fire dragon",
+    w = 48,
+    x = 384,
+    y = 480
+  }, {
+    h = 96,
+    index = 339,
+    name = "<Issizzle> the dark abomination",
+    w = 48,
+    x = 432,
+    y = 480
+  }, {
+    h = 48,
+    index = 340,
+    name = "<Erystia> the scholar of history",
+    w = 48,
+    x = 480,
+    y = 480
+  }, {
+    h = 96,
+    index = 341,
+    name = "<Wynan> the lord of the Ancient Castle",
+    w = 48,
+    x = 528,
+    y = 480
+  }, {
+    h = 96,
+    index = 342,
+    name = "<Corgon> the steel dragon",
+    w = 48,
+    x = 576,
+    y = 480
+  }, {
+    h = 96,
+    index = 343,
+    name = "<Quruiza> the red-eyed Deceiver",
+    w = 48,
+    x = 624,
+    y = 480
+  }, {
+    h = 48,
+    index = 344,
+    name = "<Dungeon cleaner>",
+    w = 48,
+    x = 672,
+    y = 480
+  }, {
+    h = 48,
+    index = 345,
+    name = "<Larnneire> the listener of wind",
+    w = 48,
+    x = 720,
+    y = 480
+  }, {
+    h = 48,
+    index = 346,
+    name = "<Lomias> the messenger from Vindale",
+    w = 48,
+    x = 768,
+    y = 480
+  }, {
+    h = 48,
+    index = 347,
+    name = "at",
+    w = 48,
+    x = 816,
+    y = 480
+  }, {
+    h = 48,
+    index = 348,
+    name = "<Frisia> the cat queen",
+    w = 48,
+    x = 864,
+    y = 480
+  }, {
+    h = 96,
+    index = 349,
+    name = "<Utima> the destroyer of Xeren",
+    w = 48,
+    x = 912,
+    y = 480
+  }, {
+    h = 48,
+    index = 350,
+    name = "master of pet arena",
+    w = 48,
+    x = 960,
+    y = 480
+  }, {
+    h = 96,
+    index = 351,
+    name = "<Ebon> the fire giant",
+    w = 48,
+    x = 1008,
+    y = 480
+  }, {
+    h = 48,
+    index = 352,
+    name = "<Garok> the legendary smith",
+    w = 48,
+    x = 1056,
+    y = 480
+  }, {
+    h = 48,
+    index = 353,
+    name = "<Miral> the legendary smith",
+    w = 48,
+    x = 1104,
+    y = 480
+  }, {
+    h = 48,
+    index = 354,
+    name = "younger cat sister",
+    w = 48,
+    x = 1152,
+    y = 480
+  }, {
+    h = 48,
+    index = 355,
+    name = "young lady",
+    w = 48,
+    x = 1200,
+    y = 480
+  }, {
+    h = 48,
+    index = 356,
+    name = "<Gwen> the innocent",
+    w = 48,
+    x = 1248,
+    y = 480
+  }, {
+    h = 48,
+    index = 357,
+    name = "town child",
+    w = 48,
+    x = 1296,
+    y = 480
+  }, {
+    h = 48,
+    index = 358,
+    name = "Lonely <Pael>",
+    w = 48,
+    x = 1344,
+    y = 480
+  }, {
+    h = 48,
+    index = 359,
+    name = "Pael's mom <Lily>",
+    w = 48,
+    x = 1392,
+    y = 480
+  }, {
+    h = 48,
+    index = 360,
+    name = "Pael's mom <Lily> masked",
+    w = 48,
+    x = 1440,
+    y = 480
+  }, {
+    h = 48,
+    index = 361,
+    name = "<Raphael> the womanizer",
+    w = 48,
+    x = 1488,
+    y = 480
+  }, {
+    h = 48,
+    index = 362,
+    name = "<Ainc> the novice knight",
+    w = 48,
+    x = 1536,
+    y = 480
+  }, {
+    h = 48,
+    index = 363,
+    name = "guard",
+    w = 48,
+    x = 0,
+    y = 528
+  }, {
+    h = 48,
+    index = 364,
+    name = "<Poppy> the little dog",
+    w = 48,
+    x = 48,
+    y = 528
+  }, {
+    h = 48,
+    index = 365,
+    name = "<Rilian> the dog lover",
+    w = 48,
+    x = 96,
+    y = 528
+  }, {
+    h = 48,
+    index = 366,
+    name = "<Tam> the cat hater",
+    w = 48,
+    x = 144,
+    y = 528
+  }, {
+    h = 48,
+    index = 367,
+    name = "carbuncle",
+    w = 48,
+    x = 192,
+    y = 528
+  }, {
+    h = 48,
+    index = 368,
+    name = "lion",
+    w = 48,
+    x = 240,
+    y = 528
+  }, {
+    h = 48,
+    index = 369,
+    name = "<Cacy> the cat tamer",
+    w = 48,
+    x = 288,
+    y = 528
+  }, {
+    h = 48,
+    index = 370,
+    name = "<Colonel Gilbert> the frontier warrior",
+    w = 48,
+    x = 336,
+    y = 528
+  }, {
+    h = 48,
+    index = 373,
+    name = "yerles self-propelled gun",
+    w = 48,
+    x = 480,
+    y = 528
+  }, {
+    h = 48,
+    index = 377,
+    name = "juere infantry",
+    w = 48,
+    x = 672,
+    y = 528
+  }, {
+    h = 48,
+    index = 378,
+    name = "yeek hard worker",
+    w = 48,
+    x = 720,
+    y = 528
+  }, {
+    h = 48,
+    index = 379,
+    name = "hot spring maniac male",
+    w = 48,
+    x = 768,
+    y = 528
+  }, {
+    h = 48,
+    index = 380,
+    name = "hot spring maniac female",
+    w = 48,
+    x = 816,
+    y = 528
+  }, {
+    h = 48,
+    index = 381,
+    name = "<Rodlob> the yeek chief",
+    w = 48,
+    x = 864,
+    y = 528
+  }, {
+    h = 48,
+    index = 383,
+    name = "<Arnord> the injured soldier",
+    w = 48,
+    x = 960,
+    y = 528
+  }, {
+    h = 48,
+    index = 385,
+    name = "kamikaze samurai",
+    w = 48,
+    x = 1056,
+    y = 528
+  }, {
+    h = 48,
+    index = 386,
+    name = "bomb rock",
+    w = 48,
+    x = 1104,
+    y = 528
+  }, {
+    h = 48,
+    index = 387,
+    name = "silver cat",
+    w = 48,
+    x = 1152,
+    y = 528
+  }, {
+    h = 48,
+    index = 388,
+    name = "<Mia> the cat freak",
+    w = 48,
+    x = 1200,
+    y = 528
+  }, {
+    h = 96,
+    index = 389,
+    name = "dinosaur",
+    w = 48,
+    x = 1248,
+    y = 528
+  }, {
+    h = 48,
+    index = 390,
+    name = "fairy",
+    w = 48,
+    x = 1296,
+    y = 528
+  }, {
+    h = 96,
+    index = 391,
+    name = "troll",
+    w = 48,
+    x = 1344,
+    y = 528
+  }, {
+    h = 48,
+    index = 392,
+    name = "<Renton> the suffering wizard",
+    w = 48,
+    x = 1392,
+    y = 528
+  }, {
+    h = 96,
+    index = 393,
+    name = "<Devastate Lulwy>",
+    w = 48,
+    x = 1440,
+    y = 528
+  }, {
+    h = 48,
+    index = 394,
+    name = "<Marks> the great thief",
+    w = 48,
+    x = 1488,
+    y = 528
+  }, {
+    h = 48,
+    index = 395,
+    name = "ancient coffin",
+    w = 48,
+    x = 1536,
+    y = 528
+  }, {
+    h = 48,
+    index = 396,
+    name = "scorpion",
+    w = 48,
+    x = 0,
+    y = 576
+  }, {
+    h = 48,
+    index = 397,
+    name = "lizard man",
+    w = 48,
+    x = 48,
+    y = 576
+  }, {
+    h = 96,
+    index = 398,
+    name = "minotaur",
+    w = 48,
+    x = 96,
+    y = 576
+  }, {
+    h = 48,
+    index = 399,
+    name = "spore mushroom",
+    w = 48,
+    x = 144,
+    y = 576
+  }, {
+    h = 48,
+    index = 400,
+    name = "bubble",
+    w = 48,
+    x = 192,
+    y = 576
+  }, {
+    h = 48,
+    index = 401,
+    name = "mass monster",
+    w = 48,
+    x = 240,
+    y = 576
+  }, {
+    h = 96,
+    index = 402,
+    name = "<Blessed Jure>",
+    w = 48,
+    x = 288,
+    y = 576
+  }, {
+    h = 48,
+    index = 403,
+    name = "<Conery> Palmian major general",
+    w = 48,
+    x = 336,
+    y = 576
+  }, {
+    h = 96,
+    index = 404,
+    name = "executioner",
+    w = 48,
+    x = 384,
+    y = 576
+  }, {
+    h = 96,
+    index = 405,
+    name = "asura",
+    w = 48,
+    x = 432,
+    y = 576
+  }, {
+    h = 48,
+    index = 406,
+    name = "hungry sea lion",
+    w = 48,
+    x = 480,
+    y = 576
+  }, {
+    h = 48,
+    index = 407,
+    name = "mad gaze",
+    w = 48,
+    x = 528,
+    y = 576
+  }, {
+    h = 96,
+    index = 408,
+    name = "<Big Daddy>",
+    w = 48,
+    x = 576,
+    y = 576
+  }, {
+    h = 48,
+    index = 409,
+    name = "<Little Sister>",
+    w = 48,
+    x = 624,
+    y = 576
+  }, {
+    h = 48,
+    index = 410,
+    name = "cleaner",
+    w = 48,
+    x = 672,
+    y = 576
+  }, {
+    h = 48,
+    index = 411,
+    name = "hard gay",
+    w = 48,
+    x = 720,
+    y = 576
+  }, {
+    h = 48,
+    index = 412,
+    name = "<Strange scientist>",
+    w = 48,
+    x = 768,
+    y = 576
+  }, {
+    h = 96,
+    index = 413,
+    name = "<Ehekatl>",
+    w = 48,
+    x = 816,
+    y = 576
+  }, {
+    h = 48,
+    index = 414,
+    name = "guild trainer female",
+    w = 48,
+    x = 864,
+    y = 576
+  }, {
+    h = 48,
+    index = 415,
+    name = "guild trainer male",
+    w = 48,
+    x = 912,
+    y = 576
+  }, {
+    h = 48,
+    index = 416,
+    name = "<Mysterious Producer>",
+    w = 48,
+    x = 960,
+    y = 576
+  }, {
+    h = 48,
+    index = 417,
+    name = "prostitute female",
+    w = 48,
+    x = 1008,
+    y = 576
+  }, {
+    h = 48,
+    index = 418,
+    name = "prostitute male",
+    w = 48,
+    x = 1056,
+    y = 576
+  }, {
+    h = 48,
+    index = 419,
+    name = "prisoner male",
+    w = 48,
+    x = 1104,
+    y = 576
+  }, {
+    h = 48,
+    index = 420,
+    name = "prisoner female",
+    w = 48,
+    x = 1152,
+    y = 576
+  }, {
+    h = 48,
+    index = 421,
+    name = "<Dog cop>",
+    w = 48,
+    x = 1200,
+    y = 576
+  }, {
+    h = 48,
+    index = 423,
+    name = "eulderna summonknight",
+    w = 48,
+    x = 1296,
+    y = 576
+  }, {
+    h = 48,
+    index = 425,
+    name = "bounty hunter",
+    w = 48,
+    x = 1392,
+    y = 576
+  }, {
+    h = 48,
+    index = 427,
+    name = "<Snail> the android rider",
+    w = 48,
+    x = 1488,
+    y = 576
+  }, {
+    h = 48,
+    index = 428,
+    name = "<Reconciled cleaner>",
+    w = 48,
+    x = 1536,
+    y = 576
+  }, {
+    h = 96,
+    index = 429,
+    name = "yith",
+    w = 48,
+    x = 0,
+    y = 624
+  }, {
+    h = 96,
+    index = 430,
+    name = "spiral king",
+    w = 48,
+    x = 48,
+    y = 624
+  }, {
+    h = 96,
+    index = 432,
+    name = "<Buildup Opatos>",
+    w = 48,
+    x = 144,
+    y = 624
+  }, {
+    h = 96,
+    index = 433,
+    name = "<Insane Kumiromi>",
+    w = 48,
+    x = 192,
+    y = 624
+  }, {
+    h = 48,
+    index = 434,
+    name = "mine dog",
+    w = 48,
+    x = 240,
+    y = 624
+  }, {
+    h = 96,
+    index = 436,
+    name = "tsathoggua",
+    w = 48,
+    x = 336,
+    y = 624
+  }, {
+    h = 96,
+    index = 439,
+    name = "mammoth",
+    w = 48,
+    x = 480,
+    y = 624
+  }, {
+    h = 48,
+    index = 440,
+    name = "Yerles latest outfit soldier",
+    w = 48,
+    x = 528,
+    y = 624
+  }, {
+    h = 96,
+    index = 442,
+    name = "holy beast",
+    w = 48,
+    x = 624,
+    y = 624
+  }, {
+    h = 48,
+    index = 443,
+    name = "caravan master",
+    w = 48,
+    x = 672,
+    y = 624
+  }, {
+    h = 48,
+    index = 444,
+    name = "<Bamboo Sprout>",
+    w = 48,
+    x = 720,
+    y = 624
+  }, {
+    h = 48,
+    index = 445,
+    name = "wing snail",
+    w = 48,
+    x = 768,
+    y = 624
+  }, {
+    h = 96,
+    index = 447,
+    name = "<Mani>",
+    w = 48,
+    x = 864,
+    y = 624
+  }, {
+    h = 48,
+    has_name = false,
+    index = 448,
+    name = "chara448",
+    w = 48,
+    x = 912,
+    y = 624
+  }, {
+    h = 96,
+    has_name = false,
+    index = 449,
+    name = "chara449",
+    w = 48,
+    x = 960,
+    y = 624
+  }, {
+    h = 96,
+    index = 450,
+    name = "five head god",
+    w = 48,
+    x = 1008,
+    y = 624
+  }, {
+    h = 96,
+    index = 451,
+    name = "suzaku",
+    w = 48,
+    x = 1056,
+    y = 624
+  }, {
+    h = 96,
+    has_name = false,
+    index = 452,
+    name = "chara452",
+    w = 48,
+    x = 1104,
+    y = 624
+  }, {
+    h = 96,
+    index = 453,
+    name = "Rudras",
+    w = 48,
+    x = 1152,
+    y = 624
+  }, {
+    h = 96,
+    index = 454,
+    name = "<Yerleswood> the savage machine",
+    w = 48,
+    x = 1200,
+    y = 624
+  }, {
+    h = 96,
+    index = 455,
+    name = "giraffe",
+    w = 48,
+    x = 1248,
+    y = 624
+  }, {
+    h = 96,
+    index = 456,
+    name = "<Metal Vesda> the fire machine",
+    w = 48,
+    x = 1296,
+    y = 624
+  }, {
+    h = 96,
+    has_name = false,
+    index = 457,
+    name = "chara457",
+    w = 48,
+    x = 1344,
+    y = 624
+  }, {
+    h = 96,
+    index = 458,
+    name = "kirin",
+    w = 48,
+    x = 1392,
+    y = 624
+  }, {
+    h = 96,
+    index = 459,
+    name = "<Meshera plant>",
+    w = 48,
+    x = 1440,
+    y = 624
+  }, {
+    h = 96,
+    has_name = false,
+    index = 460,
+    name = "chara460",
+    w = 48,
+    x = 1488,
+    y = 624
+  }, {
+    h = 96,
+    index = 461,
+    name = "<Meshera Alpha> the deformed angel",
+    w = 48,
+    x = 1536,
+    y = 624
+  }, {
+    h = 48,
+    index = 464,
+    name = "<Mizuki> The Abyss Princess",
+    w = 48,
+    x = 96,
+    y = 672
+  }, {
+    h = 48,
+    index = 467,
+    name = "pudding spirit",
+    w = 48,
+    x = 240,
+    y = 672
+  }, {
+    h = 48,
+    index = 468,
+    name = "<Grief Shield>",
+    w = 48,
+    x = 288,
+    y = 672
+  }, {
+    h = 48,
+    index = 470,
+    name = "<Kaneda Bike>",
+    w = 48,
+    x = 384,
+    y = 672
+  }, {
+    h = 48,
+    index = 471,
+    name = "cub",
+    w = 48,
+    x = 432,
+    y = 672
+  }, {
+    h = 48,
+    index = 473,
+    name = "part time worker",
+    w = 48,
+    x = 528,
+    y = 672
+  }, {
+    h = 48,
+    index = 474,
+    name = "Bankrupt <Guo>",
+    w = 48,
+    x = 576,
+    y = 672
+  }, {
+    h = 48,
+    has_name = false,
+    index = 476,
+    name = "chara476",
+    w = 48,
+    x = 672,
+    y = 672
+  }, {
+    h = 48,
+    has_name = false,
+    index = 477,
+    name = "chara477",
+    w = 48,
+    x = 720,
+    y = 672
+  }, {
+    h = 48,
+    index = 478,
+    name = "<The leopard warrior>",
+    w = 48,
+    x = 768,
+    y = 672
+  }, {
+    h = 48,
+    index = 479,
+    name = "<Silvia> The princess",
+    w = 48,
+    x = 816,
+    y = 672
+  }, {
+    h = 48,
+    index = 481,
+    name = "<Lityou>",
+    w = 48,
+    x = 912,
+    y = 672
+  }, {
+    h = 96,
+    index = 495,
+    name = "<Yacatect>",
+    w = 48,
+    x = 0,
+    y = 720
+  }, {
+    h = 96,
+    index = 496,
+    name = "<Itzpalt>",
+    w = 48,
+    x = 48,
+    y = 720
+  }, {
+    h = 96,
+    has_name = false,
+    index = 497,
+    name = "chara497",
+    w = 48,
+    x = 96,
+    y = 720
+  }, {
+    h = 96,
+    index = 498,
+    name = "shoebill",
+    w = 48,
+    x = 144,
+    y = 720
+  }, {
+    h = 48,
+    index = 499,
+    name = "<Leiki>",
+    w = 48,
+    x = 192,
+    y = 720
+  }, {
+    h = 48,
+    has_name = false,
+    index = 500,
+    name = "chara500",
+    w = 48,
+    x = 240,
+    y = 720
+  }, {
+    h = 48,
+    index = 501,
+    name = "wrang-wrang",
+    w = 48,
+    x = 288,
+    y = 720
+  }, {
+    h = 96,
+    index = 502,
+    name = "element dragon",
+    w = 48,
+    x = 336,
+    y = 720
+  }, {
+    h = 48,
+    index = 503,
+    name = "lazy older sister",
+    w = 48,
+    x = 384,
+    y = 720
+  }, {
+    h = 48,
+    index = 504,
+    name = "M girl",
+    w = 48,
+    x = 432,
+    y = 720
+  }, {
+    h = 48,
+    has_name = false,
+    index = 505,
+    name = "chara505",
+    w = 48,
+    x = 480,
+    y = 720
+  }, {
+    h = 48,
+    index = 506,
+    name = "old humankind",
+    w = 48,
+    x = 528,
+    y = 720
+  }, {
+    h = 48,
+    index = 507,
+    name = "old humankind",
+    w = 48,
+    x = 576,
+    y = 720
+  }, {
+    h = 48,
+    has_name = false,
+    index = 508,
+    name = "chara508",
+    w = 48,
+    x = 624,
+    y = 720
+  }, {
+    h = 48,
+    has_name = false,
+    index = 509,
+    name = "chara509",
+    w = 48,
+    x = 672,
+    y = 720
+  }, {
+    h = 48,
+    index = 510,
+    name = "old humankind",
+    w = 48,
+    x = 720,
+    y = 720
+  }, {
+    h = 48,
+    index = 511,
+    name = "new citizen",
+    w = 48,
+    x = 768,
+    y = 720
+  }, {
+    h = 48,
+    index = 512,
+    name = "flying leech",
+    w = 48,
+    x = 816,
+    y = 720
+  }, {
+    h = 48,
+    index = 513,
+    name = "<Gwen> the pitiless",
+    w = 48,
+    x = 864,
+    y = 720
+  }, {
+    h = 48,
+    index = 514,
+    name = "black gauntlet <Leold>",
+    w = 48,
+    x = 912,
+    y = 720
+  }, {
+    h = 48,
+    index = 515,
+    name = "Xeren electric tank",
+    w = 48,
+    x = 960,
+    y = 720
+  }, {
+    h = 48,
+    index = 516,
+    name = "Xeren satellite unit",
+    w = 48,
+    x = 1008,
+    y = 720
+  }, {
+    h = 48,
+    has_name = false,
+    index = 517,
+    name = "chara517",
+    w = 48,
+    x = 1056,
+    y = 720
+  }, {
+    h = 48,
+    index = 518,
+    name = "chaos spirit",
+    w = 48,
+    x = 1104,
+    y = 720
+  }, {
+    h = 48,
+    has_name = false,
+    index = 519,
+    name = "chara519",
+    w = 48,
+    x = 1152,
+    y = 720
+  }, {
+    h = 48,
+    index = 520,
+    name = "<Mobile Communication Equipment>",
+    w = 48,
+    x = 1200,
+    y = 720
+  }, {
+    h = 96,
+    has_name = false,
+    index = 521,
+    name = "chara521",
+    w = 48,
+    x = 1248,
+    y = 720
+  }, {
+    h = 96,
+    has_name = false,
+    index = 522,
+    name = "chara522",
+    w = 48,
+    x = 1296,
+    y = 720
+  }, {
+    h = 96,
+    index = 523,
+    name = "<Amurdad>",
+    w = 48,
+    x = 1344,
+    y = 720
+  }, {
+    h = 96,
+    index = 524,
+    name = "<Ether Generator>",
+    w = 48,
+    x = 1392,
+    y = 720
+  }, {
+    h = 96,
+    index = 525,
+    name = "<Garziem>",
+    w = 48,
+    x = 1440,
+    y = 720
+  }, {
+    h = 96,
+    has_name = false,
+    index = 526,
+    name = "chara526",
+    w = 48,
+    x = 1488,
+    y = 720
+  }, {
+    h = 96,
+    has_name = false,
+    index = 527,
+    name = "chara527",
+    w = 48,
+    x = 1536,
+    y = 720
+  }, {
+    h = 48,
+    index = 532,
+    name = "<Rovid>",
+    w = 48,
+    x = 192,
+    y = 768
+  }, {
+    h = 48,
+    index = 533,
+    name = "<Karavika>",
+    w = 48,
+    x = 240,
+    y = 768
+  }, {
+    h = 48,
+    index = 534,
+    name = "<Sinaha>",
+    w = 48,
+    x = 288,
+    y = 768
+  }, {
+    h = 48,
+    index = 536,
+    name = "<Sophia> The Wise",
+    w = 48,
+    x = 384,
+    y = 768
+  }, {
+    h = 48,
+    index = 537,
+    name = "<Urcaguary>",
+    w = 48,
+    x = 432,
+    y = 768
+  }, {
+    h = 48,
+    index = 538,
+    name = "<Arasiel>",
+    w = 48,
+    x = 480,
+    y = 768
+  }, {
+    h = 48,
+    index = 539,
+    name = "demon",
+    w = 48,
+    x = 528,
+    y = 768
+  }, {
+    h = 48,
+    has_name = false,
+    index = 540,
+    name = "chara540",
+    w = 48,
+    x = 576,
+    y = 768
+  }, {
+    h = 48,
+    has_name = false,
+    index = 541,
+    name = "chara541",
+    w = 48,
+    x = 624,
+    y = 768
+  }, {
+    h = 48,
+    index = 542,
+    name = "<Nazuna> the instructor",
+    w = 48,
+    x = 672,
+    y = 768
+  }, {
+    h = 96,
+    index = 543,
+    name = "<Estork> the doggod",
+    w = 48,
+    x = 720,
+    y = 768
+  }, {
+    h = 48,
+    index = 544,
+    name = "<part time worker>",
+    w = 48,
+    x = 768,
+    y = 768
+  }, {
+    h = 96,
+    index = 545,
+    name = "sei-ryu",
+    w = 48,
+    x = 816,
+    y = 768
+  }, {
+    h = 48,
+    has_name = false,
+    index = 546,
+    name = "chara546",
+    w = 48,
+    x = 864,
+    y = 768
+  }, {
+    h = 48,
+    index = 547,
+    name = "<King Cockroach>",
+    w = 48,
+    x = 912,
+    y = 768
+  }, {
+    h = 48,
+    index = 548,
+    name = "pro-jet",
+    w = 48,
+    x = 960,
+    y = 768
+  }, {
+    h = 48,
+    has_name = false,
+    index = 549,
+    name = "chara549",
+    w = 48,
+    x = 1008,
+    y = 768
+  }, {
+    h = 48,
+    index = 550,
+    name = "bird archer",
+    w = 48,
+    x = 1056,
+    y = 768
+  }, {
+    h = 48,
+    has_name = false,
+    index = 551,
+    name = "chara551",
+    w = 48,
+    x = 1104,
+    y = 768
+  }, {
+    h = 48,
+    index = 552,
+    name = "strike eagle",
+    w = 48,
+    x = 1152,
+    y = 768
+  }, {
+    h = 48,
+    has_name = false,
+    index = 553,
+    name = "chara553",
+    w = 48,
+    x = 1200,
+    y = 768
+  }, {
+    h = 96,
+    index = 561,
+    name = "<Grandmaster>",
+    w = 48,
+    x = 0,
+    y = 816
+  }, {
+    h = 96,
+    index = 562,
+    name = "dragon centipede",
+    w = 48,
+    x = 48,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 563,
+    name = "chara563",
+    w = 48,
+    x = 96,
+    y = 816
+  }, {
+    h = 48,
+    index = 564,
+    name = "stag god",
+    w = 48,
+    x = 144,
+    y = 816
+  }, {
+    h = 96,
+    index = 565,
+    name = "giant eater flower",
+    w = 48,
+    x = 192,
+    y = 816
+  }, {
+    h = 48,
+    index = 566,
+    name = "Yerles cyborg soldier",
+    w = 48,
+    x = 240,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 567,
+    name = "chara567",
+    w = 48,
+    x = 288,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 568,
+    name = "chara568",
+    w = 48,
+    x = 336,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 569,
+    name = "chara569",
+    w = 48,
+    x = 384,
+    y = 816
+  }, {
+    h = 48,
+    index = 570,
+    name = "gryffon child",
+    w = 48,
+    x = 432,
+    y = 816
+  }, {
+    h = 96,
+    has_name = false,
+    index = 571,
+    name = "chara571",
+    w = 48,
+    x = 480,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 572,
+    name = "chara572",
+    w = 48,
+    x = 528,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 573,
+    name = "chara573",
+    w = 48,
+    x = 576,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 574,
+    name = "chara574",
+    w = 48,
+    x = 624,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 575,
+    name = "chara575",
+    w = 48,
+    x = 672,
+    y = 816
+  }, {
+    h = 96,
+    index = 577,
+    name = "dragon zombie",
+    w = 48,
+    x = 768,
+    y = 816
+  }, {
+    h = 96,
+    index = 579,
+    name = "<Vansesda> the ancient fire",
+    w = 48,
+    x = 864,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 580,
+    name = "chara580",
+    w = 48,
+    x = 912,
+    y = 816
+  }, {
+    h = 48,
+    index = 581,
+    name = "fox brother",
+    w = 48,
+    x = 960,
+    y = 816
+  }, {
+    h = 48,
+    index = 582,
+    name = "jaguar warrior",
+    w = 48,
+    x = 1008,
+    y = 816
+  }, {
+    h = 96,
+    index = 583,
+    name = "hypomyces",
+    w = 48,
+    x = 1056,
+    y = 816
+  }, {
+    h = 48,
+    index = 584,
+    name = "nyarlathotep",
+    w = 48,
+    x = 1104,
+    y = 816
+  }, {
+    h = 48,
+    has_name = false,
+    index = 585,
+    name = "chara585",
+    w = 48,
+    x = 1152,
+    y = 816
+  }, {
+    h = 48,
+    index = 586,
+    name = "high-magician",
+    w = 48,
+    x = 1200,
+    y = 816
+  }, {
+    h = 48,
+    index = 587,
+    name = "hel",
+    w = 48,
+    x = 1248,
+    y = 816
+  }, {
+    h = 48,
+    index = 588,
+    name = "super-dragonewt",
+    w = 48,
+    x = 1296,
+    y = 816
+  }, {
+    h = 96,
+    index = 589,
+    name = "<Lazasye> the destroy",
+    w = 48,
+    x = 1344,
+    y = 816
+  }, {
+    h = 96,
+    index = 590,
+    name = "<Inqtual> the revenge",
+    w = 48,
+    x = 1392,
+    y = 816
+  }, {
+    h = 96,
+    index = 591,
+    name = "<Roatonis> the infections",
+    w = 48,
+    x = 1440,
+    y = 816
+  }, {
+    h = 96,
+    has_name = false,
+    index = 592,
+    name = "chara592",
+    w = 48,
+    x = 1488,
+    y = 816
+  }, {
+    h = 96,
+    has_name = false,
+    index = 593,
+    name = "chara593",
+    w = 48,
+    x = 1536,
+    y = 816
+  }, {
+    h = 48,
+    index = 596,
+    name = "sheepdog",
+    w = 48,
+    x = 96,
+    y = 864
+  }, {
+    h = 48,
+    index = 597,
+    name = "<Raizel> the old wizard",
+    w = 48,
+    x = 144,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 599,
+    name = "chara599",
+    w = 48,
+    x = 240,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 600,
+    name = "chara600",
+    w = 48,
+    x = 288,
+    y = 864
+  }, {
+    h = 48,
+    index = 601,
+    name = "chaos mimic",
+    w = 48,
+    x = 336,
+    y = 864
+  }, {
+    h = 48,
+    index = 602,
+    name = "<Aile> the attendant",
+    w = 48,
+    x = 384,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 603,
+    name = "chara603",
+    w = 48,
+    x = 432,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 605,
+    name = "chara605",
+    w = 48,
+    x = 528,
+    y = 864
+  }, {
+    h = 48,
+    index = 606,
+    name = "arkhai",
+    w = 48,
+    x = 576,
+    y = 864
+  }, {
+    h = 48,
+    index = 607,
+    name = "<Nein> the flying witch",
+    w = 48,
+    x = 624,
+    y = 864
+  }, {
+    h = 48,
+    index = 608,
+    name = "<Lenas> the mage reporter",
+    w = 48,
+    x = 672,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 609,
+    name = "chara609",
+    w = 48,
+    x = 720,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 611,
+    name = "chara611",
+    w = 48,
+    x = 816,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 613,
+    name = "chara613",
+    w = 48,
+    x = 912,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 614,
+    name = "chara614",
+    w = 48,
+    x = 960,
+    y = 864
+  }, {
+    h = 48,
+    index = 615,
+    name = "moai",
+    w = 48,
+    x = 1008,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 617,
+    name = "chara617",
+    w = 48,
+    x = 1104,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 618,
+    name = "chara618",
+    w = 48,
+    x = 1152,
+    y = 864
+  }, {
+    h = 48,
+    index = 619,
+    name = "ambystoma",
+    w = 48,
+    x = 1200,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 620,
+    name = "chara620",
+    w = 48,
+    x = 1248,
+    y = 864
+  }, {
+    h = 48,
+    has_name = false,
+    index = 621,
+    name = "chara621",
+    w = 48,
+    x = 1296,
+    y = 864
+  }, {
+    h = 48,
+    index = 627,
+    name = "cockatrice",
+    w = 48,
+    x = 0,
+    y = 912
+  }, {
+    h = 96,
+    index = 628,
+    name = "mishaguzi",
+    w = 48,
+    x = 48,
+    y = 912
+  }, {
+    h = 96,
+    has_name = false,
+    index = 629,
+    name = "chara629",
+    w = 48,
+    x = 96,
+    y = 912
+  }, {
+    h = 96,
+    index = 630,
+    name = "mega mole",
+    w = 48,
+    x = 144,
+    y = 912
+  }, {
+    h = 48,
+    has_name = false,
+    index = 631,
+    name = "chara631",
+    w = 48,
+    x = 192,
+    y = 912
+  }, {
+    h = 48,
+    index = 632,
+    name = "knight of Elea",
+    w = 48,
+    x = 240,
+    y = 912
+  }, {
+    h = 48,
+    index = 633,
+    name = "sage of Elea",
+    w = 48,
+    x = 288,
+    y = 912
+  }, {
+    h = 48,
+    has_name = false,
+    index = 634,
+    name = "chara634",
+    w = 48,
+    x = 336,
+    y = 912
+  }, {
+    h = 48,
+    index = 635,
+    name = "Ragnarock",
+    w = 48,
+    x = 384,
+    y = 912
+  }, {
+    h = 48,
+    index = 636,
+    name = "badger",
+    w = 48,
+    x = 432,
+    y = 912
+  }, {
+    h = 48,
+    index = 637,
+    name = "capybara",
+    w = 48,
+    x = 480,
+    y = 912
+  }, {
+    h = 96,
+    index = 638,
+    name = "indigo lobster",
+    w = 48,
+    x = 528,
+    y = 912
+  }, {
+    h = 96,
+    index = 639,
+    name = "the king in yellow",
+    w = 48,
+    x = 576,
+    y = 912
+  }, {
+    h = 96,
+    has_name = false,
+    index = 640,
+    name = "chara640",
+    w = 48,
+    x = 624,
+    y = 912
+  }, {
+    h = 96,
+    index = 641,
+    name = "<Alice> the big ant",
+    w = 48,
+    x = 672,
+    y = 912
+  }, {
+    h = 96,
+    index = 642,
+    name = "gi-ant",
+    w = 48,
+    x = 720,
+    y = 912
+  }, {
+    h = 96,
+    has_name = false,
+    index = 643,
+    name = "chara643",
+    w = 48,
+    x = 768,
+    y = 912
+  }, {
+    h = 96,
+    index = 644,
+    name = "<chestnut giant>",
+    w = 48,
+    x = 816,
+    y = 912
+  }, {
+    h = 96,
+    index = 645,
+    name = "sand worm",
+    w = 48,
+    x = 864,
+    y = 912
+  }, {
+    h = 96,
+    index = 646,
+    name = "lava golem",
+    w = 48,
+    x = 912,
+    y = 912
+  }, {
+    h = 96,
+    has_name = false,
+    index = 647,
+    name = "chara647",
+    w = 48,
+    x = 960,
+    y = 912
+  }, {
+    h = 96,
+    index = 648,
+    name = "phantom of end",
+    w = 48,
+    x = 1008,
+    y = 912
+  }, {
+    h = 96,
+    index = 649,
+    name = "<Yerleswood Neo>",
+    w = 48,
+    x = 1056,
+    y = 912
+  }, {
+    h = 96,
+    has_name = false,
+    index = 650,
+    name = "chara650",
+    w = 48,
+    x = 1104,
+    y = 912
+  }, {
+    h = 96,
+    has_name = false,
+    index = 651,
+    name = "chara651",
+    w = 48,
+    x = 1152,
+    y = 912
+  }, {
+    h = 96,
+    index = 652,
+    name = "metal zilla",
+    w = 48,
+    x = 1200,
+    y = 912
+  }, {
+    h = 96,
+    index = 653,
+    name = "mana monolith",
+    w = 48,
+    x = 1248,
+    y = 912
+  }, {
+    h = 96,
+    index = 654,
+    name = "cloudragon",
+    w = 48,
+    x = 1296,
+    y = 912
+  }, {
+    h = 96,
+    index = 655,
+    name = "sepa",
+    w = 48,
+    x = 1344,
+    y = 912
+  }, {
+    h = 96,
+    index = 656,
+    name = "<Ungaga> the minotaur king",
+    w = 48,
+    x = 1392,
+    y = 912
+  }, {
+    h = 96,
+    index = 657,
+    name = "momotuka",
+    w = 48,
+    x = 1440,
+    y = 912
+  }, {
+    h = 96,
+    index = 658,
+    name = "<Egelveil> the bind",
+    w = 48,
+    x = 1488,
+    y = 912
+  }, {
+    h = 96,
+    index = 659,
+    name = "Yerleswood type M",
+    w = 48,
+    x = 1536,
+    y = 912
+  }, {
+    h = 48,
+    has_name = false,
+    index = 660,
+    name = "chara660",
+    w = 48,
+    x = 0,
+    y = 960
+  }, {
+    h = 48,
+    index = 664,
+    name = "<Dain> the elder of hill",
+    w = 48,
+    x = 192,
+    y = 960
+  }, {
+    h = 48,
+    index = 665,
+    name = "<Irma> the indomitable smith",
+    w = 48,
+    x = 240,
+    y = 960
+  }, {
+    h = 48,
+    has_name = false,
+    index = 666,
+    name = "chara666",
+    w = 48,
+    x = 288,
+    y = 960
+  }, {
+    h = 48,
+    index = 667,
+    name = "hill child",
+    w = 48,
+    x = 336,
+    y = 960
+  }, {
+    h = 48,
+    index = 668,
+    name = "<Thalia> the star viewer",
+    w = 48,
+    x = 384,
+    y = 960
+  }, {
+    h = 48,
+    has_name = false,
+    index = 669,
+    name = "chara669",
+    w = 48,
+    x = 432,
+    y = 960
+  }, {
+    h = 48,
+    index = 670,
+    name = "shopkeeper",
+    w = 48,
+    x = 480,
+    y = 960
+  }, {
+    h = 48,
+    has_name = false,
+    index = 693,
+    name = "chara693",
+    w = 48,
+    x = 0,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 694,
+    name = "chara694",
+    w = 48,
+    x = 48,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 695,
+    name = "chara695",
+    w = 48,
+    x = 96,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 696,
+    name = "chara696",
+    w = 48,
+    x = 144,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 697,
+    name = "chara697",
+    w = 48,
+    x = 192,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 698,
+    name = "chara698",
+    w = 48,
+    x = 240,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 699,
+    name = "chara699",
+    w = 48,
+    x = 288,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 700,
+    name = "chara700",
+    w = 48,
+    x = 336,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 701,
+    name = "chara701",
+    w = 48,
+    x = 384,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 702,
+    name = "chara702",
+    w = 48,
+    x = 432,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 703,
+    name = "chara703",
+    w = 48,
+    x = 480,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 704,
+    name = "chara704",
+    w = 48,
+    x = 528,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 705,
+    name = "chara705",
+    w = 48,
+    x = 576,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 706,
+    name = "chara706",
+    w = 48,
+    x = 624,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 707,
+    name = "chara707",
+    w = 48,
+    x = 672,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 708,
+    name = "chara708",
+    w = 48,
+    x = 720,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 709,
+    name = "chara709",
+    w = 48,
+    x = 768,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 710,
+    name = "chara710",
+    w = 48,
+    x = 816,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 711,
+    name = "chara711",
+    w = 48,
+    x = 864,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 712,
+    name = "chara712",
+    w = 48,
+    x = 912,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 713,
+    name = "chara713",
+    w = 48,
+    x = 960,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 714,
+    name = "chara714",
+    w = 48,
+    x = 1008,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 715,
+    name = "chara715",
+    w = 48,
+    x = 1056,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 716,
+    name = "chara716",
+    w = 48,
+    x = 1104,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 717,
+    name = "chara717",
+    w = 48,
+    x = 1152,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 718,
+    name = "chara718",
+    w = 48,
+    x = 1200,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 719,
+    name = "chara719",
+    w = 48,
+    x = 1248,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 720,
+    name = "chara720",
+    w = 48,
+    x = 1296,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 721,
+    name = "chara721",
+    w = 48,
+    x = 1344,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 722,
+    name = "chara722",
+    w = 48,
+    x = 1392,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 723,
+    name = "chara723",
+    w = 48,
+    x = 1440,
+    y = 1008
+  }, {
+    h = 96,
+    has_name = false,
+    index = 724,
+    name = "chara724",
+    w = 48,
+    x = 1488,
+    y = 1008
+  }, {
+    h = 48,
+    has_name = false,
+    index = 725,
+    name = "chara725",
+    w = 48,
+    x = 1536,
+    y = 1008
+  }, {
+    h = 48,
+    index = 726,
+    name = "putit tank",
+    w = 48,
+    x = 0,
+    y = 1056
+  }, {
+    h = 48,
+    index = 727,
+    name = "<Norne> the guide",
+    w = 48,
+    x = 48,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 728,
+    name = "chara728",
+    w = 48,
+    x = 96,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 729,
+    name = "chara729",
+    w = 48,
+    x = 144,
+    y = 1056
+  }, {
+    h = 48,
+    index = 730,
+    name = "dark koala",
+    w = 48,
+    x = 192,
+    y = 1056
+  }, {
+    h = 48,
+    index = 731,
+    name = "shopkeeper crow",
+    w = 48,
+    x = 240,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 732,
+    name = "chara732",
+    w = 48,
+    x = 288,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 733,
+    name = "chara733",
+    w = 48,
+    x = 336,
+    y = 1056
+  }, {
+    h = 48,
+    index = 734,
+    name = "tree sparrow",
+    w = 48,
+    x = 384,
+    y = 1056
+  }, {
+    h = 48,
+    index = 735,
+    name = "spaghetti monster",
+    w = 48,
+    x = 432,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 736,
+    name = "chara736",
+    w = 48,
+    x = 480,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 737,
+    name = "chara737",
+    w = 48,
+    x = 528,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 738,
+    name = "chara738",
+    w = 48,
+    x = 576,
+    y = 1056
+  }, {
+    h = 48,
+    index = 739,
+    name = "<Spipha> the dragon hunter",
+    w = 48,
+    x = 624,
+    y = 1056
+  }, {
+    h = 48,
+    index = 740,
+    name = "juere demon soldier",
+    w = 48,
+    x = 672,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 741,
+    name = "chara741",
+    w = 48,
+    x = 720,
+    y = 1056
+  }, {
+    h = 48,
+    has_name = false,
+    index = 758,
+    name = "chara758",
+    w = 48,
+    x = 1536,
+    y = 1056
+  }, {
+    h = 48,
+    index = 759,
+    name = "werewolf",
+    w = 48,
+    x = 0,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 760,
+    name = "chara760",
+    w = 48,
+    x = 48,
+    y = 1104
+  }, {
+    h = 48,
+    index = 761,
+    name = "worker-02",
+    w = 48,
+    x = 96,
+    y = 1104
+  }, {
+    h = 48,
+    index = 762,
+    name = "worker-01",
+    w = 48,
+    x = 144,
+    y = 1104
+  }, {
+    h = 48,
+    index = 763,
+    name = "R cleaner",
+    w = 48,
+    x = 192,
+    y = 1104
+  }, {
+    h = 48,
+    index = 764,
+    name = "fox spirit",
+    w = 48,
+    x = 240,
+    y = 1104
+  }, {
+    h = 48,
+    index = 765,
+    name = "sunbararian",
+    w = 48,
+    x = 288,
+    y = 1104
+  }, {
+    h = 48,
+    index = 766,
+    name = "cthugha",
+    w = 48,
+    x = 336,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 767,
+    name = "chara767",
+    w = 48,
+    x = 384,
+    y = 1104
+  }, {
+    h = 48,
+    index = 768,
+    name = "yomagntho",
+    w = 48,
+    x = 432,
+    y = 1104
+  }, {
+    h = 48,
+    index = 769,
+    name = "small stone golem",
+    w = 48,
+    x = 480,
+    y = 1104
+  }, {
+    h = 48,
+    index = 770,
+    name = "small wooden golem",
+    w = 48,
+    x = 528,
+    y = 1104
+  }, {
+    h = 48,
+    index = 771,
+    name = "<Kuroya> the looking universe",
+    w = 48,
+    x = 576,
+    y = 1104
+  }, {
+    h = 48,
+    index = 772,
+    name = "<Fron> the tour planner",
+    w = 48,
+    x = 624,
+    y = 1104
+  }, {
+    h = 48,
+    index = 773,
+    name = "<Regulus> the altered",
+    w = 48,
+    x = 672,
+    y = 1104
+  }, {
+    h = 48,
+    index = 774,
+    name = "<Neres> the amnesiac",
+    w = 48,
+    x = 720,
+    y = 1104
+  }, {
+    h = 48,
+    index = 775,
+    name = "<Ryutye> the amnesiac",
+    w = 48,
+    x = 768,
+    y = 1104
+  }, {
+    h = 48,
+    index = 776,
+    name = "Zanan heavily armed",
+    w = 48,
+    x = 816,
+    y = 1104
+  }, {
+    h = 48,
+    index = 777,
+    name = "<Boyciana>",
+    w = 48,
+    x = 864,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 778,
+    name = "chara778",
+    w = 48,
+    x = 912,
+    y = 1104
+  }, {
+    h = 48,
+    index = 779,
+    name = "necro lancer",
+    w = 48,
+    x = 960,
+    y = 1104
+  }, {
+    h = 48,
+    index = 780,
+    name = "necro dancer",
+    w = 48,
+    x = 1008,
+    y = 1104
+  }, {
+    h = 48,
+    index = 781,
+    name = "detective",
+    w = 48,
+    x = 1056,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 782,
+    name = "chara782",
+    w = 48,
+    x = 1104,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 783,
+    name = "chara783",
+    w = 48,
+    x = 1152,
+    y = 1104
+  }, {
+    h = 48,
+    index = 784,
+    name = "space horned owl",
+    w = 48,
+    x = 1200,
+    y = 1104
+  }, {
+    h = 48,
+    index = 785,
+    name = "nightmare shark",
+    w = 48,
+    x = 1248,
+    y = 1104
+  }, {
+    h = 48,
+    index = 786,
+    name = "jellyfish kraken",
+    w = 48,
+    x = 1296,
+    y = 1104
+  }, {
+    h = 48,
+    index = 787,
+    name = "steel armor spider",
+    w = 48,
+    x = 1344,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 788,
+    name = "chara788",
+    w = 48,
+    x = 1392,
+    y = 1104
+  }, {
+    h = 48,
+    index = 789,
+    name = "smash ogre",
+    w = 48,
+    x = 1440,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 790,
+    name = "chara790",
+    w = 48,
+    x = 1488,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 791,
+    name = "chara791",
+    w = 48,
+    x = 1536,
+    y = 1104
+  }, {
+    h = 48,
+    has_name = false,
+    index = 792,
+    name = "chara792",
+    w = 48,
+    x = 0,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 793,
+    name = "chara793",
+    w = 48,
+    x = 48,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 794,
+    name = "chara794",
+    w = 48,
+    x = 96,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 795,
+    name = "chara795",
+    w = 48,
+    x = 144,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 796,
+    name = "chara796",
+    w = 48,
+    x = 192,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 797,
+    name = "chara797",
+    w = 48,
+    x = 240,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 798,
+    name = "chara798",
+    w = 48,
+    x = 288,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 799,
+    name = "chara799",
+    w = 48,
+    x = 336,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 800,
+    name = "chara800",
+    w = 48,
+    x = 384,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 801,
+    name = "chara801",
+    w = 48,
+    x = 432,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 802,
+    name = "chara802",
+    w = 48,
+    x = 480,
+    y = 1152
+  }, {
+    h = 48,
+    index = 803,
+    name = "kesalanpatharan",
+    w = 48,
+    x = 528,
+    y = 1152
+  }, {
+    h = 48,
+    index = 804,
+    name = "black angel hair",
+    w = 48,
+    x = 576,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 805,
+    name = "chara805",
+    w = 48,
+    x = 624,
+    y = 1152
+  }, {
+    h = 48,
+    index = 806,
+    name = "scholar",
+    w = 48,
+    x = 672,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 807,
+    name = "chara807",
+    w = 48,
+    x = 720,
+    y = 1152
+  }, {
+    h = 48,
+    index = 808,
+    name = "teacher",
+    w = 48,
+    x = 768,
+    y = 1152
+  }, {
+    h = 48,
+    index = 809,
+    name = "big boar",
+    w = 48,
+    x = 816,
+    y = 1152
+  }, {
+    h = 48,
+    index = 810,
+    name = "child boar",
+    w = 48,
+    x = 864,
+    y = 1152
+  }, {
+    h = 48,
+    index = 811,
+    name = "hedgehog",
+    w = 48,
+    x = 912,
+    y = 1152
+  }, {
+    h = 48,
+    index = 812,
+    name = "hungry sea lion",
+    w = 48,
+    x = 960,
+    y = 1152
+  }, {
+    h = 48,
+    index = 813,
+    name = "chicken",
+    w = 48,
+    x = 1008,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 814,
+    name = "chara814",
+    w = 48,
+    x = 1056,
+    y = 1152
+  }, {
+    h = 48,
+    index = 815,
+    name = "hamster",
+    w = 48,
+    x = 1104,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 816,
+    name = "chara816",
+    w = 48,
+    x = 1152,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 817,
+    name = "chara817",
+    w = 48,
+    x = 1200,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 818,
+    name = "chara818",
+    w = 48,
+    x = 1248,
+    y = 1152
+  }, {
+    h = 48,
+    index = 819,
+    name = "hill citizen",
+    w = 48,
+    x = 1296,
+    y = 1152
+  }, {
+    h = 48,
+    index = 820,
+    name = "wise hill citizen",
+    w = 48,
+    x = 1344,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 821,
+    name = "chara821",
+    w = 48,
+    x = 1392,
+    y = 1152
+  }, {
+    h = 48,
+    index = 822,
+    name = "chaos hunter",
+    w = 48,
+    x = 1440,
+    y = 1152
+  }, {
+    h = 48,
+    index = 823,
+    name = "chaos paladin",
+    w = 48,
+    x = 1488,
+    y = 1152
+  }, {
+    h = 48,
+    index = 824,
+    name = "chaos shaman",
+    w = 48,
+    x = 1536,
+    y = 1152
+  }, {
+    h = 48,
+    has_name = false,
+    index = 825,
+    name = "chara825",
+    w = 48,
+    x = 0,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 826,
+    name = "chara826",
+    w = 48,
+    x = 48,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 827,
+    name = "chara827",
+    w = 48,
+    x = 96,
+    y = 1200
+  }, {
+    h = 48,
+    index = 828,
+    name = "halloween children",
+    w = 48,
+    x = 144,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 829,
+    name = "chara829",
+    w = 48,
+    x = 192,
+    y = 1200
+  }, {
+    h = 48,
+    index = 830,
+    name = "magic archer",
+    w = 48,
+    x = 240,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 831,
+    name = "chara831",
+    w = 48,
+    x = 288,
+    y = 1200
+  }, {
+    h = 48,
+    index = 832,
+    name = "wandering penguin",
+    w = 48,
+    x = 336,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 833,
+    name = "chara833",
+    w = 48,
+    x = 384,
+    y = 1200
+  }, {
+    h = 48,
+    index = 834,
+    name = "zombie queen",
+    w = 48,
+    x = 432,
+    y = 1200
+  }, {
+    h = 48,
+    index = 835,
+    name = "gothic",
+    w = 48,
+    x = 480,
+    y = 1200
+  }, {
+    h = 48,
+    index = 836,
+    name = "zombie girl",
+    w = 48,
+    x = 528,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 837,
+    name = "chara837",
+    w = 48,
+    x = 576,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 838,
+    name = "chara838",
+    w = 48,
+    x = 624,
+    y = 1200
+  }, {
+    h = 48,
+    index = 839,
+    name = "<Shuraida> the expert merc",
+    w = 48,
+    x = 672,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 840,
+    name = "chara840",
+    w = 48,
+    x = 720,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 841,
+    name = "chara841",
+    w = 48,
+    x = 768,
+    y = 1200
+  }, {
+    h = 48,
+    index = 842,
+    name = "spirit of bread",
+    w = 48,
+    x = 816,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 843,
+    name = "chara843",
+    w = 48,
+    x = 864,
+    y = 1200
+  }, {
+    h = 48,
+    index = 844,
+    name = "kentaurs",
+    w = 48,
+    x = 912,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 845,
+    name = "chara845",
+    w = 48,
+    x = 960,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 846,
+    name = "chara846",
+    w = 48,
+    x = 1008,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 847,
+    name = "chara847",
+    w = 48,
+    x = 1056,
+    y = 1200
+  }, {
+    h = 48,
+    index = 848,
+    name = "cattle",
+    w = 48,
+    x = 1104,
+    y = 1200
+  }, {
+    h = 48,
+    index = 849,
+    name = "disaster",
+    w = 48,
+    x = 1152,
+    y = 1200
+  }, {
+    h = 48,
+    index = 850,
+    name = "triceratops",
+    w = 48,
+    x = 1200,
+    y = 1200
+  }, {
+    h = 48,
+    index = 851,
+    name = "wild rabbit",
+    w = 48,
+    x = 1248,
+    y = 1200
+  }, {
+    h = 48,
+    index = 852,
+    name = "hakutoshin",
+    w = 48,
+    x = 1296,
+    y = 1200
+  }, {
+    h = 48,
+    index = 853,
+    name = "vorpal bunny",
+    w = 48,
+    x = 1344,
+    y = 1200
+  }, {
+    h = 48,
+    has_name = false,
+    index = 854,
+    name = "chara854",
+    w = 48,
+    x = 1392,
+    y = 1200
+  }, {
+    h = 48,
+    index = 855,
+    name = "<Ssil> the undead witch",
+    w = 48,
+    x = 1440,
+    y = 1200
+  }, {
+    h = 48,
+    index = 856,
+    name = "Sylph",
+    w = 48,
+    x = 1488,
+    y = 1200
+  }, {
+    h = 48,
+    index = 857,
+    name = "<Aribel> the white arms",
+    w = 48,
+    x = 1536,
+    y = 1200
+  }, {
+    h = 48,
+    index = 858,
+    name = "musical notadpole",
+    w = 48,
+    x = 0,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 859,
+    name = "chara859",
+    w = 48,
+    x = 48,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 860,
+    name = "chara860",
+    w = 48,
+    x = 96,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 861,
+    name = "chara861",
+    w = 48,
+    x = 144,
+    y = 1248
+  }, {
+    h = 48,
+    index = 862,
+    name = "fallen angel",
+    w = 48,
+    x = 192,
+    y = 1248
+  }, {
+    h = 48,
+    index = 863,
+    name = "cupid inspector",
+    w = 48,
+    x = 240,
+    y = 1248
+  }, {
+    h = 48,
+    index = 864,
+    name = "<Renai> the over meshera",
+    w = 48,
+    x = 288,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 865,
+    name = "chara865",
+    w = 48,
+    x = 336,
+    y = 1248
+  }, {
+    h = 48,
+    index = 866,
+    name = "gigantic fairy",
+    w = 48,
+    x = 384,
+    y = 1248
+  }, {
+    h = 48,
+    index = 867,
+    name = "titania",
+    w = 48,
+    x = 432,
+    y = 1248
+  }, {
+    h = 48,
+    index = 868,
+    name = "lizard mage",
+    w = 48,
+    x = 480,
+    y = 1248
+  }, {
+    h = 48,
+    index = 869,
+    name = "claymore dragonewt",
+    w = 48,
+    x = 528,
+    y = 1248
+  }, {
+    h = 48,
+    index = 870,
+    name = "<Belphat> the cosmic sword",
+    w = 48,
+    x = 576,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 871,
+    name = "chara871",
+    w = 48,
+    x = 624,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 872,
+    name = "chara872",
+    w = 48,
+    x = 672,
+    y = 1248
+  }, {
+    h = 96,
+    index = 873,
+    name = "dhwty",
+    w = 48,
+    x = 720,
+    y = 1248
+  }, {
+    h = 96,
+    has_name = false,
+    index = 874,
+    name = "chara874",
+    w = 48,
+    x = 768,
+    y = 1248
+  }, {
+    h = 96,
+    index = 875,
+    name = "<Saimef> the doggod",
+    w = 48,
+    x = 816,
+    y = 1248
+  }, {
+    h = 96,
+    index = 876,
+    name = "orcinus orca",
+    w = 48,
+    x = 864,
+    y = 1248
+  }, {
+    h = 48,
+    index = 877,
+    name = "nine dart garfish",
+    w = 48,
+    x = 912,
+    y = 1248
+  }, {
+    h = 96,
+    index = 878,
+    name = "sea fallen angel",
+    w = 48,
+    x = 960,
+    y = 1248
+  }, {
+    h = 48,
+    index = 879,
+    name = "aroma-locaris",
+    w = 48,
+    x = 1008,
+    y = 1248
+  }, {
+    h = 96,
+    has_name = false,
+    index = 880,
+    name = "chara880",
+    w = 48,
+    x = 1056,
+    y = 1248
+  }, {
+    h = 48,
+    index = 881,
+    name = "dark dome",
+    w = 48,
+    x = 1104,
+    y = 1248
+  }, {
+    h = 48,
+    index = 882,
+    name = "lothrian agent",
+    w = 48,
+    x = 1152,
+    y = 1248
+  }, {
+    h = 48,
+    index = 883,
+    name = "dark elea",
+    w = 48,
+    x = 1200,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 884,
+    name = "chara884",
+    w = 48,
+    x = 1248,
+    y = 1248
+  }, {
+    h = 48,
+    index = 885,
+    name = "<Rianna> the daydreamer",
+    w = 48,
+    x = 1296,
+    y = 1248
+  }, {
+    h = 48,
+    has_name = false,
+    index = 886,
+    name = "chara886",
+    w = 48,
+    x = 1344,
+    y = 1248
+  }, {
+    h = 96,
+    index = 887,
+    name = "unitdead-jack",
+    w = 48,
+    x = 1392,
+    y = 1248
+  }, {
+    h = 96,
+    index = 888,
+    name = "unitdead-king",
+    w = 48,
+    x = 1440,
+    y = 1248
+  }, {
+    h = 48,
+    index = 889,
+    name = "unitdead-joker",
+    w = 48,
+    x = 1488,
+    y = 1248
+  }, {
+    h = 48,
+    index = 890,
+    name = "large bike",
+    w = 48,
+    x = 1536,
+    y = 1248
+  }, {
+    h = 48,
+    index = 891,
+    name = "<Maile> the marionette shaman",
+    w = 48,
+    x = 0,
+    y = 1296
+  }, {
+    h = 48,
+    index = 892,
+    name = "mad scratcher",
+    w = 48,
+    x = 48,
+    y = 1296
+  }, {
+    h = 48,
+    index = 893,
+    name = "devotee of oblivion",
+    w = 48,
+    x = 96,
+    y = 1296
+  }, {
+    h = 48,
+    index = 894,
+    name = "zap mandrake",
+    w = 48,
+    x = 144,
+    y = 1296
+  }, {
+    h = 48,
+    index = 895,
+    name = "cucumber horse",
+    w = 48,
+    x = 192,
+    y = 1296
+  }, {
+    h = 48,
+    has_name = false,
+    index = 896,
+    name = "chara896",
+    w = 48,
+    x = 240,
+    y = 1296
+  }, {
+    h = 48,
+    index = 897,
+    name = "performaid pinchief",
+    w = 48,
+    x = 288,
+    y = 1296
+  }, {
+    h = 48,
+    index = 898,
+    name = "performaid bloodress",
+    w = 48,
+    x = 336,
+    y = 1296
+  }, {
+    h = 48,
+    index = 899,
+    name = "performaid bitchiack",
+    w = 48,
+    x = 384,
+    y = 1296
+  }, {
+    h = 48,
+    index = 900,
+    name = "killing anteater",
+    w = 48,
+    x = 432,
+    y = 1296
+  }, {
+    h = 48,
+    index = 901,
+    name = "<Fashionable Kunoichi>",
+    w = 48,
+    x = 480,
+    y = 1296
+  }, {
+    h = 48,
+    index = 902,
+    name = "gunfish",
+    w = 48,
+    x = 528,
+    y = 1296
+  }, {
+    h = 48,
+    index = 903,
+    name = "flight fish",
+    w = 48,
+    x = 576,
+    y = 1296
+  }, {
+    h = 48,
+    index = 904,
+    name = "abysstar",
+    w = 48,
+    x = 624,
+    y = 1296
+  }, {
+    h = 48,
+    has_name = false,
+    index = 905,
+    name = "chara905",
+    w = 48,
+    x = 672,
+    y = 1296
+  }, {
+    h = 48,
+    index = 910,
+    name = "manta rayarn",
+    w = 48,
+    x = 912,
+    y = 1296
+  }, {
+    h = 48,
+    has_name = false,
+    index = 912,
+    name = "chara912",
+    w = 48,
+    x = 1008,
+    y = 1296
+  }, {
+    h = 48,
+    index = 914,
+    name = "<Manytia> the adventure merchant",
+    w = 48,
+    x = 1104,
+    y = 1296
+  }, {
+    h = 48,
+    index = 915,
+    name = "<Lankata> the lightning of blue",
+    w = 48,
+    x = 1152,
+    y = 1296
+  }, {
+    h = 48,
+    index = 916,
+    name = "zanan old soldier",
+    w = 48,
+    x = 1200,
+    y = 1296
+  }, {
+    h = 48,
+    index = 917,
+    name = "grass dancer",
+    w = 48,
+    x = 1248,
+    y = 1296
+  }, {
+    h = 48,
+    index = 918,
+    name = "archayeek",
+    w = 48,
+    x = 1296,
+    y = 1296
+  }, {
+    h = 48,
+    index = 919,
+    name = "unitdead-queen",
+    w = 48,
+    x = 1344,
+    y = 1296
+  }, {
+    h = 48,
+    index = 922,
+    name = "<Halion> the extremist",
+    w = 48,
+    x = 1488,
+    y = 1296
+  }, {
+    h = 48,
+    index = 923,
+    name = "ride cleric",
+    w = 48,
+    x = 1536,
+    y = 1296
+  }, {
+    h = 96,
+    index = 924,
+    name = "buildion",
+    w = 48,
+    x = 0,
+    y = 1344
+  }, {
+    h = 96,
+    index = 925,
+    name = "zoibo",
+    w = 48,
+    x = 48,
+    y = 1344
+  }, {
+    h = 96,
+    index = 926,
+    name = "konigs katze",
+    w = 48,
+    x = 96,
+    y = 1344
+  }, {
+    h = 96,
+    index = 927,
+    name = "banyan monster",
+    w = 48,
+    x = 144,
+    y = 1344
+  }, {
+    h = 96,
+    has_name = false,
+    index = 928,
+    name = "chara928",
+    w = 48,
+    x = 192,
+    y = 1344
+  }, {
+    h = 96,
+    index = 929,
+    name = "rats bringer",
+    w = 48,
+    x = 240,
+    y = 1344
+  }, {
+    h = 96,
+    index = 930,
+    name = "chaos serpent",
+    w = 48,
+    x = 288,
+    y = 1344
+  }, {
+    h = 96,
+    index = 931,
+    name = "<Tezcatlipoca>",
+    w = 48,
+    x = 336,
+    y = 1344
+  }, {
+    h = 96,
+    index = 932,
+    name = "brontosaurus",
+    w = 48,
+    x = 384,
+    y = 1344
+  }, {
+    h = 96,
+    index = 933,
+    name = "ganesa",
+    w = 48,
+    x = 432,
+    y = 1344
+  }, {
+    h = 96,
+    has_name = false,
+    index = 934,
+    name = "chara934",
+    w = 48,
+    x = 480,
+    y = 1344
+  }, {
+    h = 96,
+    index = 935,
+    name = "ninetails",
+    w = 48,
+    x = 528,
+    y = 1344
+  }, {
+    h = 96,
+    index = 936,
+    name = "wild wyrm",
+    w = 48,
+    x = 576,
+    y = 1344
+  }, {
+    h = 48,
+    has_name = false,
+    index = 937,
+    name = "chara937",
+    w = 48,
+    x = 624,
+    y = 1344
+  }, {
+    h = 96,
+    index = 938,
+    name = "<Enthumesis>",
+    w = 48,
+    x = 672,
+    y = 1344
+  }, {
+    h = 48,
+    index = 939,
+    name = "zanan assassin",
+    w = 48,
+    x = 720,
+    y = 1344
+  }, {
+    h = 48,
+    index = 940,
+    name = "skeleton magician",
+    w = 48,
+    x = 768,
+    y = 1344
+  }, {
+    h = 48,
+    index = 941,
+    name = "peace maker",
+    w = 48,
+    x = 816,
+    y = 1344
+  }, {
+    h = 96,
+    has_name = false,
+    index = 942,
+    name = "chara942",
+    w = 48,
+    x = 864,
+    y = 1344
+  }, {
+    h = 96,
+    index = 943,
+    name = "<Gilphem> the magic steel",
+    w = 48,
+    x = 912,
+    y = 1344
+  }, {
+    h = 96,
+    index = 944,
+    name = "gasyadokuro",
+    w = 48,
+    x = 960,
+    y = 1344
+  }, {
+    h = 96,
+    index = 945,
+    name = "<Jaldabaoth>The Chaos Child",
+    w = 48,
+    x = 1008,
+    y = 1344
+  }, {
+    h = 48,
+    index = 946,
+    name = "oblivion beast",
+    w = 48,
+    x = 1056,
+    y = 1344
+  }, {
+    h = 96,
+    index = 947,
+    name = "<Sunrise> the archipelago dragon",
+    w = 48,
+    x = 1104,
+    y = 1344
+  }, {
+    h = 48,
+    index = 948,
+    name = "performaid cocruel",
+    w = 48,
+    x = 1152,
+    y = 1344
+  }, {
+    h = 96,
+    index = 949,
+    name = "<Graveed> the gravity valley",
+    w = 48,
+    x = 1200,
+    y = 1344
+  }, {
+    h = 96,
+    index = 950,
+    name = "<Beilgena> the artificial dragon",
+    w = 48,
+    x = 1248,
+    y = 1344
+  }, {
+    h = 48,
+    has_name = false,
+    index = 951,
+    name = "chara951",
+    w = 48,
+    x = 1296,
+    y = 1344
+  }, {
+    h = 48,
+    index = 952,
+    name = "silver skull majesty",
+    w = 48,
+    x = 1344,
+    y = 1344
+  }, {
+    h = 96,
+    has_name = false,
+    index = 953,
+    name = "chara953",
+    w = 48,
+    x = 1392,
+    y = 1344
+  }, {
+    h = 96,
+    has_name = false,
+    index = 954,
+    name = "chara954",
+    w = 48,
+    x = 1440,
+    y = 1344
+  }, {
+    h = 48,
+    index = 955,
+    name = "<Talka> the long twintail",
+    w = 48,
+    x = 1488,
+    y = 1344
+  }, {
+    h = 48,
+    has_name = false,
+    index = 956,
+    name = "chara956",
+    w = 48,
+    x = 1536,
+    y = 1344
+  }, {
+    h = 48,
+    has_name = false,
+    index = 970,
+    name = "chara970",
+    w = 48,
+    x = 624,
+    y = 1392
+  }, {
+    h = 48,
+    index = 972,
+    name = "<Alsapia> the murderer mask",
+    w = 48,
+    x = 720,
+    y = 1392
+  }, {
+    h = 48,
+    index = 973,
+    name = "ochimusha armor",
+    w = 48,
+    x = 768,
+    y = 1392
+  }, {
+    h = 48,
+    index = 974,
+    name = "arrow duck",
+    w = 48,
+    x = 816,
+    y = 1392
+  }, {
+    h = 48,
+    index = 979,
+    name = "oblivion rude beast",
+    w = 48,
+    x = 1056,
+    y = 1392
+  }, {
+    h = 48,
+    index = 981,
+    name = "performaid desweeper",
+    w = 48,
+    x = 1152,
+    y = 1392
+  }, {
+    h = 48,
+    index = 984,
+    name = "porc",
+    w = 48,
+    x = 1296,
+    y = 1392
+  }, {
+    h = 48,
+    index = 985,
+    name = "black porc",
+    w = 48,
+    x = 1344,
+    y = 1392
+  }, {
+    h = 48,
+    index = 988,
+    name = "hogweeder",
+    w = 48,
+    x = 1488,
+    y = 1392
+  }, {
+    h = 48,
+    index = 989,
+    name = "alraune",
+    w = 48,
+    x = 1536,
+    y = 1392
+  }, {
+    h = 48,
+    index = 990,
+    name = "<Alfred> the cangnan wind",
+    w = 48,
+    x = 0,
+    y = 1440
+  }, {
+    h = 48,
+    index = 991,
+    name = "yokoshima enaga",
+    w = 48,
+    x = 48,
+    y = 1440
+  }, {
+    h = 48,
+    index = 992,
+    name = "skogsra",
+    w = 48,
+    x = 96,
+    y = 1440
+  }, {
+    h = 48,
+    index = 993,
+    name = "magic hawk moth",
+    w = 48,
+    x = 144,
+    y = 1440
+  }, {
+    h = 48,
+    index = 994,
+    name = "<Zisilion> the mine king",
+    w = 48,
+    x = 192,
+    y = 1440
+  }, {
+    h = 48,
+    index = 995,
+    name = "chaos seed",
+    w = 48,
+    x = 240,
+    y = 1440
+  }, {
+    h = 48,
+    index = 996,
+    name = "<Ajetalio> the seminar lecturer",
+    w = 48,
+    x = 288,
+    y = 1440
+  }, {
+    h = 48,
+    index = 997,
+    name = "<Cresce> the seminar lecturer",
+    w = 48,
+    x = 336,
+    y = 1440
+  }, {
+    h = 48,
+    index = 998,
+    name = "<Iduru> the seminar lecturer",
+    w = 48,
+    x = 384,
+    y = 1440
+  }, {
+    h = 48,
+    index = 999,
+    name = "<Mito> the seminar lecturer",
+    w = 48,
+    x = 432,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1000,
+    name = "<Part time worker> the red sword",
+    w = 48,
+    x = 480,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1001,
+    name = "forest assassin",
+    w = 48,
+    x = 528,
+    y = 1440
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1002,
+    name = "chara1002",
+    w = 48,
+    x = 576,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1003,
+    name = "<Karata> the seminar mascot",
+    w = 48,
+    x = 624,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1004,
+    name = "nursing moth",
+    w = 48,
+    x = 672,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1005,
+    name = "assault red dragonfly",
+    w = 48,
+    x = 720,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1006,
+    name = "battle hopper",
+    w = 48,
+    x = 768,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1007,
+    name = "caterpillar sniper",
+    w = 48,
+    x = 816,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1008,
+    name = "talon soldier",
+    w = 48,
+    x = 864,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1009,
+    name = "fin crocodile",
+    w = 48,
+    x = 912,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1010,
+    name = "knightceros",
+    w = 48,
+    x = 960,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1011,
+    name = "inconeet",
+    w = 48,
+    x = 1008,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1012,
+    name = "fallen bird",
+    w = 48,
+    x = 1056,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1013,
+    name = "electric hippopotamus",
+    w = 48,
+    x = 1104,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1014,
+    name = "<Melugast AO-I> the dimension driver",
+    w = 48,
+    x = 1152,
+    y = 1440
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1015,
+    name = "chara1015",
+    w = 48,
+    x = 1200,
+    y = 1440
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1016,
+    name = "chara1016",
+    w = 48,
+    x = 1248,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1017,
+    name = "formless spawn",
+    w = 48,
+    x = 1296,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1018,
+    name = "silver fox brother",
+    w = 48,
+    x = 1344,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1019,
+    name = "sickfull older brother",
+    w = 48,
+    x = 1392,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1020,
+    name = "angry burger",
+    w = 48,
+    x = 1440,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1021,
+    name = "<Dorothia> standing in the wetland",
+    w = 48,
+    x = 1488,
+    y = 1440
+  }, {
+    h = 48,
+    index = 1022,
+    name = "last dancer",
+    w = 48,
+    x = 1536,
+    y = 1440
+  }, {
+    h = 96,
+    index = 1023,
+    name = "old bell",
+    w = 48,
+    x = 0,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1024,
+    name = "<Loyter> the crimson of Dole",
+    w = 48,
+    x = 48,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1025,
+    name = "<Cray> the curious adventurer",
+    w = 48,
+    x = 96,
+    y = 1488
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1026,
+    name = "chara1026",
+    w = 48,
+    x = 144,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1027,
+    name = "<Jenna> the mythical mania",
+    w = 48,
+    x = 192,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1028,
+    name = "fox",
+    w = 48,
+    x = 240,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1029,
+    name = "lion",
+    w = 48,
+    x = 288,
+    y = 1488
+  }, {
+    h = 96,
+    has_name = false,
+    index = 1030,
+    name = "chara1030",
+    w = 48,
+    x = 336,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1031,
+    name = "kobold blaster",
+    w = 48,
+    x = 384,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1032,
+    name = "<Toni> the angler",
+    w = 48,
+    x = 432,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1033,
+    name = "<Nancy> the wanderlust",
+    w = 48,
+    x = 480,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1034,
+    name = "<Mary> the flower picking",
+    w = 48,
+    x = 528,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1035,
+    name = "desktop birdie",
+    w = 48,
+    x = 576,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1036,
+    name = "fang fungus",
+    w = 48,
+    x = 624,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1037,
+    name = "<Mikraanesis>",
+    w = 48,
+    x = 672,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1038,
+    name = "horus eye",
+    w = 48,
+    x = 720,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1039,
+    name = "providence gaze",
+    w = 48,
+    x = 768,
+    y = 1488
+  }, {
+    h = 96,
+    has_name = false,
+    index = 1040,
+    name = "chara1040",
+    w = 48,
+    x = 816,
+    y = 1488
+  }, {
+    h = 96,
+    has_name = false,
+    index = 1041,
+    name = "chara1041",
+    w = 48,
+    x = 864,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1042,
+    name = "janken king",
+    w = 48,
+    x = 912,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1043,
+    name = "clinghost",
+    w = 48,
+    x = 960,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1044,
+    name = "hellabyrinth ruler",
+    w = 48,
+    x = 1008,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1045,
+    name = "<Oxode> the queen bee",
+    w = 48,
+    x = 1056,
+    y = 1488
+  }, {
+    h = 96,
+    has_name = false,
+    index = 1046,
+    name = "chara1046",
+    w = 48,
+    x = 1104,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1047,
+    name = "mag count",
+    w = 48,
+    x = 1152,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1048,
+    name = "dark artificial giant",
+    w = 48,
+    x = 1200,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1049,
+    name = "eighty shaku",
+    w = 48,
+    x = 1248,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1050,
+    name = "crimson dark guardian",
+    w = 48,
+    x = 1296,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1051,
+    name = "blue dark guardian",
+    w = 48,
+    x = 1344,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1052,
+    name = "green dark guardian",
+    w = 48,
+    x = 1392,
+    y = 1488
+  }, {
+    h = 96,
+    index = 1053,
+    name = "hinocchio",
+    w = 48,
+    x = 1440,
+    y = 1488
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1054,
+    name = "chara1054",
+    w = 48,
+    x = 1488,
+    y = 1488
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1055,
+    name = "chara1055",
+    w = 48,
+    x = 1536,
+    y = 1488
+  }, {
+    h = 48,
+    index = 1057,
+    name = "clerk",
+    w = 48,
+    x = 48,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1058,
+    name = "<Bonyac> the general vendor",
+    w = 48,
+    x = 96,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1059,
+    name = "guild broker",
+    w = 48,
+    x = 144,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1060,
+    name = "<Bysymlha> the amber eyes",
+    w = 48,
+    x = 192,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1061,
+    name = "boar",
+    w = 48,
+    x = 240,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1062,
+    name = "wolf",
+    w = 48,
+    x = 288,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1065,
+    name = "<Carter> the skilled foot",
+    w = 48,
+    x = 432,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1066,
+    name = "<Manson> the careful adventurer",
+    w = 48,
+    x = 480,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1067,
+    name = "orichal-co",
+    w = 48,
+    x = 528,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1068,
+    name = "desktop navy",
+    w = 48,
+    x = 576,
+    y = 1536
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1071,
+    name = "chara1071",
+    w = 48,
+    x = 720,
+    y = 1536
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1072,
+    name = "chara1072",
+    w = 48,
+    x = 768,
+    y = 1536
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1087,
+    name = "chara1087",
+    w = 48,
+    x = 1488,
+    y = 1536
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1088,
+    name = "chara1088",
+    w = 48,
+    x = 1536,
+    y = 1536
+  }, {
+    h = 48,
+    index = 1089,
+    name = "bisque doll",
+    w = 48,
+    x = 0,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1090,
+    name = "chara1090",
+    w = 48,
+    x = 48,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1091,
+    name = "vestige",
+    w = 48,
+    x = 96,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1092,
+    name = "little boy",
+    w = 48,
+    x = 144,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1093,
+    name = "S boy",
+    w = 48,
+    x = 192,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1094,
+    name = "butler",
+    w = 48,
+    x = 240,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1095,
+    name = "old butler",
+    w = 48,
+    x = 288,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1096,
+    name = "chara1096",
+    w = 48,
+    x = 336,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1097,
+    name = "chara1097",
+    w = 48,
+    x = 384,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1098,
+    name = "chara1098",
+    w = 48,
+    x = 432,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1099,
+    name = "chara1099",
+    w = 48,
+    x = 480,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1100,
+    name = "universe invader",
+    w = 48,
+    x = 528,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1101,
+    name = "kobolina",
+    w = 48,
+    x = 576,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1102,
+    name = "rushroom",
+    w = 48,
+    x = 624,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1103,
+    name = "matangoddess",
+    w = 48,
+    x = 672,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1104,
+    name = "cthulhick",
+    w = 48,
+    x = 720,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1105,
+    name = "chara1105",
+    w = 48,
+    x = 768,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1106,
+    name = "chara1106",
+    w = 48,
+    x = 816,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1107,
+    name = "chara1107",
+    w = 48,
+    x = 864,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1108,
+    name = "<Aime> the story teller",
+    w = 48,
+    x = 912,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1109,
+    name = "pale inviter",
+    w = 48,
+    x = 960,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1110,
+    name = "ooteguchi",
+    w = 48,
+    x = 1008,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1111,
+    name = "catgod hand",
+    w = 48,
+    x = 1056,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1112,
+    name = "death fog",
+    w = 48,
+    x = 1104,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1113,
+    name = "wall hack cheatah",
+    w = 48,
+    x = 1152,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1114,
+    name = "<Telhureza> the house guard",
+    w = 48,
+    x = 1200,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1115,
+    name = "<Imarituka> the zasiki warai",
+    w = 48,
+    x = 1248,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1116,
+    name = "magic bee",
+    w = 48,
+    x = 1296,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1117,
+    name = "<Scard> the happy swallow",
+    w = 48,
+    x = 1344,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1118,
+    name = "young swallow",
+    w = 48,
+    x = 1392,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1119,
+    name = "<Yonorne> the rookie guide",
+    w = 48,
+    x = 1440,
+    y = 1584
+  }, {
+    h = 48,
+    has_name = false,
+    index = 1120,
+    name = "chara1120",
+    w = 48,
+    x = 1488,
+    y = 1584
+  }, {
+    h = 48,
+    index = 1121,
+    name = "<Sist> the older sister",
+    w = 48,
+    x = 1536,
+    y = 1584
+  },
+  variant = "plus",
+  version = "6.12"
+}
