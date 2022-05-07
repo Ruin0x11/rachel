@@ -58,15 +58,10 @@ function atlas:open_file(filename)
 end
 
 function atlas:add_page(filename, at_index)
-   local std = "elonaplus"
+   local config_filename = "C:/build/ElonaPlusCustom-GX/assets/2.05-custom-gx/plus_6.12.rachel"
+   local regions = assert(loadfile(config_filename))()
 
-   local regions = {
-      { 48, 0, 48, 48 },
-      { 96, 0, 48, 48 },
-      { 144, 0, 48, 48 },
-   }
-
-   local atlas_view = atlas_view.create(self.panel, filename, regions, std)
+   local atlas_view = atlas_view.create(self.panel, filename, regions)
 
    local page_bmp = wx.wxArtProvider.GetBitmap(wx.wxART_NORMAL_FILE, wx.wxART_OTHER, wx.wxSize(16,16))
 
@@ -80,9 +75,9 @@ function atlas:add_page(filename, at_index)
    local index = self.notebook:GetPageIndex(atlas_view)
 
    self.page_data[index] = {
+      config_filename = config_filename,
       filename = filename,
       regions = regions,
-      std = std,
       atlas_view = atlas_view,
       index = index
    }
@@ -145,7 +140,9 @@ function atlas:on_auinotebook_page_closed(event)
 end
 
 function atlas:on_atlas_tile_selected(event)
-   print("Get!", inspect(self:get_current_region()))
+   local region = self:get_current_region()
+   print("Get!", inspect(region))
+   self.app.widget_properties:update_properties(region)
 end
 
 return atlas

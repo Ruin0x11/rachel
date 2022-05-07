@@ -74,6 +74,22 @@ function fs.normalize(path)
    end
 end
 
+function fs.basename(path)
+   return string.gsub(path, "(.*" .. dir_sep .. ")(.*)", "%2")
+end
+
+function fs.filename_part(path)
+   return string.gsub(fs.basename(path), "(.*)%..*", "%1")
+end
+
+function fs.extension_part(path)
+   return string.gsub(fs.basename(path), ".*%.(.*)", "%1")
+end
+
+function fs.parent(path)
+   return string.match(path, "^(.+)" .. dir_sep)
+end
+
 function fs.join(base, ...)
    local res = base
 

@@ -7,6 +7,7 @@ local atlas = require("app.atlas")
 local properties = require("app.properties")
 local repl = require("app.repl")
 local config = require("config")
+local fs = require("lib.fs")
 
 local ID = require("lib.ids")
 
@@ -25,7 +26,9 @@ function app:init()
    self.last_folder = "C:/Users/"
 
    self.file_menu = wx.wxMenu()
-   self.file_menu:Append(ID.OPEN, "&Open...\tCTRL+O", "Open a file")
+   self.file_menu:Append(ID.OPEN, "&Open...\tCTRL+O", "Open an atlas")
+   self.file_menu:Append(ID.SAVE, "&Save...\tCTRL+S", "Save an atlas")
+   self.file_menu:Append(ID.SAVE_CONFIG, "Save Config...", "Saves the current config")
    self.file_menu:Append(ID.REVERT, "&Reload\tCTRL+R", "Reload the current file from disk")
    self.file_menu:Append(ID.CLOSE, "&Close\tCTRL+W", "Close the current file")
    self.file_menu:Append(ID.EXIT, "E&xit", "Quit the program")
@@ -41,11 +44,17 @@ function app:init()
                            wx.wxDEFAULT_FRAME_STYLE)
    self.frame.MenuBar = self.menu_bar
 
-   self.frame:CreateStatusBar(ID.STATUS_BAR)
-   self.frame:SetStatusText(self:get_info())
+   self.status_bar = self.frame:CreateStatusBar(ID.STATUS_BAR)
+   local info = self:get_info()
+   local status_txt_width = self.status_bar:GetTextExtent(info)
+   self.status_bar:SetFieldsCount(1)
+   self.frame:SetStatusWidths({-1, status_txt_width})
+   self.frame:SetStatusText(info)
 
    self:connect_frame(ID.OPEN, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_open")
    self:connect_frame(ID.REVERT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_revert")
+   self:connect_frame(ID.SAVE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save")
+   self:connect_frame(ID.SAVE_CONFIG, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save_config")
    self:connect_frame(ID.CLOSE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_close")
    self:connect_frame(ID.EXIT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_exit")
    self:connect_frame(ID.ABOUT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_about")
@@ -138,15 +147,63 @@ function app:try_load_file(path)
    end
 end
 
+function app:try_save_config(path)
+   local page = self.widget_atlas:get_current_page()
+   if page == nil then
+      return
+   end
+
+   local f, err = io.open(path, "w")
+
+   if not f then
+      self:print_error(err)
+      wx.wxMessageBox(("Unable to save config '%s'.\n\n%s"):format(path, err),
+         "wxLua Error",
+         wx.wxOK + wx.wxCENTRE + wx.wxICON_ERROR, self.frame)
+      return
+   end
+
+   f:write("return " .. inspect(page.regions))
+   f:close()
+
+   self.frame:SetStatusText("Saved config to " .. path)
+end
+
 function app:on_menu_open(_)
    local file_dialog = wx.wxFileDialog(self.frame, "Load serialized file", self.last_folder,
       "",
-      "All files (*)|*",
+      "All files (*.ratlas)|*.ratlas",
       wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST)
    if file_dialog:ShowModal() == wx.wxID_OK then
       local path = file_dialog:GetPath()
       self.last_filepath = path
       self:try_load_file(path)
+   end
+   file_dialog:Destroy()
+end
+
+function app:on_menu_save(_)
+end
+
+function app:on_menu_save_config(_)
+   local path = self.last_folder
+   local name = "config.rachel"
+   local page = self.widget_atlas:get_current_page()
+   if page then
+      local filename = fs.normalize(page.config_filename)
+      path = fs.parent(filename)
+      name = fs.filename_part(filename)
+      print(page.config_filename, path, name)
+   end
+
+   local file_dialog = wx.wxFileDialog(self.frame, "Save config", path,
+      name,
+      "Rachel configs (*.rachel)|*.rachel",
+      wx.wxFD_SAVE + wx.wxFD_OVERWRITE_PROMPT)
+   if file_dialog:ShowModal() == wx.wxID_OK then
+      local path = file_dialog:GetPath()
+      self.last_filepath = path
+      self:try_save_config(path)
    end
    file_dialog:Destroy()
 end

@@ -4,7 +4,7 @@ local ID = require("lib.ids")
 
 local atlas_view = {}
 
-function atlas_view.create(panel, filepath, regions, std)
+function atlas_view.create(panel, filepath, regions)
    local image = wx.wxImage()
    assert(image:LoadFile(filepath))
    local bitmap = wx.wxBitmap(image)
@@ -30,16 +30,18 @@ function atlas_view.create(panel, filepath, regions, std)
       dc:DrawText("asdf", 2, 2)
 
       dc:SetBrush(wx.wxTRANSPARENT_BRUSH)
-      dc:SetPen(wx.wxPen(wx.wxRED, 1, wx.wxPENSTYLE_SOLID))
 
+      dc:SetPen(wx.wxPen(wx.wxRED, 1, wx.wxPENSTYLE_SOLID))
       for _, region in ipairs(self.regions) do
-         dc:DrawRectangle(region[1], region[2], region[3] + 1, region[4] + 1)
+         if not region.has_name then
+            dc:DrawRectangle(region.x, region.y, region.w, region.h)
+         end
       end
 
       if self.selected ~= nil then
          local region = self.regions[self.selected]
-         dc:SetPen(wx.wxPen(wx.wxGREEN, 1, wx.wxPENSTYLE_SOLID))
-         dc:DrawRectangle(region[1], region[2], region[3] + 1, region[4] + 1)
+         dc:SetPen(wx.wxPen(wx.wxYELLOW, 1, wx.wxPENSTYLE_SOLID))
+         dc:DrawRectangle(region.x, region.y, region.w, region.h)
       end
 
       dc:delete()
@@ -47,15 +49,16 @@ function atlas_view.create(panel, filepath, regions, std)
 
    function win:on_left_mouse_down(event)
       local x, y = event:GetPositionXY()
-      self.selected = nil
       for i, region in ipairs(self.regions) do
-         if x >= region[1] and y >= region[2] and x < region[1] + region[3] and y < region[2] + region[4] then
+         if x >= region.x and y >= region.y and x < region.x + region.w and y < region.y + region.h then
             self:select(i)
-            print("get")
-            break
+            return
          end
       end
 
+      self.selected = nil
+      local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_ENTER, ID.ATLAS_WINDOW)
+      wx.wxPostEvent(self, evt)
       self:Refresh()
    end
 
