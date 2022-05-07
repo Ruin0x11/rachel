@@ -121,6 +121,11 @@ function app:print_error(fmt, ...)
    end
 end
 
+function app:show_error(str)
+      wx.wxMessageBox(str "wxLua Error",
+         wx.wxOK + wx.wxCENTRE + wx.wxICON_ERROR, self.frame)
+end
+
 function app:run()
    self.wx_app:MainLoop()
 end
@@ -141,9 +146,7 @@ function app:try_load_file(path)
    local ok, err = xpcall(self.widget_atlas.open_file, debug.traceback, self.widget_atlas, path)
    if not ok then
       self:print_error(err)
-      wx.wxMessageBox(("Unable to load file '%s'.\n\n%s"):format(path, err),
-         "wxLua Error",
-         wx.wxOK + wx.wxCENTRE + wx.wxICON_ERROR, self.frame)
+      self:show_error(("Unable to load file '%s'.\n\n%s"):format(path, err))
    end
 end
 
@@ -157,9 +160,7 @@ function app:try_save_config(path)
 
    if not f then
       self:print_error(err)
-      wx.wxMessageBox(("Unable to save config '%s'.\n\n%s"):format(path, err),
-         "wxLua Error",
-         wx.wxOK + wx.wxCENTRE + wx.wxICON_ERROR, self.frame)
+      self:show_error(("Unable to save config '%s'.\n\n%s"):format(path, err))
       return
    end
 
@@ -172,7 +173,7 @@ end
 function app:on_menu_open(_)
    local file_dialog = wx.wxFileDialog(self.frame, "Load serialized file", self.last_folder,
       "",
-      "All files (*.ratlas)|*.ratlas",
+      "Atlas files (*.ratlas)|*.ratlas",
       wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST)
    if file_dialog:ShowModal() == wx.wxID_OK then
       local path = file_dialog:GetPath()

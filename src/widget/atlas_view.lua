@@ -4,11 +4,7 @@ local ID = require("lib.ids")
 
 local atlas_view = {}
 
-function atlas_view.create(panel, filepath, regions)
-   local image = wx.wxImage()
-   assert(image:LoadFile(filepath))
-   local bitmap = wx.wxBitmap(image)
-
+function atlas_view.create(panel, bitmap, regions)
    local scrollwin = wx.wxScrolledWindow(panel, wx.wxID_ANY)
    local win = wx.wxPanel(scrollwin, wx.wxID_ANY,
                                   wx.wxDefaultPosition, wx.wxSize(bitmap:GetWidth(), bitmap:GetHeight()),
@@ -47,19 +43,39 @@ function atlas_view.create(panel, filepath, regions)
       dc:delete()
    end
 
-   function win:on_left_mouse_down(event)
-      local x, y = event:GetPositionXY()
+   function win:get_region_at(x, y)
       for i, region in ipairs(self.regions) do
          if x >= region.x and y >= region.y and x < region.x + region.w and y < region.y + region.h then
-            self:select(i)
-            return
+            return i
          end
+      end
+
+      return nil
+   end
+
+   -- FIXME: No wxNewEventType()!
+
+   function win:on_left_mouse_down(event)
+      local x, y = event:GetPositionXY()
+      local i = self:get_region_at(x, y)
+      if i then
+         self:select(i)
+         return
       end
 
       self.selected = nil
       local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_ENTER, ID.ATLAS_WINDOW)
       wx.wxPostEvent(self, evt)
       self:Refresh()
+   end
+
+   function win:on_left_mouse_dclick(event)
+      print "ASD!"
+      local x, y = event:GetPositionXY()
+      local i = self:get_region_at(x, y)
+      if i then
+         self:activate(i)
+      end
    end
 
    function win:select(index)
@@ -69,8 +85,16 @@ function atlas_view.create(panel, filepath, regions)
       self:Refresh()
    end
 
+   function win:activate(index)
+      self.selected = index
+      local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_TREE_SEL_CHANGED, ID.ATLAS_WINDOW)
+      wx.wxPostEvent(self, evt)
+      self:Refresh()
+   end
+
    util.connect(win, wx.wxEVT_PAINT, win, "on_paint")
    util.connect(win, wx.wxEVT_LEFT_DOWN, win, "on_left_mouse_down")
+   util.connect(win, wx.wxEVT_LEFT_DCLICK, win, "on_left_mouse_dclick")
 
    scrollwin:SetScrollbars(1, 1, win.bitmap:GetWidth(), win.bitmap:GetHeight())
    scrollwin.win = win

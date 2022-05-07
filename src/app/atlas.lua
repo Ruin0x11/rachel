@@ -26,6 +26,7 @@ function atlas:init(app, frame)
 
    util.connect(self.notebook, wxaui.wxEVT_AUINOTEBOOK_PAGE_CLOSED, self, "on_auinotebook_page_closed")
    util.connect(self.notebook, wx.wxEVT_COMMAND_ENTER, self, "on_atlas_tile_selected")
+   util.connect(self.notebook, wx.wxEVT_COMMAND_TREE_SEL_CHANGED, self, "on_atlas_tile_activated")
 
    self.page_data = {}
    self.filenames = {}
@@ -61,7 +62,11 @@ function atlas:add_page(filename, at_index)
    local config_filename = "C:/build/ElonaPlusCustom-GX/assets/2.05-custom-gx/plus_6.12.rachel"
    local regions = assert(loadfile(config_filename))()
 
-   local atlas_view = atlas_view.create(self.panel, filename, regions)
+   local image = wx.wxImage()
+   assert(image:LoadFile(filename))
+   local bitmap = wx.wxBitmap(image)
+
+   local atlas_view = atlas_view.create(self.panel, bitmap, regions)
 
    local page_bmp = wx.wxArtProvider.GetBitmap(wx.wxART_NORMAL_FILE, wx.wxART_OTHER, wx.wxSize(16,16))
 
@@ -76,6 +81,7 @@ function atlas:add_page(filename, at_index)
 
    self.page_data[index] = {
       config_filename = config_filename,
+      bitmap = bitmap,
       filename = filename,
       regions = regions,
       atlas_view = atlas_view,
@@ -85,6 +91,32 @@ function atlas:add_page(filename, at_index)
    self.notebook:SetSelection(index)
 
    atlas_view:select(1)
+   self:split_and_save()
+end
+
+local function get_chip_variant_dir(index)
+   return fs.join("resources", "chips", "chara", index)
+end
+
+function atlas:split_and_save()
+   local suffix = "base"
+   local page = self:get_current_page()
+   if page == nil then
+      return
+   end
+
+   for _, region in ipairs(page.regions) do
+      local dir = get_chip_variant_dir(region.index)
+      local path = fs.join(dir, ("chara_%d_%s.bmp"):format(region.index, suffix))
+      local cut = page.bitmap:GetSubBitmap(wx.wxRect(region.x, region.y, region.w, region.h))
+      if not wx.wxDirExists(dir) then
+         wx.wxMkdir(dir)
+      end
+      if wx.wxFileExists(path) then
+         wx.wxRemoveFile(path)
+      end
+      cut:SaveFile(path, wx.wxBITMAP_TYPE_BMP)
+   end
 end
 
 function atlas:has_some()
@@ -141,8 +173,32 @@ end
 
 function atlas:on_atlas_tile_selected(event)
    local region = self:get_current_region()
-   print("Get!", inspect(region))
    self.app.widget_properties:update_properties(region)
+end
+
+function atlas:on_atlas_tile_activated(event)
+   local region = self:get_current_region()
+   local dir = get_chip_variant_dir(region.index)
+
+   local file_dialog = wx.wxFileDialog(self.frame, "Load image", dir,
+      "",
+      "PNG (*.png)|*.png|PCX (*.pcx)|*.pcx|Bitmap (*.bmp)|*.bmp|Jpeg (*.jpg,*.jpeg)|*.jpg,*.jpeg|Tiff (*.tif,*.tiff)|*.tif,*.tiff",
+      wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST)
+   if file_dialog:ShowModal() == wx.wxID_OK then
+      local path = file_dialog:GetPath()
+      local bitmap = wx.wxBitmap()
+
+      if not bitmap:LoadFile(path) then
+         self.app:show_error(("Unable to load file '%s'."):format(path))
+      end
+
+      if bitmap:GetWidth() ~= region.w or bitmap:GetHeight() ~= region.h then
+         self.app:show_error(("Region is incorrect size (expected (%d, %d), got (%d %d))")
+            :format(region.w, region.h, bitmap:GetWidth(), bitmap:GetHeight()))
+      end
+
+   end
+   file_dialog:Destroy()
 end
 
 return atlas

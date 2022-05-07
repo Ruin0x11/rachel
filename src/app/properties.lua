@@ -68,6 +68,14 @@ function properties:on_property_grid_changed(event)
 
    if prop then
       self.app:print("OnPropertyGridChange(%s, value=%s)", prop:GetName(), prop:GetValueAsString())
+
+      local region = self.app.widget_atlas:get_current_region()
+      if region then
+         if prop:GetName() == "Name" then
+            region.name = prop:GetValueAsString()
+            region.has_name = true
+         end
+      end
    else
       self.app:print("OnPropertyGridChange(NULL)")
    end
