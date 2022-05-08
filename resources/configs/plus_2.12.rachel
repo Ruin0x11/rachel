@@ -2166,14 +2166,14 @@ return {
       }, {
         h = 48,
         index = 316,
-        name = "mimic",
+        name = "mimic male",
         w = 48,
         x = 912,
         y = 432
       }, {
         h = 48,
         index = 317,
-        name = "mimic 2",
+        name = "mimic female",
         w = 48,
         x = 960,
         y = 432
@@ -6429,14 +6429,14 @@ return {
       }, {
         h = 48,
         index = 1090,
-        name = "vestige",
+        name = "vestige male",
         w = 48,
         x = 48,
         y = 1584
       }, {
         h = 48,
         index = 1091,
-        name = "vestige",
+        name = "vestige female",
         w = 48,
         x = 96,
         y = 1584

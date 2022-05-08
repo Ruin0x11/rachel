@@ -8,6 +8,7 @@ local properties = require("app.properties")
 local repl = require("app.repl")
 local config = require("config")
 local fs = require("lib.fs")
+local tile_picker = require("app.tile_picker")
 
 local ID = require("lib.ids")
 
@@ -71,6 +72,7 @@ function app:init()
    self.widget_repl = repl:new(self, self.frame)
    self.widget_atlas = atlas:new(self, self.frame)
    self.widget_properties = properties:new(self, self.frame)
+   self.widget_tile_picker = tile_picker:new(self, self.frame)
 
    self.debug_server = debug_server:new(self, config.debug_server.port)
 

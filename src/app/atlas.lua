@@ -31,7 +31,7 @@ function atlas:init(app, frame)
 
    local index_text_sizer = wx.wxFlexGridSizer(2, 2, 0, 0)
    index_text_sizer:AddGrowableCol(1)
-   index_text_sizer:Add(index_text,  0, wx.wxALL + wx.wxALIGN_LEFT, 0)
+   index_text_sizer:Add(index_text,  0, wx.wxALL + wx.wxALIGN_LEFT, 5)
    index_text_sizer:Add(self.index_text_ctrl, 1, wx.wxALL + wx.wxGROW + wx.wxCENTER, 0)
 
    self.sizer:Add(index_text_sizer, 0, wx.wxALIGN_BOTTOM, 0)
@@ -289,11 +289,12 @@ end
 
 function atlas:on_atlas_tile_selected(event)
    local region = self:get_current_region()
-   if region == nil then
-      return
-   end
    self.app.widget_properties:update_properties(region)
-   self.index_text_ctrl:SetValue(tostring(region.index))
+   if region ~= nil then
+      self.index_text_ctrl:SetValue(tostring(region.index))
+   else
+      self.index_text_ctrl:SetValue("")
+   end
 end
 
 function atlas:on_atlas_tile_activated(event)
