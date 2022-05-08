@@ -28,7 +28,7 @@ function app:init()
    self.file_menu = wx.wxMenu()
    self.file_menu:Append(ID.OPEN, "&Open...\tCTRL+O", "Open an atlas")
    self.file_menu:Append(ID.SAVE, "&Save...\tCTRL+S", "Save an atlas")
-   self.file_menu:Append(ID.SAVE_CONFIG, "Save Config...", "Saves the current config")
+   self.file_menu:Append(ID.SAVE_CONFIG, "Save Config", "Saves the current config")
    self.file_menu:Append(ID.REVERT, "&Reload\tCTRL+R", "Reload the current file from disk")
    self.file_menu:Append(ID.CLOSE, "&Close\tCTRL+W", "Close the current file")
    self.file_menu:Append(ID.EXIT, "E&xit", "Quit the program")
@@ -80,7 +80,7 @@ function app:init()
 
    self.widget_repl:activate()
 
-   self:try_load_file("C:/build/ElonaPlusCustom-GX/assets/2.05-custom-gx/graphic/character.bmp")
+   self:try_load_file("C:/build/elonaplus2.12/graphic/character.bmp")
 end
 
 function app:add_pane(ctrl, args)
@@ -164,7 +164,7 @@ function app:try_save_config(path)
       return
    end
 
-   f:write("return " .. inspect(page.regions))
+   f:write("return " .. inspect(page.config))
    f:close()
 
    page.config_modified = false
@@ -194,26 +194,14 @@ function app:on_menu_save(_)
 end
 
 function app:on_menu_save_config(_)
-   local path = self.last_folder
-   local name = "config.rachel"
    local page = self.widget_atlas:get_current_page()
-   if page then
-      local filename = fs.normalize(page.config_filename)
-      path = fs.parent(filename)
-      name = fs.filename_part(filename)
-      print(page.config_filename, path, name)
+   if not page then
+      self.frame:SetStatusText("No config is loaded.")
+      return
    end
 
-   local file_dialog = wx.wxFileDialog(self.frame, "Save config", path,
-      name,
-      "Rachel configs (*.rachel)|*.rachel",
-      wx.wxFD_SAVE + wx.wxFD_OVERWRITE_PROMPT)
-   if file_dialog:ShowModal() == wx.wxID_OK then
-      local path = file_dialog:GetPath()
-      self.last_filepath = path
-      self:try_save_config(path)
-   end
-   file_dialog:Destroy()
+   local filename = fs.normalize(page.config_filename)
+   self:try_save_config(filename)
 end
 
 function app:on_menu_revert(_)

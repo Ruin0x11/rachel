@@ -26,6 +26,7 @@ function atlas_view:select_by_index(index)
       local r = self.win.regions[self.win.selected]
       self:Scroll(r.x + r.w - w, r.y + r.h - h)
    end
+   return self.win.selected
 end
 
 function atlas_view:update_bitmap(image)

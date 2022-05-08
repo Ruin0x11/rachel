@@ -25,7 +25,7 @@ function properties:init(app, frame)
                                  {
                                     Name = wxT("Data Properties"),
                                     Caption = wxT("Data Properties"),
-                                    MinSize = wx.wxSize(300, 200),
+                                    MinSize = wx.wxSize(200, 100),
                                     BestSize = wx.wxSize(400, 300),
                                     "Right",
                                     PaneBorder = false
@@ -53,7 +53,7 @@ function properties:update_properties(region)
    self.grid:DisableProperty(prop)
    prop = wx.wxStringProperty("Name", wx.wxPG_LABEL, region.name)
    self.grid:Append(prop)
-   prop = wx.wxStringProperty("Position", wx.wxPG_LABEL, ("(%d, %d)"):format(region.x, region.y))
+   prop = wx.wxStringProperty("Position", wx.wxPG_LABEL, ("(%d, %d)"):format(region.x / 48, region.y / 48))
    self.grid:Append(prop)
    self.grid:DisableProperty(prop)
    prop = wx.wxStringProperty("Size", wx.wxPG_LABEL, ("(%d, %d)"):format(region.w, region.h))

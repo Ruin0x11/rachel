@@ -77,7 +77,14 @@ end
 
 function atlas:add_page(filename, at_index)
    local config_filename = "C:/build/rachel/resources/configs/plus_2.12.rachel"
-   local regions = assert(loadfile(config_filename))()
+   local atlas_config = assert(loadfile(config_filename))()
+   local tab_name = fs.basename(filename)
+   local regions = atlas_config.atlases[tab_name]
+
+   if regions == nil then
+      self.app:show_error(("Atlas config does not support editing '%s'."):format(tab_name))
+      return
+   end
 
    local image = wx.wxImage()
    assert(image:LoadFile(filename))
@@ -88,7 +95,6 @@ function atlas:add_page(filename, at_index)
 
    local page_bmp = wx.wxArtProvider.GetBitmap(wx.wxART_NORMAL_FILE, wx.wxART_OTHER, wx.wxSize(16,16))
 
-   local tab_name = filename:gsub("(.*[/\\])(.*)", "%2")
    if at_index then
       self.notebook:InsertPage(at_index, atlas_view, tab_name, false, page_bmp)
    else
@@ -99,6 +105,7 @@ function atlas:add_page(filename, at_index)
 
    self.page_data[index] = {
       config_filename = config_filename,
+      config = atlas_config,
       original_image = image,
       image = image:Copy(),
       tab_name = tab_name,
@@ -282,6 +289,9 @@ end
 
 function atlas:on_atlas_tile_selected(event)
    local region = self:get_current_region()
+   if region == nil then
+      return
+   end
    self.app.widget_properties:update_properties(region)
    self.index_text_ctrl:SetValue(tostring(region.index))
 end
@@ -319,7 +329,11 @@ function atlas:on_index_text_enter(event)
    if page and region then
       local index = tonumber(self.index_text_ctrl:GetValue())
       if index ~= nil then
-         page.atlas_view:select_by_index(index)
+         local i = page.atlas_view:select_by_index(index)
+         if i == nil then
+            -- Tall sprites
+            page.atlas_view:select_by_index(index + 33)
+         end
       end
    end
 end
