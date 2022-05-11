@@ -5,6 +5,8 @@ local fs = {}
 local dir_sep = package.config:sub(1, 1)
 local is_windows = dir_sep == "\\"
 
+fs.dir_sep = dir_sep
+
 --
 -- These functions are from luacheck.
 --

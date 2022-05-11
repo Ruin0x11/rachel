@@ -58,8 +58,12 @@ function tile_picker:update_cells(region)
 	local dir = chips.get_chip_variant_dir(region)
 
 	local selected = 1
+	local n = 1
+	if data.replacement_path then
+		self:add_cell(wx.wxImage(data.replacement_path), "<current>", data.replacement_path)
+		n = 2
+	end
 	self:add_cell(get_region(page.original_image, region), "<original>")
-	-- self:add_cell(get_region(page.image, region), "<original>")
 
 	for i, file in fs.iter_directory_items(dir) do
 		file = fs.normalize(file)
@@ -69,7 +73,7 @@ function tile_picker:update_cells(region)
 			self:add_cell(file)
 
 			if data.replacement_path and data.replacement_path == file then
-				selected = i + 1
+				selected = i + n
 			end
 		end
 	end
@@ -101,8 +105,8 @@ function tile_picker:select_cell(idx_or_obj)
 	self.scrollwin:Refresh()
 end
 
-function tile_picker:add_cell(image, caption)
-	local cell = tile_cell.create(self.scrollwin, image, caption)
+function tile_picker:add_cell(image, caption, path)
+	local cell = tile_cell.create(self.scrollwin, image, caption, path)
 	self.sizer:Add(cell.panel, 0, wx.wxEXPAND, 5)
 	self.cells[#self.cells + 1] = cell
 	self.app.aui:Update()

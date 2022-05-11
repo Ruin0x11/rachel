@@ -30,10 +30,12 @@ function atlas:init(app, frame)
 		wx.wxTE_PROCESS_ENTER
 	)
 
-	local index_text_sizer = wx.wxFlexGridSizer(2, 2, 0, 0)
-	index_text_sizer:AddGrowableCol(1)
-	index_text_sizer:Add(index_text, 0, wx.wxALL + wx.wxALIGN_LEFT, 5)
-	index_text_sizer:Add(self.index_text_ctrl, 1, wx.wxALL + wx.wxGROW + wx.wxCENTER, 0)
+	self.delete_button = wx.wxButton(self.panel, ID.BAR_DELETE, "Delete")
+
+	local index_text_sizer = wx.wxBoxSizer(wx.wxHORIZONTAL)
+	index_text_sizer:Add(index_text, 0, wx.wxALL + wx.wxALIGN_CENTRE, 5)
+	index_text_sizer:Add(self.index_text_ctrl, 1, wx.wxALL + wx.wxGROW + wx.wxCENTER, 5)
+	index_text_sizer:Add(self.delete_button, 1, wx.wxALL + wx.wxGROW + wx.wxCENTER, 5)
 
 	self.sizer:Add(index_text_sizer, 0, wx.wxALIGN_BOTTOM, 0)
 
@@ -47,6 +49,9 @@ function atlas:init(app, frame)
 	util.connect(self.notebook, wx.wxEVT_COMMAND_TREE_SEL_CHANGED, self, "on_atlas_tile_activated")
 	util.connect(self.notebook, ID.ATLAS_RESET, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_atlas_reset")
 	util.connect(self.index_text_ctrl, wx.wxEVT_TEXT_ENTER, self, "on_index_text_enter")
+	util.connect(self.index_text_ctrl, wx.wxEVT_UPDATE_UI, self, "on_update_ui")
+	util.connect(self.delete_button, ID.BAR_DELETE, wx.wxEVT_COMMAND_BUTTON_CLICKED, self, "on_delete_button_clicked")
+	util.connect(self.delete_button, ID.BAR_DELETE, wx.wxEVT_UPDATE_UI, self, "on_update_ui_bar_delete_button")
 
 	self.page_data = {}
 	self.filenames = {}
@@ -65,23 +70,11 @@ function atlas:init(app, frame)
 	})
 end
 
-function atlas:open_file(filename)
-	filename = fs.normalize(filename)
-
-	local existing_idx = self.filenames[filename]
-	if existing_idx then
-		self.notebook:SetSelection(existing_idx)
-		return
-	end
-
-	self:add_page(filename)
-end
-
-function atlas:add_page(filename, at_index)
-	local config_filename = "resources/configs/plus_2.12.rachel"
+function atlas:create_new(image_filename, config_filename, atlas_type, at_index)
+	image_filename = fs.normalize(image_filename)
 	local atlas_config = assert(loadfile(config_filename))()
-	local tab_name = fs.basename(filename)
-	local regions = atlas_config.atlases[tab_name]
+	local tab_name = fs.basename(image_filename)
+	local regions = atlas_config.atlases[atlas_type]
 
 	if regions == nil then
 		self.app:show_error(("Atlas config does not support editing '%s'."):format(tab_name))
@@ -89,7 +82,7 @@ function atlas:add_page(filename, at_index)
 	end
 
 	local image = wx.wxImage()
-	assert(image:LoadFile(filename))
+	assert(image:LoadFile(image_filename))
 
 	local data = {}
 
@@ -111,17 +104,30 @@ function atlas:add_page(filename, at_index)
 		original_image = image,
 		image = image:Copy(),
 		tab_name = tab_name,
-		filename = filename,
+		filename = image_filename,
 		regions = regions,
 		atlas_view = atlas_view,
 		index = index,
 		atlas_modified = false,
 		config_modified = false,
 	}
-	self.filenames[filename] = index
+	-- self.filenames[filename] = index
 	self.notebook:SetSelection(index)
 
+	-- select the first tile on the atlas
 	atlas_view:select(1)
+end
+
+function atlas:open_file(atlas_filename)
+	atlas_filename = fs.normalize(atlas_filename)
+
+	local existing_idx = self.filenames[atlas_filename]
+	if existing_idx then
+		self.notebook:SetSelection(existing_idx)
+		return
+	end
+
+	-- self:add_page(filename, config_filename, atlas_type)
 end
 
 function atlas:replace_chip(page, region, image, path)
@@ -133,7 +139,7 @@ function atlas:replace_chip(page, region, image, path)
 		end
 	end
 
-	if image:GetWidth() ~= region.w or image:GetHeight() ~= region.h then
+	if image:GetWidth() > region.w or image:GetHeight() > region.h then
 		self.app:show_error(
 			("Region is incorrect size (expected (%d, %d), got (%d %d))"):format(
 				region.w,
@@ -142,14 +148,18 @@ function atlas:replace_chip(page, region, image, path)
 				image:GetHeight()
 			)
 		)
+		return
 	end
 
-	page.image:Paste(image, region.x, region.y)
+	local blank = wx.wxImage(region.w, region.h)
+	page.image:Paste(blank, region.x, region.y)
+	page.image:Paste(image, region.x, region.y + (region.h - image:GetHeight()))
+
 	local data = page.atlas_view.win.data
 	data[region.index] = data[region.index] or {}
 	data[region.index].replacement_path = path and fs.to_relative(path, wx.wxGetCwd()) or nil
 	page.atlas_view:update_bitmap(page.image)
-	self.app.widget_properties:update_properties(region)
+	-- self.app.widget_properties:update_properties(region)
 	self:set_modified(page, true)
 end
 
@@ -160,7 +170,7 @@ function atlas:reset_chip(page, region)
 	data[region.index] = data[region.index] or {}
 	data[region.index].replacement_path = nil
 	page.atlas_view:update_bitmap(page.image)
-	self.app.widget_properties:update_properties(region)
+	-- self.app.widget_properties:update_properties(region)
 	self:set_modified(page, true)
 end
 
@@ -173,6 +183,9 @@ function atlas:iter_pages()
 end
 
 function atlas:get_current_page()
+	if not self:has_some() then
+		return nil
+	end
 	local page = self.notebook:GetCurrentPage()
 	local index = self.notebook:GetPageIndex(page)
 	return self.page_data[index]
@@ -219,7 +232,7 @@ end
 
 function atlas:refresh_current_region()
 	local region = self:get_current_region()
-	self.app.widget_properties:update_properties(region)
+	-- self.app.widget_properties:update_properties(region)
 	self.app.widget_tile_picker:update_cells(region)
 	if region ~= nil then
 		self.index_text_ctrl:SetValue(tostring(region.index))
@@ -346,6 +359,7 @@ function atlas:on_auinotebook_page_closed(event)
 	local page = self.page_data[index]
 	self.filenames[page.filename] = nil
 	self.page_data[index] = nil
+	self:refresh_current_region()
 end
 
 function atlas:on_atlas_tile_hovered(event)
@@ -389,6 +403,10 @@ function atlas:on_menu_atlas_reset(event)
 	end
 end
 
+function atlas:on_update_ui(event)
+	event:Enable(self:has_some())
+end
+
 function atlas:on_index_text_enter(event)
 	local page = self:get_current_page()
 	local region = self:get_current_region()
@@ -403,6 +421,17 @@ function atlas:on_index_text_enter(event)
 			end
 		end
 	end
+end
+
+function atlas:on_delete_button_clicked(event)
+	local page = self:get_current_page()
+	table.iremove_value(page.regions, self:get_current_region())
+	page.atlas_view:select(nil)
+	self:refresh_current_region()
+end
+
+function atlas:on_update_ui_bar_delete_button(event)
+	event:Enable(self:get_current_region() ~= nil)
 end
 
 return atlas

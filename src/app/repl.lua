@@ -130,6 +130,9 @@ function repl:set_visible(visible)
 	self.visible = visible
 	self.app.aui:GetPane("REPL"):Show(visible)
 	self.app.aui:Update()
+	if visible then
+		self:activate()
+	end
 end
 
 function repl:getPromptLine()
@@ -810,7 +813,6 @@ function repl:on_size()
 end
 
 function repl:on_destroy()
-	print("Saving history.")
 	self:save_history()
 end
 

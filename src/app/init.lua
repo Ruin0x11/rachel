@@ -4,13 +4,15 @@ local wxlua = require("wxlua")
 local util = require("lib.util")
 local debug_server = require("app.debug_server")
 local atlas = require("app.atlas")
-local properties = require("app.properties")
+-- local properties = require("app.properties")
 local repl = require("app.repl")
 local config = require("config")
 local fs = require("lib.fs")
 local tile_picker = require("app.tile_picker")
 local chips = require("lib.chips")
 local suffix_dialog = require("dialog.suffix_dialog")
+local config_dialog = require("dialog.config_dialog")
+local split_dialog = require("dialog.split_dialog")
 
 local ID = require("lib.ids")
 
@@ -26,13 +28,15 @@ function app:init()
 	self.width = 1024
 	self.height = 768
 
-	self.last_folder = "C:/Users/"
+	self.last_folder = ""
 	self.last_atlas_filepath = ""
 
 	self.file_menu = wx.wxMenu()
+	self.file_menu:Append(ID.NEW, "&New...\tCTRL+N", "Import an atlas")
 	self.file_menu:Append(ID.OPEN, "&Open...\tCTRL+O", "Open an atlas")
 	self.file_menu:Append(ID.SAVE, "&Save...\tCTRL+S", "Save an atlas")
 	self.file_menu:Append(ID.SAVE_CONFIG, "Save Config", "Saves the current config")
+	self.file_menu:Append(ID.SAVE_CONFIG_AS, "Save Config As...", "Saves the current config")
 	self.export_menu = wx.wxMenu()
 	self.export_menu:Append(ID.EXPORT_TILESHEET, "&Tilesheet...", "Exports this atlas as a single bitmap image.")
 	self.export_menu:Append(
@@ -40,15 +44,19 @@ function app:init()
 		"&Graphic Folder...",
 		"Exports this atlas in the user/graphic format (character.bmp only)."
 	)
-	self.export_menu:Enable(ID.EXPORT_GRAPHIC_FOLDER, false)
 	self.file_menu:Append(ID.EXPORT, "&Export", self.export_menu)
 	self.file_menu:Append(ID.CLOSE, "&Close\tCTRL+W", "Close the current file")
 	self.file_menu:Append(ID.EXIT, "E&xit", "Quit the program")
 	self.tools_menu = wx.wxMenu()
 	self.tools_menu:Append(ID.QUICK_SET_ALL, "&Quick Set All...", "Set all tiles based on suffix")
 	self.tools_menu:Append(ID.RESET_ALL, "&Reset All...", "Reset all tiles to those of the original image")
-	self.tools_menu:Append(ID.SPLIT_ATLAS, "&Split Atlas...", "Split an existing tile atlas into separate images")
+	self.tools_menu:Append(
+		ID.SPLIT_ATLAS,
+		"&Split Atlas...",
+		"Split an existing tile atlas into separate images (based on the current atlas)"
+	)
 	self.tools_menu:AppendCheckItem(ID.SHOW_REPL, "Show &REPL", "Show the REPL")
+	self.tools_menu:AppendCheckItem(ID.SHOW_ALL_REGIONS, "Show &All Regions", "Show all tile boundaries as a grid")
 	self.help_menu = wx.wxMenu()
 	self.help_menu:Append(ID.ABOUT, "&About", "About this program")
 
@@ -74,25 +82,6 @@ function app:init()
 	self.frame:SetStatusWidths({ -1, status_txt_width })
 	self.frame:SetStatusText(info)
 
-	self:connect_frame(ID.OPEN, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_open")
-	self:connect_frame(ID.REVERT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_revert")
-	self:connect_frame(ID.SAVE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save")
-	self:connect_frame(ID.SAVE_CONFIG, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save_config")
-	self:connect_frame(ID.CLOSE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_close")
-	self:connect_frame(ID.EXIT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_exit")
-	self:connect_frame(ID.ABOUT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_about")
-
-	self:connect_frame(ID.EXPORT_TILESHEET, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_export_tilesheet")
-	self:connect_frame(ID.EXPORT_GRAPHIC_FOLDER, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_export_graphic_folder")
-
-	self:connect_frame(ID.QUICK_SET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_quick_set_all")
-	self:connect_frame(ID.RESET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_reset_all")
-	self:connect_frame(ID.SPLIT_ATLAS, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_split_atlas")
-	self:connect_frame(ID.SHOW_REPL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_show_repl")
-
-	self:connect_frame(ID.REVERT, wx.wxEVT_UPDATE_UI, self, "on_update_ui_revert")
-	self:connect_frame(ID.CLOSE, wx.wxEVT_UPDATE_UI, self, "on_update_ui_close")
-
 	self.wx_app.TopWindow = self.frame
 	self.frame:Show(true)
 
@@ -101,18 +90,59 @@ function app:init()
 
 	self.widget_repl = repl:new(self, self.frame)
 	self.widget_atlas = atlas:new(self, self.frame)
-	self.widget_properties = properties:new(self, self.frame)
+	-- self.widget_properties = properties:new(self, self.frame)
 	self.widget_tile_picker = tile_picker:new(self, self.frame)
 
 	self.debug_server = debug_server:new(self, config.debug_server.port)
 
 	self.aui:Update()
 
-	self:connect_frame(nil, wx.wxEVT_DESTROY, self, "on_destroy")
+	util.connect(self.frame, ID.NEW, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_new")
+	util.connect(self.frame, ID.OPEN, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_open")
+	util.connect(self.frame, ID.SAVE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save")
+	util.connect(self.frame, ID.SAVE_CONFIG, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save_config")
+	util.connect(self.frame, ID.SAVE_CONFIG_AS, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save_config_as")
+	util.connect(self.frame, ID.CLOSE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_close")
+	util.connect(self.frame, ID.EXIT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_exit")
+	util.connect(self.frame, ID.ABOUT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_about")
 
-	self.widget_repl:activate()
+	util.connect(
+		self.export_menu,
+		ID.EXPORT_TILESHEET,
+		wx.wxEVT_COMMAND_MENU_SELECTED,
+		self,
+		"on_menu_export_tilesheet"
+	)
+	util.connect(
+		self.export_menu,
+		ID.EXPORT_GRAPHIC_FOLDER,
+		wx.wxEVT_COMMAND_MENU_SELECTED,
+		self,
+		"on_menu_export_graphic_folder"
+	)
 
-	self:try_load_file("C:/Users/yuno/build/elonaplus2.12/graphic/character.bmp")
+	util.connect(self.tools_menu, ID.QUICK_SET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_quick_set_all")
+	util.connect(self.tools_menu, ID.RESET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_reset_all")
+	util.connect(self.tools_menu, ID.SPLIT_ATLAS, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_split_atlas")
+	util.connect(self.tools_menu, ID.SHOW_REPL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_show_repl")
+	util.connect(self.tools_menu, ID.SHOW_ALL_REGIONS, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_show_all_regions")
+
+	for _, id in ipairs({
+		ID.SAVE,
+		ID.CLOSE,
+		ID.SAVE_CONFIG,
+		ID.EXPORT_TILESHEET,
+		ID.EXPORT_GRAPHIC_FOLDER,
+		ID.QUICK_SET_ALL,
+		ID.RESET_ALL,
+		ID.SPLIT_ATLAS,
+	}) do
+		self:connect_frame(id, wx.wxEVT_UPDATE_UI, self, "on_update_ui")
+	end
+
+	self:connect_frame(wx.wxID_ANY, wx.wxEVT_DESTROY, self, "on_destroy")
+
+	self.frame:SetFocus()
 end
 
 function app:add_pane(ctrl, args)
@@ -179,11 +209,18 @@ function app:on_destroy(event)
 	end
 end
 
-function app:try_load_file(path)
-	local ok, err = xpcall(self.widget_atlas.open_file, debug.traceback, self.widget_atlas, path)
+function app:try_create_atlas(path, config_file, atlas_type)
+	local ok, err = xpcall(
+		self.widget_atlas.create_new,
+		debug.traceback,
+		self.widget_atlas,
+		path,
+		config_file,
+		atlas_type
+	)
 	if not ok then
 		self:print_error(err)
-		self:show_error(("Unable to load file '%s'.\n\n%s"):format(path, err))
+		self:show_error(("Unable to create atlas '%s'.\n\n%s"):format(path, err))
 	end
 end
 
@@ -205,22 +242,43 @@ function app:try_save_config(path)
 	f:close()
 
 	page.config_modified = false
+	page.config_filename = path
 	self.frame:SetStatusText("Saved config to " .. path)
+end
+
+function app:on_menu_new(_)
+	local file_dialog = wx.wxFileDialog(
+		self.frame,
+		"Import atlas",
+		self.last_folder,
+		"",
+		"Atlas images (character.bmp)|character.bmp",
+		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
+	)
+	if file_dialog:ShowModal() ~= wx.wxID_OK then
+		file_dialog:Destroy()
+		return
+	end
+
+	local path = fs.normalize(file_dialog:GetPath())
+	file_dialog:Destroy()
+
+	config_dialog.query(self.frame, path, function(config_filename, atlas_type)
+		self:try_create_atlas(path, config_filename, atlas_type)
+	end)
 end
 
 function app:on_menu_open(_)
 	local file_dialog = wx.wxFileDialog(
 		self.frame,
-		"Load serialized file",
+		"Load atlas",
 		self.last_folder,
 		"",
 		"Atlas files (*.ratlas)|*.ratlas",
 		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
 	)
 	if file_dialog:ShowModal() == wx.wxID_OK then
-		local path = file_dialog:GetPath()
-		self.last_filepath = path
-		self:try_load_file(path)
+		local path = fs.normalize(file_dialog:GetPath())
 	end
 	file_dialog:Destroy()
 end
@@ -241,8 +299,29 @@ function app:on_menu_save_config(_)
 		return
 	end
 
-	local filename = fs.normalize(page.config_filename)
+	local filename = page.config_filename
 	self:try_save_config(filename)
+end
+
+function app:on_menu_save_config_as(_)
+	local page = self.widget_atlas:get_current_page()
+	if not page then
+		self.frame:SetStatusText("No config is loaded.")
+		return
+	end
+
+	local file_dialog = wx.wxFileDialog(
+		self.frame,
+		"Save config",
+		"resources/configs",
+		"",
+		"Config files (*.rachel)|*.rachel",
+		wx.wxFD_SAVE + wx.wxFD_OVERWRITE_PROMPT
+	)
+	if file_dialog:ShowModal() == wx.wxID_OK then
+		local filename = file_dialog:GetPath()
+		self:try_save_config(filename)
+	end
 end
 
 function app:on_menu_revert(_)
@@ -253,19 +332,13 @@ function app:on_menu_close(_)
 	self.widget_atlas:close_current()
 end
 
-function app:get_suffix(cb)
-	local dialog = suffix_dialog.create(self.frame, cb)
-	dialog:Centre()
-	dialog:Show(true)
-end
-
 function app:on_menu_split_atlas(_)
 	local file_dialog = wx.wxFileDialog(
 		self.frame,
 		"Load atlas image",
 		self.last_atlas_filepath,
 		"",
-		"Image files (*.bmp,*.png,*.jpg,*.jpeg)|*.bmp;*.png;*.jpg;*.jpeg",
+		"Atlas images (character.bmp)|character.bmp",
 		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
 	)
 	if file_dialog:ShowModal() ~= wx.wxID_OK then
@@ -273,14 +346,12 @@ function app:on_menu_split_atlas(_)
 		return
 	end
 
-	local path = fs.normalize(file_dialog:GetPath())
-	local filename = fs.basename(path)
-	self.last_atlas_filepath = path
+	local image_filename = fs.normalize(file_dialog:GetPath())
+	self.last_atlas_filepath = image_filename
 	file_dialog:Destroy()
 
-	self:get_suffix(function(suffix)
-		local config_filename = "resources/configs/plus_2.12.rachel"
-		app.split_atlas_images(self, path, suffix, config_filename)
+	split_dialog.query(self.frame, image_filename, function(config_filename, atlas_type, suffix)
+		self:split_atlas_images(image_filename, suffix, config_filename, atlas_type)
 	end)
 end
 
@@ -303,7 +374,7 @@ function app:on_menu_export_tilesheet(event)
 		return
 	end
 
-	local path = fs.normalize(file_dialog:GetPath())
+	local path = file_dialog:GetPath()
 	page.image:SaveFile(path, wx.wxBITMAP_TYPE_BMP)
 
 	self.frame:SetStatusText(("Exported to %s."):format(path))
@@ -359,7 +430,7 @@ function app:on_menu_export_graphic_folder(event)
 end
 
 function app:on_menu_quick_set_all(event)
-	self:get_suffix(function(suffix)
+	suffix_dialog.query(self.frame, function(suffix)
 		self.widget_atlas:quick_set_all(suffix)
 	end)
 end
@@ -377,8 +448,8 @@ function app:on_menu_reset_all(event)
 	self.widget_atlas:reset_all()
 end
 
-function app:split_atlas_images(filepath, suffix, config_filename)
-	if suffix == "" or suffix == "base" then
+function app:split_atlas_images(filepath, suffix, config_filename, atlas_type)
+	if suffix == "" then
 		self:show_error('Invalid suffix: "' .. suffix .. '"')
 	end
 
@@ -387,13 +458,12 @@ function app:split_atlas_images(filepath, suffix, config_filename)
 
 	local atlas_config = assert(loadfile(config_filename))()
 
-	local basename = fs.basename(filepath)
-	local regions = atlas_config.atlases[basename]
+	local regions = atlas_config.atlases[atlas_type]
 
 	if regions == nil or regions.tile_prefix == nil then
 		self:show_error(
 			"Unsupported atlas file: "
-				.. basename
+				.. atlas_type
 				.. '"\n\nSupported files: '
 				.. table.concat(table.keys(atlas_config.atlases), ", ")
 		)
@@ -425,19 +495,14 @@ function app:split_atlas_images(filepath, suffix, config_filename)
 	end
 
 	progress_dialog:Destroy()
+	self.widget_atlas:refresh_current_region()
 
 	if ok then
 		wx.wxMessageBox("Saved " .. #regions .. " images.", "Success", wx.wxOK + wx.wxICON_INFORMATION, self.frame)
 	end
-
-	self.widget_atlas:refresh_current_region()
 end
 
-function app:on_update_ui_revert(event)
-	event:Enable(self.widget_atlas:has_some())
-end
-
-function app:on_update_ui_close(event)
+function app:on_update_ui(event)
 	event:Enable(self.widget_atlas:has_some())
 end
 
@@ -447,6 +512,11 @@ end
 
 function app:on_menu_show_repl(event)
 	self.widget_repl:set_visible(event:IsChecked())
+end
+
+function app:on_menu_show_all_regions(event)
+	config.atlas.show_all_regions = event:IsChecked()
+	self.widget_atlas.panel:Refresh()
 end
 
 function app:get_info()

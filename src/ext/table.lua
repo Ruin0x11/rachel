@@ -38,3 +38,35 @@ function table.keys(tbl)
 	end
 	return arr
 end
+
+function table.index_of(tbl, value)
+	for i, v in ipairs(tbl) do
+		if v == value then
+			return i
+		end
+	end
+
+	return nil
+end
+
+--- Removes a value from a list-like table.
+---
+--- @tparam table tbl
+--- @tparam any value
+--- @treturn[opt] any the removed value
+function table.iremove_value(tbl, value)
+	local result
+
+	local ind
+	for i, v in ipairs(tbl) do
+		if v == value then
+			ind = i
+			break
+		end
+	end
+	if ind then
+		result = table.remove(tbl, ind)
+	end
+
+	return result
+end

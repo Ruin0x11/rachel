@@ -4,7 +4,7 @@ local util = require("lib.util")
 
 local suffix_dialog = {}
 
-function suffix_dialog.create(parent, cb)
+function suffix_dialog.query(parent, cb)
 	local dialog = wx.wxDialog(
 		parent or wx.NULL,
 		wx.wxID_ANY,
@@ -56,6 +56,10 @@ function suffix_dialog.create(parent, cb)
 		"on_cancel_button_clicked"
 	)
 	util.connect_self(dialog, wx.wxEVT_CLOSE_WINDOW, suffix_dialog, "on_close_window")
+	util.connect_self(dialog, ID.SUFFIX_OK, wx.wxEVT_UPDATE_UI, suffix_dialog, "on_update_ui_ok_button")
+
+	dialog:Centre()
+	dialog:Show(true)
 
 	return util.subclass(dialog, suffix_dialog)
 end
@@ -76,6 +80,11 @@ end
 function suffix_dialog:on_close_window(event)
 	self:Destroy()
 	event:Skip()
+end
+
+function suffix_dialog:on_update_ui_ok_button(event)
+	local value = self.text_ctrl:GetValue()
+	event:Enable(value ~= "")
 end
 
 return suffix_dialog

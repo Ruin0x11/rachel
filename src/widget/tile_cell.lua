@@ -5,9 +5,8 @@ local ID = require("lib.ids")
 
 local tile_cell = {}
 
-function tile_cell.create(scrollwin, image, caption)
+function tile_cell.create(scrollwin, image, caption, filepath)
 	local panel = wx.wxPanel(scrollwin, wx.wxID_ANY)
-	local filepath = nil
 
 	if type(image) == "string" then
 		filepath = image

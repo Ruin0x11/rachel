@@ -18,6 +18,7 @@ local ids = {
 	ID_OPEN = linux and NewID() or wx.wxID_OPEN,
 	ID_SAVE = linux and NewID() or wx.wxID_SAVE,
 	ID_SAVE_CONFIG = NewID(),
+	ID_SAVE_CONFIG_AS = NewID(),
 	ID_EXPORT = NewID(),
 	ID_EXPORT_TILESHEET = NewID(),
 	ID_EXPORT_GRAPHIC_FOLDER = NewID(),
@@ -37,7 +38,11 @@ local ids = {
 	ID_SUFFIX_TEXT = NewID(),
 	ID_SUFFIX_OK = NewID(),
 	ID_SUFFIX_CANCEL = NewID(),
+	ID_CONFIG_BOX = NewID(),
+	ID_CONFIG_OK = NewID(),
+	ID_CONFIG_CANCEL = NewID(),
 	ID_SHOW_REPL = NewID(),
+	ID_SHOW_ALL_REGIONS = NewID(),
 	-- don't use wx.wxID_PREFERENCES to avoid merging with OSX app menu, because
 	-- Apple guidelines describe Preferences as a "normal" item without submenus.
 	ID_PREFERENCES = NewID(),
@@ -56,10 +61,20 @@ local ids = {
 	ID_ATLAS_RESET = NewID(),
 
 	ID_TILE_PICKER = NewID(),
+
+	ID_BAR_DELETE = NewID(),
 }
+
+local i = {}
+for k, v in pairs(ids) do
+	if i[v] then
+		error(k)
+	end
+	i[v] = k
+end
 
 return setmetatable({}, {
 	__index = function(_, id)
-		return ids["ID_" .. id]
+		return assert(ids["ID_" .. id], "unknown id " .. id)
 	end,
 })

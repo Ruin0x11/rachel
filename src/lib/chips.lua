@@ -4,7 +4,7 @@ local fs = require("lib.fs")
 local chips = {}
 
 function chips.get_chip_variant_dir(region)
-	return fs.join("resources", "chips", "chara", region.index)
+	return fs.join("resources", "chips", region.type, region.index)
 end
 
 function chips.get_subimage(image, region)

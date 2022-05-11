@@ -1,6 +1,7 @@
 local wx = require("wx")
 local util = require("lib.util")
 local ID = require("lib.ids")
+local config = require("config")
 
 local atlas_window = {}
 
@@ -47,6 +48,13 @@ function atlas_window:on_paint(event)
 
 	dc:SetBrush(wx.wxTRANSPARENT_BRUSH)
 
+	if config.atlas.show_all_regions then
+		dc:SetPen(wx.wxPen(wx.wxLIGHT_GREY, 1, wx.wxPENSTYLE_SOLID))
+		for _, region in ipairs(self.regions) do
+			dc:DrawRectangle(region.x, region.y, region.w, region.h)
+		end
+	end
+
 	dc:SetPen(wx.wxPen(wx.wxCYAN, 1, wx.wxPENSTYLE_SOLID))
 	for _, region in ipairs(self.regions) do
 		local d = self.data[region.index]
@@ -64,7 +72,7 @@ function atlas_window:on_paint(event)
 
 	if self.selected ~= nil then
 		local region = self.regions[self.selected]
-		dc:SetPen(wx.wxPen(wx.wxYELLOW, 1, wx.wxPENSTYLE_SOLID))
+		dc:SetPen(wx.wxPen(wx.wxYELLOW, 2, wx.wxPENSTYLE_SOLID))
 		dc:DrawRectangle(region.x, region.y, region.w, region.h)
 	end
 

@@ -1,4 +1,7 @@
 return {
+	atlas = {
+		show_all_regions = false,
+	},
 	editor = {
 		autoactivate = false,
 		autoreload = true,

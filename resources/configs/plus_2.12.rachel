@@ -1,8 +1,6 @@
 return {
   atlases = {
-    ["character.bmp"] = {
-        tile_prefix = "chara",
-        {
+    ["character.bmp"] = { {
         h = 48,
         index = 1,
         name = "lord armor",
@@ -541,7 +539,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 68,
         name = "chara68",
         type = "chara",
@@ -804,7 +801,7 @@ return {
         w = 48,
         x = 48,
         y = 144
-      }, {
+      }, {
         h = 48,
         index = 101,
         name = "<Jin> the machine rebel",
@@ -863,7 +860,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 108,
         name = "chara108",
         type = "chara",
@@ -905,7 +901,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 113,
         name = "chara113",
         type = "chara",
@@ -915,7 +910,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 114,
         name = "chara114",
         type = "chara",
@@ -949,7 +943,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 118,
         name = "chara118",
         type = "chara",
@@ -1239,7 +1232,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 154,
         name = "chara154",
         type = "chara",
@@ -1321,7 +1313,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 164,
         name = "chara164",
         type = "chara",
@@ -3627,7 +3618,6 @@ return {
       }, {
         h = 96,
         has_name = false,
-        type = "chara",
         index = 497,
         name = "chara497",
         type = "chara",
@@ -4341,7 +4331,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 603,
         name = "chara603",
         type = "chara",
@@ -4784,7 +4773,7 @@ return {
         h = 48,
         index = 693,
         name = "user graphic 1",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 0,
         y = 1008
@@ -4792,7 +4781,7 @@ return {
         h = 48,
         index = 694,
         name = "user graphic 2",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 48,
         y = 1008
@@ -4800,7 +4789,7 @@ return {
         h = 48,
         index = 695,
         name = "user graphic 3",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 96,
         y = 1008
@@ -4808,7 +4797,7 @@ return {
         h = 48,
         index = 696,
         name = "user graphic 4",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 144,
         y = 1008
@@ -4816,7 +4805,7 @@ return {
         h = 48,
         index = 697,
         name = "user graphic 5",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 192,
         y = 1008
@@ -4824,7 +4813,7 @@ return {
         h = 48,
         index = 698,
         name = "user graphic 6",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 240,
         y = 1008
@@ -4832,7 +4821,7 @@ return {
         h = 48,
         index = 699,
         name = "user graphic 7",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 288,
         y = 1008
@@ -4840,7 +4829,7 @@ return {
         h = 48,
         index = 700,
         name = "user graphic 8",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 336,
         y = 1008
@@ -4848,7 +4837,7 @@ return {
         h = 48,
         index = 701,
         name = "user graphic 9",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 384,
         y = 1008
@@ -4856,7 +4845,7 @@ return {
         h = 48,
         index = 702,
         name = "user graphic 10",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 432,
         y = 1008
@@ -4864,7 +4853,7 @@ return {
         h = 48,
         index = 703,
         name = "user graphic 11",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 480,
         y = 1008
@@ -4872,7 +4861,7 @@ return {
         h = 48,
         index = 704,
         name = "user graphic 12",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 528,
         y = 1008
@@ -4880,7 +4869,7 @@ return {
         h = 48,
         index = 705,
         name = "user graphic 13",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 576,
         y = 1008
@@ -4888,7 +4877,7 @@ return {
         h = 48,
         index = 706,
         name = "user graphic 14",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 624,
         y = 1008
@@ -4896,7 +4885,7 @@ return {
         h = 48,
         index = 707,
         name = "user graphic 15",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 672,
         y = 1008
@@ -4904,7 +4893,7 @@ return {
         h = 48,
         index = 708,
         name = "user graphic 16",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 720,
         y = 1008
@@ -4912,7 +4901,7 @@ return {
         h = 96,
         index = 709,
         name = "user graphic 17",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 768,
         y = 1008
@@ -4920,7 +4909,7 @@ return {
         h = 96,
         index = 710,
         name = "user graphic 18",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 816,
         y = 1008
@@ -4928,7 +4917,7 @@ return {
         h = 96,
         index = 711,
         name = "user graphic 19",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 864,
         y = 1008
@@ -4936,7 +4925,7 @@ return {
         h = 96,
         index = 712,
         name = "user graphic 20",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 912,
         y = 1008
@@ -4944,7 +4933,7 @@ return {
         h = 96,
         index = 713,
         name = "user graphic 21",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 960,
         y = 1008
@@ -4952,7 +4941,7 @@ return {
         h = 96,
         index = 714,
         name = "user graphic 22",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1008,
         y = 1008
@@ -4960,7 +4949,7 @@ return {
         h = 96,
         index = 715,
         name = "user graphic 23",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1056,
         y = 1008
@@ -4968,7 +4957,7 @@ return {
         h = 96,
         index = 716,
         name = "user graphic 24",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1104,
         y = 1008
@@ -4976,7 +4965,7 @@ return {
         h = 96,
         index = 717,
         name = "user graphic 25",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1152,
         y = 1008
@@ -4984,7 +4973,7 @@ return {
         h = 96,
         index = 718,
         name = "user graphic 26",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1200,
         y = 1008
@@ -4992,7 +4981,7 @@ return {
         h = 96,
         index = 719,
         name = "user graphic 27",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1248,
         y = 1008
@@ -5000,7 +4989,7 @@ return {
         h = 96,
         index = 720,
         name = "user graphic 28",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1296,
         y = 1008
@@ -5008,7 +4997,7 @@ return {
         h = 96,
         index = 721,
         name = "user graphic 29",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1344,
         y = 1008
@@ -5016,7 +5005,7 @@ return {
         h = 96,
         index = 722,
         name = "user graphic 30",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1392,
         y = 1008
@@ -5024,7 +5013,7 @@ return {
         h = 96,
         index = 723,
         name = "user graphic 31",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1440,
         y = 1008
@@ -5032,7 +5021,7 @@ return {
         h = 96,
         index = 724,
         name = "user graphic 32",
-        type = "chara",
+        type = "user",
         w = 48,
         x = 1488,
         y = 1008
@@ -6606,16 +6595,6 @@ return {
         y = 1344
       }, {
         h = 48,
-        has_name = false,
-        type = "chara",
-        index = 956,
-        name = "chara956",
-        type = "chara",
-        w = 48,
-        x = 1536,
-        y = 1344
-      }, {
-        h = 48,
         index = 970,
         name = "indomitable general",
         type = "chara",
@@ -6793,7 +6772,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 1002,
         name = "chara1002",
         type = "chara",
@@ -6899,7 +6877,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 1015,
         name = "chara1015",
         type = "chara",
@@ -6909,7 +6886,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 1016,
         name = "chara1016",
         type = "chara",
@@ -7023,7 +6999,6 @@ return {
       }, {
         h = 96,
         has_name = false,
-        type = "chara",
         index = 1030,
         name = "chara1030",
         type = "chara",
@@ -7152,16 +7127,6 @@ return {
         y = 1488
       }, {
         h = 96,
-        has_name = false,
-        type = "chara",
-        index = 1046,
-        name = "chara1046",
-        type = "chara",
-        w = 48,
-        x = 1104,
-        y = 1488
-      }, {
-        h = 96,
         index = 1047,
         name = "mag count",
         type = "chara",
@@ -7215,26 +7180,6 @@ return {
         type = "chara",
         w = 48,
         x = 1440,
-        y = 1488
-      }, {
-        h = 48,
-        has_name = false,
-        type = "chara",
-        index = 1054,
-        name = "chara1054",
-        type = "chara",
-        w = 48,
-        x = 1488,
-        y = 1488
-      }, {
-        h = 48,
-        has_name = false,
-        type = "chara",
-        index = 1055,
-        name = "chara1055",
-        type = "chara",
-        w = 48,
-        x = 1536,
         y = 1488
       }, {
         h = 48,
@@ -7319,7 +7264,6 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 1071,
         name = "chara1071",
         type = "chara",
@@ -7329,32 +7273,11 @@ return {
       }, {
         h = 48,
         has_name = false,
-        type = "chara",
         index = 1072,
         name = "chara1072",
         type = "chara",
         w = 48,
         x = 768,
-        y = 1536
-      }, {
-        h = 48,
-        has_name = false,
-        type = "chara",
-        index = 1087,
-        name = "chara1087",
-        type = "chara",
-        w = 48,
-        x = 1488,
-        y = 1536
-      }, {
-        h = 48,
-        has_name = false,
-        type = "chara",
-        index = 1088,
-        name = "chara1088",
-        type = "chara",
-        w = 48,
-        x = 1536,
         y = 1536
       }, {
         h = 48,
@@ -7620,8 +7543,11 @@ return {
         w = 48,
         x = 1536,
         y = 1584
-      } }
+      },
+      tile_prefix = "chara"
+    }
   },
+  folder_name = "elonaplus2.12",
   variant = "Elona+",
   version = "2.12"
 }

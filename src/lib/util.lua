@@ -291,7 +291,7 @@ function util.connect(...)
 	local emitter, id, event_id, receiver, cb
 	if #t == 5 then
 		emitter = t[1]
-		id = t[2]
+		id = assert(t[2], "must provide non-nil id")
 		event_id = t[3]
 		receiver = t[4]
 		cb = t[5]

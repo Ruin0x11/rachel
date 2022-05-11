@@ -19,6 +19,13 @@ function properties:init(app, frame)
 	self.grid = self.manager:GetGrid()
 	self.sizer:Add(self.manager, 1, wx.wxEXPAND, 5)
 
+	self.prop_category = wx.wxPropertyCategory("Chip")
+	self.prop_index = wx.wxFloatProperty("Index", wx.wxPG_LABEL, 0)
+	self.prop_name = wx.wxStringProperty("Name", wx.wxPG_LABEL, "")
+	self.prop_position = wx.wxStringProperty("Position", wx.wxPG_LABEL, "")
+	self.prop_size = wx.wxStringProperty("Size", wx.wxPG_LABEL, "")
+	self.prop_replacement = wx.wxStringProperty("Replacement", wx.wxPG_LABEL, "")
+
 	self:update_properties()
 
 	util.connect(self.manager, wx.wxEVT_PG_CHANGED, self, "on_property_grid_changed")
@@ -51,22 +58,26 @@ function properties:update_properties(region)
 
 	local data = self.app.widget_atlas:get_data(region)
 
-	self.grid:Append(wx.wxPropertyCategory(("Chip (%s)"):format("chara")))
+	self.grid:Append(self.prop_category)
 
-	local prop = wx.wxFloatProperty("Index", wx.wxPG_LABEL, region.index)
-	self.grid:Append(prop)
-	self.grid:DisableProperty(prop)
-	prop = wx.wxStringProperty("Name", wx.wxPG_LABEL, region.name)
-	self.grid:Append(prop)
-	prop = wx.wxStringProperty("Position", wx.wxPG_LABEL, ("(%d, %d)"):format(region.x / 48, region.y / 48))
-	self.grid:Append(prop)
-	self.grid:DisableProperty(prop)
-	prop = wx.wxStringProperty("Size", wx.wxPG_LABEL, ("(%d, %d)"):format(region.w, region.h))
-	self.grid:Append(prop)
-	self.grid:DisableProperty(prop)
-	prop = wx.wxStringProperty("Replacement", wx.wxPG_LABEL, data.replacement_path or "")
-	self.grid:Append(prop)
-	self.grid:DisableProperty(prop)
+	self.prop_index:SetValue(region.index)
+	self.grid:Append(self.prop_index)
+	self.grid:DisableProperty(self.prop_index)
+
+	self.prop_name:SetValue(region.name)
+	self.grid:Append(self.prop_name)
+
+	self.prop_position:SetValue(("(%d, %d)"):format(region.x / 48, region.y / 48))
+	self.grid:Append(self.prop_position)
+	self.grid:DisableProperty(self.prop_position)
+
+	self.prop_size:SetValue(("(%d, %d)"):format(region.w, region.h))
+	self.grid:Append(self.prop_size)
+	self.grid:DisableProperty(self.prop_size)
+
+	self.prop_replacement:SetValue(data.replacement_path or "")
+	self.grid:Append(self.prop_replacement)
+	self.grid:DisableProperty(self.prop_replacement)
 end
 
 --
