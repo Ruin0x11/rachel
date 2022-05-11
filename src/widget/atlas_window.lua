@@ -101,7 +101,7 @@ function atlas_window:on_left_mouse_down(event)
 
 	self.selected = nil
 	local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_ENTER, ID.ATLAS_WINDOW)
-	wx.wxPostEvent(self, evt)
+	self:ProcessEvent(evt)
 	self:Refresh()
 end
 
@@ -111,7 +111,7 @@ function atlas_window:on_motion(event)
 	if i then
 		self.hovered = i
 		local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_FILEPICKER_CHANGED, ID.ATLAS_WINDOW)
-		wx.wxPostEvent(self, evt)
+		self:ProcessEvent(evt)
 	end
 end
 
@@ -132,14 +132,14 @@ function atlas_window:on_right_mouse_down(event)
 	end
 	self.selected = nil
 	local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_ENTER, ID.ATLAS_WINDOW)
-	wx.wxPostEvent(self, evt)
+	self:ProcessEvent(evt)
 	self:Refresh()
 end
 
 function atlas_window:select(index)
 	self.selected = index
 	local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_ENTER, ID.ATLAS_WINDOW)
-	wx.wxPostEvent(self, evt)
+	self:ProcessEvent(evt)
 	self:Refresh()
 end
 
@@ -155,7 +155,7 @@ end
 function atlas_window:activate(index)
 	self.selected = index
 	local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_TREE_SEL_CHANGED, ID.ATLAS_WINDOW)
-	wx.wxPostEvent(self, evt)
+	self:ProcessEvent(evt)
 	self:Refresh()
 end
 

@@ -836,7 +836,7 @@ return {
       }, {
         h = 48,
         index = 105,
-        name = "<H sister>",
+        name = "younger sister",
         type = "chara",
         w = 48,
         x = 288,
@@ -3026,7 +3026,7 @@ return {
       }, {
         h = 96,
         index = 393,
-        name = "<Devastate Lulwy>",
+        name = "<Lulwy>",
         type = "chara",
         w = 48,
         x = 1440,
@@ -3306,7 +3306,7 @@ return {
       }, {
         h = 96,
         index = 432,
-        name = "<Buildup Opatos>",
+        name = "<Opatos>",
         type = "chara",
         w = 48,
         x = 144,
@@ -3314,7 +3314,7 @@ return {
       }, {
         h = 96,
         index = 433,
-        name = "<Insane Kumiromi>",
+        name = "<Kumiromi>",
         type = "chara",
         w = 48,
         x = 192,

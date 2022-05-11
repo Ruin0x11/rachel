@@ -68,7 +68,7 @@ end
 function tile_cell:on_left_mouse_down(event)
 	local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_ENTER, ID.TILE_PICKER)
 	evt:SetEventObject(self)
-	wx.wxPostEvent(self, evt)
+	self:ProcessEvent(evt)
 	self:Refresh()
 end
 

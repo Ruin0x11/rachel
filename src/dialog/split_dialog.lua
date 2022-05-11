@@ -17,18 +17,6 @@ function split_dialog.query(parent, atlas_filename, cb)
 	local panel = wx.wxPanel(dialog, wx.wxID_ANY)
 	local config_static_text = wx.wxStaticText(panel, wx.wxID_ANY, "Config: ")
 	local config_combo_box = wx.wxComboBox(panel, ID.CONFIG_BOX, "", wx.wxDefaultPosition, wx.wxDefaultSize)
-	local static_text = wx.wxStaticText(panel, wx.wxID_ANY, "Suffix: ")
-	local text_ctrl = wx.wxTextCtrl(
-		panel,
-		ID.SUFFIX_TEXT,
-		"",
-		wx.wxDefaultPosition,
-		wx.wxDefaultSize,
-		wx.wxTE_PROCESS_ENTER
-	)
-
-	local text_w, text_h = text_ctrl:GetTextExtent("00000.00000")
-	text_ctrl:SetInitialSize(wx.wxSize(text_w, -1))
 
 	local configs = configs.get_configs()
 
@@ -38,6 +26,18 @@ function split_dialog.query(parent, atlas_filename, cb)
 
 	local atlas_static_text = wx.wxStaticText(panel, wx.wxID_ANY, "Atlas: ")
 	local atlas_combo_box = wx.wxComboBox(panel, wx.wxID_ANY, "", wx.wxDefaultPosition, wx.wxDefaultSize)
+
+	local static_text = wx.wxStaticText(panel, wx.wxID_ANY, "Suffix: ")
+	local text_ctrl = wx.wxTextCtrl(
+		panel,
+		ID.SUFFIX_TEXT,
+		"",
+		wx.wxDefaultPosition,
+		wx.wxDefaultSize,
+		wx.wxTE_PROCESS_ENTER
+	)
+	local text_w, text_h = text_ctrl:GetTextExtent("00000.00000")
+	text_ctrl:SetInitialSize(wx.wxSize(text_w, -1))
 
 	local flex_grid_sizer = wx.wxFlexGridSizer(0, 2, 0, 0)
 	flex_grid_sizer:AddGrowableCol(1, 0)

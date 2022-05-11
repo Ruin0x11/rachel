@@ -137,7 +137,7 @@ function fs.get_directory_items(dir, recursive)
 end
 
 function fs.iter_directory_items(dir, recursive)
-	return ipairs(fs.get_directory_items(dir, recursive))
+	return fun.iter(fs.get_directory_items(dir, recursive))
 end
 
 return fs

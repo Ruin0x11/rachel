@@ -33,6 +33,7 @@ local ids = {
 	ID_REDO = linux and NewID() or wx.wxID_REDO,
 	-- Tools menu
 	ID_QUICK_SET_ALL = NewID(),
+	ID_RANDOMIZE = NewID(),
 	ID_RESET_ALL = NewID(),
 	ID_SPLIT_ATLAS = NewID(),
 	ID_SUFFIX_TEXT = NewID(),

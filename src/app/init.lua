@@ -49,7 +49,8 @@ function app:init()
 	self.file_menu:Append(ID.EXIT, "E&xit", "Quit the program")
 	self.tools_menu = wx.wxMenu()
 	self.tools_menu:Append(ID.QUICK_SET_ALL, "&Quick Set All...", "Set all tiles based on suffix")
-	self.tools_menu:Append(ID.RESET_ALL, "&Reset All...", "Reset all tiles to those of the original image")
+	self.tools_menu:Append(ID.RANDOMIZE, "&Randomize...", "Fill the atlas with random tile variants")
+	self.tools_menu:Append(ID.RESET_ALL, "Reset &All...", "Reset all tiles to those of the original image")
 	self.tools_menu:Append(
 		ID.SPLIT_ATLAS,
 		"&Split Atlas...",
@@ -122,6 +123,7 @@ function app:init()
 	)
 
 	util.connect(self.tools_menu, ID.QUICK_SET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_quick_set_all")
+	util.connect(self.tools_menu, ID.RANDOMIZE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_randomize")
 	util.connect(self.tools_menu, ID.RESET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_reset_all")
 	util.connect(self.tools_menu, ID.SPLIT_ATLAS, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_split_atlas")
 	util.connect(self.tools_menu, ID.SHOW_REPL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_show_repl")
@@ -134,6 +136,7 @@ function app:init()
 		ID.EXPORT_TILESHEET,
 		ID.EXPORT_GRAPHIC_FOLDER,
 		ID.QUICK_SET_ALL,
+		ID.RANDOMIZE,
 		ID.RESET_ALL,
 		ID.SPLIT_ATLAS,
 	}) do
@@ -252,7 +255,7 @@ function app:on_menu_new(_)
 		"Import atlas",
 		self.last_folder,
 		"",
-		"Atlas images (character.bmp)|character.bmp",
+		"Atlas images (character.bmp)|character.bmp|Image files (*.bmp,*.png,*.jpg,*.jpeg)|*.bmp;*.png;*.jpg;*.jpeg",
 		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
 	)
 	if file_dialog:ShowModal() ~= wx.wxID_OK then
@@ -338,7 +341,7 @@ function app:on_menu_split_atlas(_)
 		"Load atlas image",
 		self.last_atlas_filepath,
 		"",
-		"Atlas images (character.bmp)|character.bmp",
+		"Atlas images (character.bmp)|character.bmp|Image files (*.bmp,*.png,*.jpg,*.jpeg)|*.bmp;*.png;*.jpg;*.jpeg",
 		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
 	)
 	if file_dialog:ShowModal() ~= wx.wxID_OK then
@@ -435,6 +438,48 @@ function app:on_menu_quick_set_all(event)
 	end)
 end
 
+function app:on_menu_randomize(event)
+	local page = self.widget_atlas:get_current_page()
+	if page == nil then
+		return
+	end
+
+	local res = wx.wxMessageBox(
+		wxT("Randomize?"),
+		wxT("Alert"),
+		wx.wxYES_NO + wx.wxCENTRE + wx.wxICON_QUESTION,
+		self.frame
+	)
+	if res ~= wx.wxYES then
+		return
+	end
+
+	local progress_dialog = wx.wxProgressDialog(
+		"Randomizing",
+		"",
+		#page.regions,
+		self.frame,
+		wx.wxPD_AUTO_HIDE + wx.wxPD_ELAPSED_TIME
+	)
+
+	local ok = false
+
+	for i, region in ipairs(page.regions) do
+		ok = progress_dialog:Update(i, tostring(i))
+		if not ok then
+			break
+		end
+		local choices = chips.iter_subimage_variants(region):to_list()
+		choices[#choices + 1] = "<original>"
+		local path = choices[math.random(#choices)]
+		if path == "<original>" then
+			self.widget_atlas:reset_chip(page, region)
+		else
+			self.widget_atlas:replace_chip(page, region, path)
+		end
+	end
+end
+
 function app:on_menu_reset_all(event)
 	local res = wx.wxMessageBox(
 		wxT("Are you sure you want to reset all tiles?"),
@@ -480,17 +525,19 @@ function app:split_atlas_images(filepath, suffix, config_filename, atlas_type)
 	local ok = true
 
 	for i, region in ipairs(regions) do
-		local dir = chips.get_chip_variant_dir(region)
-		local filename = ("%s_%d_%s.bmp"):format(regions.tile_prefix, region.index, suffix)
-		local path = fs.join(dir, filename)
-		ok = progress_dialog:Update(i, filename)
-		if not ok then
-			break
-		end
-		local cut = chips.get_subimage(image, region)
-		local original = chips.get_subimage(page.original_image, region)
-		if cut:GetData() ~= original:GetData() then
-			chips.save_subimage(cut, path)
+		if regions.tile_prefix ~= "user" then
+			local dir = chips.get_chip_variant_dir(region)
+			local filename = ("%s_%d_%s.bmp"):format(regions.tile_prefix, region.index, suffix)
+			local path = fs.join(dir, filename)
+			ok = progress_dialog:Update(i, filename)
+			if not ok then
+				break
+			end
+			local cut = chips.get_subimage(image, region)
+			local original = chips.get_subimage(page.original_image, region)
+			if cut:GetData() ~= original:GetData() then
+				chips.save_subimage(cut, path)
+			end
 		end
 	end
 

@@ -35,8 +35,6 @@ function tile_picker:init(app, frame)
 	self.scrollwin:Refresh()
 end
 
-local EXTENSIONS = { "bmp", "jpg", "jpeg", "png" }
-
 local function get_region(image, region)
 	return image:GetSubImage(wx.wxRect(region.x, region.y, region.w, region.h))
 end
@@ -55,7 +53,6 @@ function tile_picker:update_cells(region)
 
 	local page = self.app.widget_atlas:get_current_page()
 	local data = self.app.widget_atlas:get_data(region)
-	local dir = chips.get_chip_variant_dir(region)
 
 	local selected = 1
 	local n = 1
@@ -65,16 +62,11 @@ function tile_picker:update_cells(region)
 	end
 	self:add_cell(get_region(page.original_image, region), "<original>")
 
-	for i, file in fs.iter_directory_items(dir) do
-		file = fs.normalize(file)
-		if fun.iter(EXTENSIONS):any(function(i)
-			return file:match("%." .. i .. "$")
-		end) then
-			self:add_cell(file)
+	for i, file in chips.iter_subimage_variants(region) do
+		self:add_cell(file)
 
-			if data.replacement_path and data.replacement_path == file then
-				selected = i + n
-			end
+		if data.replacement_path and data.replacement_path == file then
+			selected = i + n
 		end
 	end
 
