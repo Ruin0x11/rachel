@@ -73,6 +73,7 @@ function tile_picker:update_cells(region)
 	local vs = self.scrollwin:GetVirtualSize()
 	self.scrollwin:SetScrollbars(1, 1, vs:GetWidth(), vs:GetHeight())
 	self.scrollwin:SetSizer(self.sizer)
+	self.selected = selected
 	self:select_cell(selected)
 end
 
@@ -87,10 +88,12 @@ function tile_picker:select_cell(idx_or_obj)
 		local selected = cell.panel:DynamicCast("wxObject") == obj
 		cell:set_selected(selected)
 		if selected then
-			self.selected = i
-			local page = self.app.widget_atlas:get_current_page()
-			local region = self.app.widget_atlas:get_current_region()
-			self.app.widget_atlas:replace_chip(page, region, cell.image, cell.filepath)
+			if self.selected ~= i then
+				self.selected = i
+				local page = self.app.widget_atlas:get_current_page()
+				local region = self.app.widget_atlas:get_current_region()
+				self.app.widget_atlas:replace_chip(page, region, cell.image, cell.filepath)
+			end
 		end
 	end
 

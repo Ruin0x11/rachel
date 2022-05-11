@@ -17,6 +17,7 @@ local ids = {
 	ID_NEW = linux and NewID() or wx.wxID_NEW,
 	ID_OPEN = linux and NewID() or wx.wxID_OPEN,
 	ID_SAVE = linux and NewID() or wx.wxID_SAVE,
+	ID_SAVE_AS = linux and NewID() or wx.wxID_SAVEAS,
 	ID_SAVE_CONFIG = NewID(),
 	ID_SAVE_CONFIG_AS = NewID(),
 	ID_EXPORT = NewID(),

@@ -13,6 +13,7 @@ local chips = require("lib.chips")
 local suffix_dialog = require("dialog.suffix_dialog")
 local config_dialog = require("dialog.config_dialog")
 local split_dialog = require("dialog.split_dialog")
+local atlas_view = require("widget.atlas_view")
 
 local ID = require("lib.ids")
 
@@ -32,17 +33,18 @@ function app:init()
 	self.last_atlas_filepath = ""
 
 	self.file_menu = wx.wxMenu()
-	self.file_menu:Append(ID.NEW, "&New...\tCTRL+N", "Import an atlas")
+	self.file_menu:Append(ID.NEW, "&New...\tCTRL+N", "Create an atlas")
 	self.file_menu:Append(ID.OPEN, "&Open...\tCTRL+O", "Open an atlas")
-	self.file_menu:Append(ID.SAVE, "&Save...\tCTRL+S", "Save an atlas")
-	self.file_menu:Append(ID.SAVE_CONFIG, "Save Config", "Saves the current config")
-	self.file_menu:Append(ID.SAVE_CONFIG_AS, "Save Config As...", "Saves the current config")
+	self.file_menu:Append(ID.SAVE, "&Save\tCTRL+S", "Save the current atlas")
+	self.file_menu:Append(ID.SAVE_AS, "S&ave As...\tCTRL+SHIFT+S", "Save the current atlas under a new name")
+	self.file_menu:Append(ID.SAVE_CONFIG, "Save Config", "Save the current config")
+	self.file_menu:Append(ID.SAVE_CONFIG_AS, "Save Config As...", "Save the current config under a new name")
 	self.export_menu = wx.wxMenu()
-	self.export_menu:Append(ID.EXPORT_TILESHEET, "&Tilesheet...", "Exports this atlas as a single bitmap image.")
+	self.export_menu:Append(ID.EXPORT_TILESHEET, "&Tilesheet...", "Export this atlas as a single bitmap image")
 	self.export_menu:Append(
 		ID.EXPORT_GRAPHIC_FOLDER,
 		"&Graphic Folder...",
-		"Exports this atlas in the user/graphic format (character.bmp only)."
+		"Exports this atlas in the user/graphic format (character.bmp/item.bmp only)."
 	)
 	self.file_menu:Append(ID.EXPORT, "&Export", self.export_menu)
 	self.file_menu:Append(ID.CLOSE, "&Close\tCTRL+W", "Close the current file")
@@ -101,6 +103,7 @@ function app:init()
 	util.connect(self.frame, ID.NEW, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_new")
 	util.connect(self.frame, ID.OPEN, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_open")
 	util.connect(self.frame, ID.SAVE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save")
+	util.connect(self.frame, ID.SAVE_AS, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save_as")
 	util.connect(self.frame, ID.SAVE_CONFIG, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save_config")
 	util.connect(self.frame, ID.SAVE_CONFIG_AS, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_save_config_as")
 	util.connect(self.frame, ID.CLOSE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_close")
@@ -131,8 +134,10 @@ function app:init()
 
 	for _, id in ipairs({
 		ID.SAVE,
+		ID.SAVE_AS,
 		ID.CLOSE,
 		ID.SAVE_CONFIG,
+		ID.SAVE_CONFIG_AS,
 		ID.EXPORT_TILESHEET,
 		ID.EXPORT_GRAPHIC_FOLDER,
 		ID.QUICK_SET_ALL,
@@ -233,16 +238,13 @@ function app:try_save_config(path)
 		return
 	end
 
-	local f, err = io.open(path, "w")
+	local f, err = util.write_file("return " .. inspect(page.config))
 
 	if not f then
 		self:print_error(err)
 		self:show_error(("Unable to save config '%s'.\n\n%s"):format(path, err))
 		return
 	end
-
-	f:write("return " .. inspect(page.config))
-	f:close()
 
 	page.config_modified = false
 	page.config_filename = path
@@ -255,7 +257,7 @@ function app:on_menu_new(_)
 		"Import atlas",
 		self.last_folder,
 		"",
-		"Atlas images (character.bmp)|character.bmp|Image files (*.bmp,*.png,*.jpg,*.jpeg)|*.bmp;*.png;*.jpg;*.jpeg",
+		"Atlas images (character.bmp,item.bmp)|character.bmp;item.bmp|Image files (*.bmp,*.png,*.jpg,*.jpeg)|*.bmp;*.png;*.jpg;*.jpeg",
 		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
 	)
 	if file_dialog:ShowModal() ~= wx.wxID_OK then
@@ -280,19 +282,124 @@ function app:on_menu_open(_)
 		"Atlas files (*.ratlas)|*.ratlas",
 		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
 	)
-	if file_dialog:ShowModal() == wx.wxID_OK then
-		local path = fs.normalize(file_dialog:GetPath())
+	if file_dialog:ShowModal() ~= wx.wxID_OK then
+		file_dialog:Destroy()
+		return
 	end
+
+	local path = fs.normalize(file_dialog:GetPath())
 	file_dialog:Destroy()
+
+	self:load_atlas(path)
+end
+
+function app:load_atlas(filepath)
+	print(1)
+	local t, err = loadfile(filepath)
+	if not t then
+		self:show_error("Failed to load atlas file: " .. err)
+		return
+	end
+	t = t()
+	print(2)
+
+	local atlas_config, err = loadfile(t.config_filename)
+	if not atlas_config then
+		self:show_error("Failed to load atlas file: " .. err)
+		return
+	end
+	atlas_config = atlas_config()
+	print(3)
+
+	local tab_name = t.tab_name
+	local regions = atlas_config.atlases[t.atlas_type]
+
+	local stem = fs.filename_part(filepath)
+	local dir = fs.parent(filepath)
+	local image = wx.wxImage(fs.join(dir, stem .. "_modified.bmp"))
+	local original_image = wx.wxImage(fs.join(dir, stem .. "_original.bmp"))
+
+	local atlas_view = atlas_view.create(self.widget_atlas.notebook, image, regions, t.data)
+
+	local page = {
+		source_filename = t.source_filename,
+		config_filename = t.config_filename,
+		config = atlas_config,
+		atlas_type = t.atlas_type,
+		original_image = original_image,
+		image = image,
+		tab_name = tab_name,
+		filename = filepath,
+		regions = regions,
+		atlas_view = atlas_view,
+		index = nil, -- to be set by :add_page(page)
+		atlas_modified = false,
+		config_modified = false,
+	}
+	self.widget_atlas:add_page(page)
+end
+
+function app:save_atlas(page, filepath)
+	local t = {
+		source_filename = page.source_filename,
+		config_filename = page.config_filename,
+		atlas_type = page.atlas_type,
+		data = page.atlas_view.win.data,
+		tab_name = page.tab_name,
+	}
+
+	for _, k in ipairs(table.keys(t.data)) do
+		if next(t.data[k]) == nil then
+			t.data[k] = nil
+		end
+	end
+
+	local stem = fs.filename_part(filepath)
+	local dir = fs.parent(filepath)
+
+	local ok, err = util.write_file(filepath, "return " .. inspect(t))
+	if not ok then
+		self:show_error("Failed to save atlas file: " .. err)
+		return
+	end
+
+	page.image:SaveFile(fs.join(dir, stem .. "_modified.bmp"), wx.wxBITMAP_TYPE_BMP)
+	page.original_image:SaveFile(fs.join(dir, stem .. "_original.bmp"), wx.wxBITMAP_TYPE_BMP)
+	page.filename = filepath
+
+	self.widget_atlas:set_modified(page, false)
+end
+
+function app:on_menu_save_as(_)
+	local file_dialog = wx.wxFileDialog(
+		self.frame,
+		"Save atlas",
+		"resources/atlases",
+		"",
+		"Atlas files (*.ratlas)|*.ratlas",
+		wx.wxFD_SAVE + wx.wxFD_OVERWRITE_PROMPT
+	)
+	if file_dialog:ShowModal() ~= wx.wxID_OK then
+		file_dialog:Destroy()
+		return
+	end
+
+	local path = file_dialog:GetPath()
+	file_dialog:Destroy()
+
+	local page = self.widget_atlas:get_current_page()
+
+	self:save_atlas(page, path)
 end
 
 function app:on_menu_save(_)
 	local page = self.widget_atlas:get_current_page()
-	if page == nil then
+	if page.filename == nil then
+		self:on_menu_save_as(_)
 		return
 	end
 
-	self.widget_atlas:set_modified(page, false)
+	self:save_atlas(page, page.filename)
 end
 
 function app:on_menu_save_config(_)
@@ -341,7 +448,7 @@ function app:on_menu_split_atlas(_)
 		"Load atlas image",
 		self.last_atlas_filepath,
 		"",
-		"Atlas images (character.bmp)|character.bmp|Image files (*.bmp,*.png,*.jpg,*.jpeg)|*.bmp;*.png;*.jpg;*.jpeg",
+		"Atlas images (character.bmp,item.bmp)|character.bmp;item.bmp|Image files (*.bmp,*.png,*.jpg,*.jpeg)|*.bmp;*.png;*.jpg;*.jpeg",
 		wx.wxFD_OPEN + wx.wxFD_FILE_MUST_EXIST
 	)
 	if file_dialog:ShowModal() ~= wx.wxID_OK then
@@ -367,8 +474,8 @@ function app:on_menu_export_tilesheet(event)
 	local file_dialog = wx.wxFileDialog(
 		self.frame,
 		"Export tilesheet",
-		fs.parent(page.filename),
-		fs.basename(page.filename),
+		fs.parent(page.source_filename),
+		fs.basename(page.source_filename),
 		"Image files (*.bmp)|*.bmp",
 		wx.wxFD_SAVE + wx.wxFD_OVERWRITE_PROMPT
 	)
@@ -392,7 +499,7 @@ function app:on_menu_export_graphic_folder(event)
 	local dir_dialog = wx.wxDirDialog(
 		self.frame,
 		"Export graphic folder",
-		fs.parent(page.filename),
+		fs.parent(page.source_filename),
 		wx.wxFD_SAVE + wx.wxDD_DIR_MUST_EXIST
 	)
 	if dir_dialog:ShowModal() ~= wx.wxID_OK then
@@ -523,6 +630,7 @@ function app:split_atlas_images(filepath, suffix, config_filename, atlas_type)
 	)
 
 	local ok = true
+	local saved = 0
 
 	for i, region in ipairs(regions) do
 		if regions.tile_prefix ~= "user" then
@@ -536,6 +644,7 @@ function app:split_atlas_images(filepath, suffix, config_filename, atlas_type)
 			local cut = chips.get_subimage(image, region)
 			local original = chips.get_subimage(page.original_image, region)
 			if cut:GetData() ~= original:GetData() then
+				saved = saved + 1
 				chips.save_subimage(cut, path)
 			end
 		end
@@ -545,7 +654,7 @@ function app:split_atlas_images(filepath, suffix, config_filename, atlas_type)
 	self.widget_atlas:refresh_current_region()
 
 	if ok then
-		wx.wxMessageBox("Saved " .. #regions .. " images.", "Success", wx.wxOK + wx.wxICON_INFORMATION, self.frame)
+		wx.wxMessageBox("Saved " .. saved .. " images.", "Success", wx.wxOK + wx.wxICON_INFORMATION, self.frame)
 	end
 end
 

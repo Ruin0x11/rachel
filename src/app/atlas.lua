@@ -99,12 +99,14 @@ function atlas:create_new(image_filename, config_filename, atlas_type, at_index)
 	local index = self.notebook:GetPageIndex(atlas_view)
 
 	self.page_data[index] = {
+		source_filename = image_filename,
 		config_filename = config_filename,
 		config = atlas_config,
+		atlas_type = atlas_type,
 		original_image = image,
 		image = image:Copy(),
 		tab_name = tab_name,
-		filename = image_filename,
+		filename = nil, -- only set on .ratlas load
 		regions = regions,
 		atlas_view = atlas_view,
 		index = index,
@@ -116,6 +118,26 @@ function atlas:create_new(image_filename, config_filename, atlas_type, at_index)
 
 	-- select the first tile on the atlas
 	atlas_view:select(1)
+end
+
+function atlas:add_page(page, at_index)
+	local page_bmp = wx.wxArtProvider.GetBitmap(wx.wxART_NORMAL_FILE, wx.wxART_OTHER, wx.wxSize(16, 16))
+
+	if at_index then
+		self.notebook:InsertPage(at_index, page.atlas_view, page.tab_name, false, page_bmp)
+	else
+		self.notebook:AddPage(page.atlas_view, page.tab_name, false, page_bmp)
+	end
+
+	local index = self.notebook:GetPageIndex(page.atlas_view)
+	page.index = index
+
+	self.page_data[index] = page
+	self.filenames[page.filename] = index
+	self.notebook:SetSelection(index)
+
+	-- select the first tile on the atlas
+	page.atlas_view:select(1)
 end
 
 function atlas:open_file(atlas_filename)
@@ -319,8 +341,8 @@ end
 
 function atlas:on_auinotebook_page_changed(event)
 	local page = self:get_current_page()
-	local is_chara = page and page.tab_name == "character.bmp" or false
-	self.app.export_menu:Enable(ID.EXPORT_GRAPHIC_FOLDER, is_chara)
+	local can_export = page and (page.tab_name == "character.bmp" or page.tab_name == "item.bmp") or false
+	self.app.export_menu:Enable(ID.EXPORT_GRAPHIC_FOLDER, can_export)
 end
 
 function atlas:on_auinotebook_page_close(event)
@@ -357,7 +379,9 @@ end
 function atlas:on_auinotebook_page_closed(event)
 	local index = event:GetSelection()
 	local page = self.page_data[index]
-	self.filenames[page.filename] = nil
+	if page.filename then
+		self.filenames[page.filename] = nil
+	end
 	self.page_data[index] = nil
 	self:refresh_current_region()
 end

@@ -347,10 +347,23 @@ function util.connect_self(...)
 end
 
 function util.read_file(file)
-	local f = assert(io.open(file, "rb"))
+	local f, err = io.open(file, "rb")
+	if not f then
+		return f, err
+	end
 	local content = f:read("*all")
 	f:close()
-	return content
+	return content, nil
+end
+
+function util.write_file(file, content)
+	local f, err = io.open(file, "w")
+	if not f then
+		return f, err
+	end
+	f:write(content)
+	f:close()
+	return true, nil
 end
 
 local function cmp_multitype(op1, op2)

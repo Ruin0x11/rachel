@@ -47,23 +47,6 @@ function config_dialog.query(parent, atlas_filename, cb)
 	panel:SetSizer(sizer)
 	sizer:SetSizeHints(dialog)
 
-	local idx
-	for _, seg in ipairs(string.split(atlas_filename, fs.dir_sep)) do
-		for i, config in ipairs(configs) do
-			if seg == config.folder_name then
-				idx = i - 1
-			end
-		end
-	end
-	if idx then
-		config_combo_box:SetSelection(idx)
-	end
-
-	local idx2 = atlas_combo_box:FindString(fs.basename(atlas_filename))
-	if idx2 ~= wx.wxNOT_FOUND then
-		atlas_combo_box:SetSelection(idx2)
-	end
-
 	dialog.config_combo_box = config_combo_box
 	dialog.atlas_combo_box = atlas_combo_box
 	dialog.cb = cb
@@ -88,6 +71,24 @@ function config_dialog.query(parent, atlas_filename, cb)
 
 	dialog = util.subclass(dialog, config_dialog)
 	dialog:update_atlas_combo_box(dialog)
+
+	local idx
+	for _, seg in ipairs(string.split(atlas_filename, fs.dir_sep)) do
+		for i, config in ipairs(configs) do
+			if seg == config.folder_name then
+				idx = i - 1
+			end
+		end
+	end
+	if idx then
+		config_combo_box:SetSelection(idx)
+	end
+
+	local idx2 = atlas_combo_box:FindString(fs.basename(atlas_filename))
+	if idx2 ~= wx.wxNOT_FOUND then
+		atlas_combo_box:SetSelection(idx2)
+	end
+
 	return dialog
 end
 
