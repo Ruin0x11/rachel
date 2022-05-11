@@ -124,21 +124,6 @@ function atlas:add_page(filename, at_index)
 	atlas_view:select(1)
 end
 
-function atlas:split_and_save()
-	local suffix = "base"
-	local page = self:get_current_page()
-	if page == nil then
-		return
-	end
-
-	for _, region in ipairs(page.regions) do
-		local dir = chips.get_chip_variant_dir(region)
-		local path = fs.join(dir, ("chara_%d_%s.bmp"):format(region.index, suffix))
-		local cut = chips.get_subimage(page.image, region)
-		chips.save_subimage(cut, path)
-	end
-end
-
 function atlas:replace_chip(page, region, image, path)
 	if type(image) == "string" then
 		path = image
@@ -255,6 +240,9 @@ function atlas:quick_set_all(suffix)
 	local page = self:get_current_page()
 
 	local regions = page.regions
+	if regions.tile_prefix == nil then
+		self:show_all("Cannot quick set for this atlas: " .. page.tab_name)
+	end
 
 	local progress_dialog = wx.wxProgressDialog(
 		"Applying",
@@ -268,7 +256,7 @@ function atlas:quick_set_all(suffix)
 
 	for i, region in ipairs(regions) do
 		local dir = chips.get_chip_variant_dir(region)
-		local filename = ("chara_%d_%s.bmp"):format(region.index, suffix)
+		local filename = ("%s_%d_%s.bmp"):format(regions.tile_prefix, region.index, suffix)
 		local path = fs.join(dir, filename)
 		ok = progress_dialog:Update(i, filename)
 		if not ok then

@@ -387,12 +387,12 @@ function app:on_menu_export_graphic_folder(event)
 	local ok = false
 
 	for i, region in ipairs(page.regions) do
-		local filepath = fs.join(dir, ("chara_%d.bmp"):format(region.index))
-		ok = progress_dialog:Update(i, filepath)
+		ok = progress_dialog:Update(i, tostring(region.index))
 		if not ok then
 			break
 		end
-		if region.type == "chara" then
+		if region.type == "chara" or region.type == "item" then
+			local filepath = fs.join(dir, ("%s_%d.bmp"):format(region.type, region.index))
 			local cut = chips.get_subimage(page.image, region)
 			local original = chips.get_subimage(page.original_image, region)
 			if cut:GetData() ~= original:GetData() then
@@ -438,7 +438,7 @@ function app:split_atlas_images(filepath, suffix, config_filename)
 	local basename = fs.basename(filepath)
 	local regions = atlas_config.atlases[basename]
 
-	if regions == nil then
+	if regions == nil or regions.tile_prefix == nil then
 		self:show_error(
 			"Unsupported atlas file: "
 				.. basename
@@ -459,7 +459,7 @@ function app:split_atlas_images(filepath, suffix, config_filename)
 
 	for i, region in ipairs(regions) do
 		local dir = chips.get_chip_variant_dir(region)
-		local filename = ("chara_%d_%s.bmp"):format(region.index, suffix)
+		local filename = ("%s_%d_%s.bmp"):format(regions.tile_prefix, region.index, suffix)
 		local path = fs.join(dir, filename)
 		ok = progress_dialog:Update(i, filename)
 		if not ok then

@@ -1,6 +1,8 @@
 return {
   atlases = {
-    ["character.bmp"] = { {
+    ["character.bmp"] = {
+        tile_prefix = "chara",
+        {
         h = 48,
         index = 1,
         name = "lord armor",
