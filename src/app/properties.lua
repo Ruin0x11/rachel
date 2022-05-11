@@ -29,10 +29,11 @@ function properties:init(app, frame)
 	self.pane = self.app:add_pane(self.panel, {
 		Name = wxT("Data Properties"),
 		Caption = wxT("Data Properties"),
-		MinSize = wx.wxSize(200, 100),
-		BestSize = wx.wxSize(400, 300),
+		MinSize = wx.wxSize(200, 150),
+		BestSize = wx.wxSize(400, 200),
 		"Right",
 		PaneBorder = false,
+		dock_proportion = 1,
 	})
 end
 
@@ -63,7 +64,7 @@ function properties:update_properties(region)
 	prop = wx.wxStringProperty("Size", wx.wxPG_LABEL, ("(%d, %d)"):format(region.w, region.h))
 	self.grid:Append(prop)
 	self.grid:DisableProperty(prop)
-	prop = wx.wxStringProperty("Replacement", wx.wxPG_LABEL, (data and data.replacement_path) or "")
+	prop = wx.wxStringProperty("Replacement", wx.wxPG_LABEL, data.replacement_path or "")
 	self.grid:Append(prop)
 	self.grid:DisableProperty(prop)
 end

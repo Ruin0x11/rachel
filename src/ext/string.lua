@@ -70,3 +70,19 @@ function string.trim(str, chars)
 	chars = string.escape_magic(chars)
 	return str:match("^[" .. chars .. "]*(.-)[" .. chars .. "]*$")
 end
+
+--- Version of tostring that bypasses metatables.
+---
+--- @tparam any tbl
+--- @treturn string
+function string.tostring_raw(tbl)
+	if type(tbl) ~= "table" then
+		return tostring(tbl)
+	end
+
+	local mt = getmetatable(tbl)
+	setmetatable(tbl, {})
+	local s = tostring(tbl)
+	setmetatable(tbl, mt)
+	return s
+end

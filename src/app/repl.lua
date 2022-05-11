@@ -109,12 +109,14 @@ function repl:init(app, frame)
 	self:bind_console_events()
 
 	self.env = self:createenv()
+	self.visible = false
 
 	self.pane = self.app:add_pane(self.console, {
 		Name = "REPL",
 		Caption = "REPL",
 		BestSize = wx.wxSize(400, 300),
 		"Bottom",
+		Show = self.visible,
 	})
 
 	util.connect(console, wx.wxEVT_DESTROY, self, "on_destroy")
@@ -122,6 +124,12 @@ function repl:init(app, frame)
 	self:load_history()
 
 	self:displayShellIntro()
+end
+
+function repl:set_visible(visible)
+	self.visible = visible
+	self.app.aui:GetPane("REPL"):Show(visible)
+	self.app.aui:Update()
 end
 
 function repl:getPromptLine()

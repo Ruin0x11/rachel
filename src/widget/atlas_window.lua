@@ -18,6 +18,7 @@ function atlas_window.create(scrollwin, image, regions, data)
 	win.bitmap = wx.wxBitmap(image)
 	win.regions = regions
 	win.data = data
+	win.hovered = nil
 	win.selected = nil
 	win.lookup = {}
 	for i, region in ipairs(win.regions) do
@@ -28,6 +29,7 @@ function atlas_window.create(scrollwin, image, regions, data)
 	win.context_menu:Append(ID.ATLAS_RESET, "&Reset", "Reset this chip to its original state.")
 
 	util.connect_self(win, wx.wxEVT_PAINT, atlas_window, "on_paint")
+	util.connect_self(win, wx.wxEVT_MOTION, atlas_window, "on_motion")
 	util.connect_self(win, wx.wxEVT_LEFT_DOWN, atlas_window, "on_left_mouse_down")
 	util.connect_self(win, wx.wxEVT_LEFT_DCLICK, atlas_window, "on_left_mouse_dclick")
 	util.connect_self(win, wx.wxEVT_RIGHT_DOWN, atlas_window, "on_right_mouse_down")
@@ -94,6 +96,16 @@ function atlas_window:on_left_mouse_down(event)
 	local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_ENTER, ID.ATLAS_WINDOW)
 	wx.wxPostEvent(self, evt)
 	self:Refresh()
+end
+
+function atlas_window:on_motion(event)
+	local x, y = event:GetPositionXY()
+	local i = self:get_region_at(x, y)
+	if i then
+		self.hovered = i
+		local evt = wx.wxCommandEvent(wx.wxEVT_COMMAND_FILEPICKER_CHANGED, ID.ATLAS_WINDOW)
+		wx.wxPostEvent(self, evt)
+	end
 end
 
 function atlas_window:on_left_mouse_dclick(event)

@@ -28,6 +28,14 @@ local ids = {
 	ID_SELECTALL = linux and NewID() or wx.wxID_SELECTALL,
 	ID_UNDO = linux and NewID() or wx.wxID_UNDO,
 	ID_REDO = linux and NewID() or wx.wxID_REDO,
+	-- Tools menu
+	ID_QUICK_SET_ALL = NewID(),
+	ID_RESET_ALL = NewID(),
+	ID_SPLIT_ATLAS = NewID(),
+	ID_SUFFIX_TEXT = NewID(),
+	ID_SUFFIX_OK = NewID(),
+	ID_SUFFIX_CANCEL = NewID(),
+	ID_SHOW_REPL = NewID(),
 	-- don't use wx.wxID_PREFERENCES to avoid merging with OSX app menu, because
 	-- Apple guidelines describe Preferences as a "normal" item without submenus.
 	ID_PREFERENCES = NewID(),
@@ -44,6 +52,8 @@ local ids = {
 
 	ID_ATLAS_WINDOW = NewID(),
 	ID_ATLAS_RESET = NewID(),
+
+	ID_TILE_PICKER = NewID(),
 }
 
 return setmetatable({}, {

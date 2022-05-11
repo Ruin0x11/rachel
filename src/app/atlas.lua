@@ -4,6 +4,7 @@ local fs = require("lib.fs")
 local util = require("lib.util")
 local atlas_view = require("widget.atlas_view")
 local ID = require("lib.ids")
+local chips = require("lib.chips")
 
 local atlas = class.class("input")
 
@@ -40,6 +41,7 @@ function atlas:init(app, frame)
 
 	util.connect(self.notebook, wxaui.wxEVT_AUINOTEBOOK_PAGE_CLOSED, self, "on_auinotebook_page_closed")
 	util.connect(self.notebook, wxaui.wxEVT_AUINOTEBOOK_PAGE_CLOSE, self, "on_auinotebook_page_close")
+	util.connect(self.notebook, wx.wxEVT_COMMAND_FILEPICKER_CHANGED, self, "on_atlas_tile_hovered")
 	util.connect(self.notebook, wx.wxEVT_COMMAND_ENTER, self, "on_atlas_tile_selected")
 	util.connect(self.notebook, wx.wxEVT_COMMAND_TREE_SEL_CHANGED, self, "on_atlas_tile_activated")
 	util.connect(self.notebook, ID.ATLAS_RESET, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_atlas_reset")
@@ -119,11 +121,6 @@ function atlas:add_page(filename, at_index)
 	self.notebook:SetSelection(index)
 
 	atlas_view:select(1)
-	self:split_and_save()
-end
-
-local function get_chip_variant_dir(index)
-	return fs.join("resources", "chips", "chara", index)
 end
 
 function atlas:split_and_save()
@@ -134,24 +131,20 @@ function atlas:split_and_save()
 	end
 
 	for _, region in ipairs(page.regions) do
-		local dir = get_chip_variant_dir(region.index)
+		local dir = chips.get_chip_variant_dir(region)
 		local path = fs.join(dir, ("chara_%d_%s.bmp"):format(region.index, suffix))
-		local cut = page.image:GetSubImage(wx.wxRect(region.x, region.y, region.w, region.h))
-		if not wx.wxDirExists(dir) then
-			wx.wxMkdir(dir)
-		end
-		if wx.wxFileExists(path) then
-			wx.wxRemoveFile(path)
-		end
-		cut:SaveFile(path, wx.wxBITMAP_TYPE_BMP)
+		local cut = chips.get_subimage(page.image, region)
+		chips.save_subimage(cut, path)
 	end
 end
 
-function atlas:replace_chip(page, region, path)
-	local image = wx.wxImage()
-
-	if not image:LoadFile(path) then
-		self.app:show_error(("Unable to load file '%s'."):format(path))
+function atlas:replace_chip(page, region, image, path)
+	if type(image) == "string" then
+		path = image
+		image = wx.wxImage()
+		if not image:LoadFile(path) then
+			self.app:show_error(("Unable to load file '%s'."):format(path))
+		end
 	end
 
 	if image:GetWidth() ~= region.w or image:GetHeight() ~= region.h then
@@ -168,7 +161,7 @@ function atlas:replace_chip(page, region, path)
 	page.image:Paste(image, region.x, region.y)
 	local data = page.atlas_view.win.data
 	data[region.index] = data[region.index] or {}
-	data[region.index].replacement_path = fs.to_relative(path, wx.wxGetCwd())
+	data[region.index].replacement_path = path and fs.to_relative(path, wx.wxGetCwd()) or nil
 	page.atlas_view:update_bitmap(page.image)
 	self.app.widget_properties:update_properties(region)
 	self:set_modified(page, true)
@@ -199,6 +192,14 @@ function atlas:get_current_page()
 	return self.page_data[index]
 end
 
+function atlas:get_hovered_region()
+	local page = self:get_current_page()
+	if page == nil then
+		return nil
+	end
+	return page.regions[page.atlas_view.win.hovered]
+end
+
 function atlas:get_current_region()
 	local page = self:get_current_page()
 	if page == nil then
@@ -212,7 +213,9 @@ function atlas:get_data(region)
 	if page == nil then
 		return nil
 	end
-	return page.atlas_view.win.data[region.index]
+	local data = page.atlas_view.win.data
+	data[region.index] = data[region.index] or {}
+	return data[region.index]
 end
 
 function atlas:try_close_page(page)
@@ -226,6 +229,57 @@ function atlas:set_modified(page, modified)
 	else
 		self.notebook:SetPageText(page.index, page.tab_name)
 	end
+end
+
+function atlas:refresh_current_region()
+	local region = self:get_current_region()
+	self.app.widget_properties:update_properties(region)
+	self.app.widget_tile_picker:update_cells(region)
+	if region ~= nil then
+		self.index_text_ctrl:SetValue(tostring(region.index))
+	else
+		self.index_text_ctrl:SetValue("")
+	end
+end
+
+function atlas:reset_all()
+	local page = self:get_current_page()
+	page.image:Destroy()
+	page.image = page.original_image:Copy()
+	table.replace_with(page.atlas_view.win.data, {})
+	self:refresh_current_region()
+end
+
+function atlas:quick_set_all(suffix)
+	local page = self:get_current_page()
+
+	local regions = page.regions
+
+	local progress_dialog = wx.wxProgressDialog(
+		"Applying",
+		"",
+		#regions,
+		self.app.frame,
+		wx.wxPD_AUTO_HIDE + wx.wxPD_ELAPSED_TIME
+	)
+
+	local ok = true
+
+	for i, region in ipairs(regions) do
+		local dir = chips.get_chip_variant_dir(region)
+		local filename = ("chara_%d_%s.bmp"):format(region.index, suffix)
+		local path = fs.join(dir, filename)
+		ok = progress_dialog:Update(i, filename)
+		if not ok then
+			break
+		end
+		if wx.wxFileExists(path) then
+			self:replace_chip(page, region, path)
+		end
+	end
+
+	progress_dialog:Destroy()
+	self:refresh_current_region()
 end
 
 function atlas:reload_current()
@@ -269,7 +323,7 @@ function atlas:on_auinotebook_page_close(event)
 		local res = wx.wxMessageBox(
 			wxT("There are unsaved changes to the config. Are you sure you want to close this pane?"),
 			wxT("Alert"),
-			wx.wxYES_NO + wx.wxCENTRE,
+			wx.wxYES_NO + wx.wxCENTRE + wx.wxICON_WARNING,
 			self.app.frame
 		)
 		if res ~= wx.wxYES then
@@ -282,7 +336,7 @@ function atlas:on_auinotebook_page_close(event)
 		local res = wx.wxMessageBox(
 			wxT("There are unsaved changes. Are you sure you want to close this pane?"),
 			wxT("Alert"),
-			wx.wxYES_NO + wx.wxCENTRE,
+			wx.wxYES_NO + wx.wxCENTRE + wx.wxICON_WARNING,
 			self.app.frame
 		)
 		if res ~= wx.wxYES then
@@ -299,20 +353,21 @@ function atlas:on_auinotebook_page_closed(event)
 	self.page_data[index] = nil
 end
 
-function atlas:on_atlas_tile_selected(event)
-	local region = self:get_current_region()
-	self.app.widget_properties:update_properties(region)
-	if region ~= nil then
-		self.index_text_ctrl:SetValue(tostring(region.index))
-	else
-		self.index_text_ctrl:SetValue("")
+function atlas:on_atlas_tile_hovered(event)
+	local region = self:get_hovered_region()
+	if region then
+		self.app.frame:SetStatusText(("(%d, %d) - %s [%d]"):format(region.x, region.y, region.name, region.index))
 	end
+end
+
+function atlas:on_atlas_tile_selected(event)
+	self:refresh_current_region()
 end
 
 function atlas:on_atlas_tile_activated(event)
 	local page = self:get_current_page()
 	local region = self:get_current_region()
-	local dir = get_chip_variant_dir(region.index)
+	local dir = chips.get_chip_variant_dir(region)
 
 	local file_dialog = wx.wxFileDialog(
 		self.app.frame,

@@ -113,6 +113,29 @@ function fs.join(base, ...)
 	return res
 end
 
-function fs.mkdir_p(dir) end
+-- wx-only
+function fs.mkdir_p(dir)
+	local stack = {}
+	dir = fs.normalize(dir)
+	while not wx.wxDirExists(dir) do
+		stack[#stack + 1] = dir
+		dir = fs.parent(dir)
+	end
+
+	while #stack > 0 do
+		local d = stack[#stack]
+		wx.wxMkdir(d)
+		stack[#stack] = nil
+	end
+end
+
+function fs.get_directory_items(dir, recursive)
+	local _, files = wx.wxDir().GetAllFiles(dir)
+	return files
+end
+
+function fs.iter_directory_items(dir, recursive)
+	return ipairs(fs.get_directory_items(dir, recursive))
+end
 
 return fs
