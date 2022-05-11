@@ -39,6 +39,7 @@ function atlas:init(app, frame)
 
 	-- FIXME: No wxNewEventType()!
 
+	util.connect(self.notebook, wxaui.wxEVT_AUINOTEBOOK_PAGE_CHANGED, self, "on_auinotebook_page_changed")
 	util.connect(self.notebook, wxaui.wxEVT_AUINOTEBOOK_PAGE_CLOSED, self, "on_auinotebook_page_closed")
 	util.connect(self.notebook, wxaui.wxEVT_AUINOTEBOOK_PAGE_CLOSE, self, "on_auinotebook_page_close")
 	util.connect(self.notebook, wx.wxEVT_COMMAND_FILEPICKER_CHANGED, self, "on_atlas_tile_hovered")
@@ -314,6 +315,12 @@ end
 --
 -- Events
 --
+
+function atlas:on_auinotebook_page_changed(event)
+	local page = self:get_current_page()
+	local is_chara = page and page.tab_name == "character.bmp" or false
+	self.app.export_menu:Enable(ID.EXPORT_GRAPHIC_FOLDER, is_chara)
+end
 
 function atlas:on_auinotebook_page_close(event)
 	local index = event:GetSelection()

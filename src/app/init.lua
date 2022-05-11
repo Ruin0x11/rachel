@@ -32,7 +32,15 @@ function app:init()
 	self.file_menu:Append(ID.OPEN, "&Open...\tCTRL+O", "Open an atlas")
 	self.file_menu:Append(ID.SAVE, "&Save...\tCTRL+S", "Save an atlas")
 	self.file_menu:Append(ID.SAVE_CONFIG, "Save Config", "Saves the current config")
-	self.file_menu:Append(ID.REVERT, "&Reload\tCTRL+R", "Reload the current file from disk")
+	self.export_menu = wx.wxMenu()
+	self.export_menu:Append(ID.EXPORT_TILESHEET, "&Tilesheet...", "Exports this atlas as a single bitmap image.")
+	self.export_menu:Append(
+		ID.EXPORT_GRAPHIC_FOLDER,
+		"&Graphic Folder...",
+		"Exports this atlas in the user/graphic format (character.bmp only)."
+	)
+	self.export_menu:Enable(ID.EXPORT_GRAPHIC_FOLDER, false)
+	self.file_menu:Append(ID.EXPORT, "&Export", self.export_menu)
 	self.file_menu:Append(ID.CLOSE, "&Close\tCTRL+W", "Close the current file")
 	self.file_menu:Append(ID.EXIT, "E&xit", "Quit the program")
 	self.tools_menu = wx.wxMenu()
@@ -72,6 +80,9 @@ function app:init()
 	self:connect_frame(ID.CLOSE, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_close")
 	self:connect_frame(ID.EXIT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_exit")
 	self:connect_frame(ID.ABOUT, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_about")
+
+	self:connect_frame(ID.EXPORT_TILESHEET, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_export_tilesheet")
+	self:connect_frame(ID.EXPORT_GRAPHIC_FOLDER, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_export_graphic_folder")
 
 	self:connect_frame(ID.QUICK_SET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_quick_set_all")
 	self:connect_frame(ID.RESET_ALL, wx.wxEVT_COMMAND_MENU_SELECTED, self, "on_menu_reset_all")
@@ -321,6 +332,80 @@ function app:on_menu_split_atlas(_)
 	end)
 end
 
+function app:on_menu_export_tilesheet(event)
+	local page = self.widget_atlas:get_current_page()
+	if page == nil then
+		return
+	end
+
+	local file_dialog = wx.wxFileDialog(
+		self.frame,
+		"Export tilesheet",
+		fs.parent(page.filename),
+		fs.basename(page.filename),
+		"Image files (*.bmp)|*.bmp",
+		wx.wxFD_SAVE + wx.wxFD_OVERWRITE_PROMPT
+	)
+	if file_dialog:ShowModal() ~= wx.wxID_OK then
+		file_dialog:Destroy()
+		return
+	end
+
+	local path = fs.normalize(file_dialog:GetPath())
+	page.image:SaveFile(path, wx.wxBITMAP_TYPE_BMP)
+
+	self.app.frame:SetStatusText(("Exported to %s."):format(path))
+end
+
+function app:on_menu_export_graphic_folder(event)
+	local page = self.widget_atlas:get_current_page()
+	if page == nil then
+		return
+	end
+
+	local dir_dialog = wx.wxDirDialog(
+		self.frame,
+		"Export graphic folder",
+		fs.parent(page.filename),
+		wx.wxFD_SAVE + wx.wxDD_DIR_MUST_EXIST
+	)
+	if dir_dialog:ShowModal() ~= wx.wxID_OK then
+		dir_dialog:Destroy()
+		return
+	end
+
+	local dir = fs.normalize(dir_dialog:GetPath())
+
+	local progress_dialog = wx.wxProgressDialog(
+		"Exporting",
+		"",
+		#page.regions,
+		self.frame,
+		wx.wxPD_AUTO_HIDE + wx.wxPD_ELAPSED_TIME
+	)
+
+	local ok = false
+
+	for i, region in ipairs(page.regions) do
+		local filepath = fs.join(dir, ("chara_%d.bmp"):format(region.index))
+		ok = progress_dialog:Update(i, filepath)
+		if not ok then
+			break
+		end
+		if region.type == "chara" then
+			local cut = chips.get_subimage(page.image, region)
+			local original = chips.get_subimage(page.original_image, region)
+			if cut:GetData() ~= original:GetData() then
+				chips.save_subimage(cut, filepath)
+			end
+		end
+	end
+
+	if ok then
+		self.frame:SetStatusText(("Exported %d images to %s."):format(#page.regions, dir))
+	end
+end
+
 function app:on_menu_quick_set_all(event)
 	self:get_suffix(function(suffix)
 		self.widget_atlas:quick_set_all(suffix)
@@ -393,7 +478,7 @@ function app:split_atlas_images(filepath, suffix, config_filename)
 		wx.wxMessageBox("Saved " .. #regions .. " images.", "Success", wx.wxOK + wx.wxICON_INFORMATION, self.frame)
 	end
 
-	self.app.widget_atlas:refresh_current_region()
+	self.widget_atlas:refresh_current_region()
 end
 
 function app:on_update_ui_revert(event)

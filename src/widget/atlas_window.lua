@@ -44,7 +44,6 @@ function atlas_window:on_paint(event)
 	dc:SetPen(wx.wxPen(wx.wxBLACK, 1, wx.wxPENSTYLE_SOLID))
 	dc:DrawRectangle(0, 0, size:GetWidth(), size:GetHeight())
 	dc:DrawBitmap(self.bitmap, 0, 0, false)
-	dc:DrawText("asdf", 2, 2)
 
 	dc:SetBrush(wx.wxTRANSPARENT_BRUSH)
 

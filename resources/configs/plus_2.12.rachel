@@ -4,6 +4,7 @@ return {
         h = 48,
         index = 1,
         name = "lord armor",
+        type = "chara",
         w = 48,
         x = 48,
         y = 0
@@ -11,6 +12,7 @@ return {
         h = 48,
         index = 2,
         name = "human female",
+        type = "chara",
         w = 48,
         x = 96,
         y = 0
@@ -18,6 +20,7 @@ return {
         h = 48,
         index = 3,
         name = "elea male",
+        type = "chara",
         w = 48,
         x = 144,
         y = 0
@@ -25,6 +28,7 @@ return {
         h = 48,
         index = 4,
         name = "elea female",
+        type = "chara",
         w = 48,
         x = 192,
         y = 0
@@ -32,6 +36,7 @@ return {
         h = 48,
         index = 5,
         name = "eulderna male",
+        type = "chara",
         w = 48,
         x = 240,
         y = 0
@@ -39,6 +44,7 @@ return {
         h = 48,
         index = 6,
         name = "eulderna female",
+        type = "chara",
         w = 48,
         x = 288,
         y = 0
@@ -46,6 +52,7 @@ return {
         h = 48,
         index = 7,
         name = "trainer male",
+        type = "chara",
         w = 48,
         x = 336,
         y = 0
@@ -53,6 +60,7 @@ return {
         h = 48,
         index = 8,
         name = "<Miches> the apprentice",
+        type = "chara",
         w = 48,
         x = 384,
         y = 0
@@ -60,6 +68,7 @@ return {
         h = 48,
         index = 9,
         name = "juere male",
+        type = "chara",
         w = 48,
         x = 432,
         y = 0
@@ -67,6 +76,7 @@ return {
         h = 48,
         index = 10,
         name = "juere female",
+        type = "chara",
         w = 48,
         x = 480,
         y = 0
@@ -74,6 +84,7 @@ return {
         h = 48,
         index = 11,
         name = "adventurer male 1",
+        type = "chara",
         w = 48,
         x = 528,
         y = 0
@@ -81,6 +92,7 @@ return {
         h = 48,
         index = 12,
         name = "adventurer female 1",
+        type = "chara",
         w = 48,
         x = 576,
         y = 0
@@ -88,6 +100,7 @@ return {
         h = 48,
         index = 13,
         name = "wizard male",
+        type = "chara",
         w = 48,
         x = 624,
         y = 0
@@ -95,6 +108,7 @@ return {
         h = 48,
         index = 14,
         name = "wizard female",
+        type = "chara",
         w = 48,
         x = 672,
         y = 0
@@ -102,6 +116,7 @@ return {
         h = 48,
         index = 15,
         name = "informer male",
+        type = "chara",
         w = 48,
         x = 720,
         y = 0
@@ -109,6 +124,7 @@ return {
         h = 48,
         index = 16,
         name = "informer female",
+        type = "chara",
         w = 48,
         x = 768,
         y = 0
@@ -116,6 +132,7 @@ return {
         h = 48,
         index = 17,
         name = "adventurer male 2",
+        type = "chara",
         w = 48,
         x = 816,
         y = 0
@@ -123,6 +140,7 @@ return {
         h = 48,
         index = 18,
         name = "adventurer female 2",
+        type = "chara",
         w = 48,
         x = 864,
         y = 0
@@ -130,6 +148,7 @@ return {
         h = 48,
         index = 19,
         name = "adventurer male 3",
+        type = "chara",
         w = 48,
         x = 912,
         y = 0
@@ -137,6 +156,7 @@ return {
         h = 48,
         index = 20,
         name = "warrior female",
+        type = "chara",
         w = 48,
         x = 960,
         y = 0
@@ -144,6 +164,7 @@ return {
         h = 48,
         index = 21,
         name = "warrior male",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 0
@@ -151,6 +172,7 @@ return {
         h = 48,
         index = 22,
         name = "adventurer female 3",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 0
@@ -158,6 +180,7 @@ return {
         h = 48,
         index = 23,
         name = "<Moyer> the crooked",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 0
@@ -165,6 +188,7 @@ return {
         h = 48,
         index = 24,
         name = "adventurer female 4",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 0
@@ -172,6 +196,7 @@ return {
         h = 48,
         index = 25,
         name = "guard",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 0
@@ -179,6 +204,7 @@ return {
         h = 48,
         index = 26,
         name = "adventurer female 5",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 0
@@ -186,6 +212,7 @@ return {
         h = 48,
         index = 27,
         name = "punk female",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 0
@@ -193,6 +220,7 @@ return {
         h = 48,
         index = 28,
         name = "adventurer female 6",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 0
@@ -200,6 +228,7 @@ return {
         h = 48,
         index = 29,
         name = "adventurer male 4",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 0
@@ -207,6 +236,7 @@ return {
         h = 48,
         index = 30,
         name = "adventurer female 7",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 0
@@ -214,6 +244,7 @@ return {
         h = 48,
         index = 31,
         name = "gangster male",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 0
@@ -221,6 +252,7 @@ return {
         h = 48,
         index = 32,
         name = "adventurer female 8",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 0
@@ -228,6 +260,7 @@ return {
         h = 48,
         index = 33,
         name = "adventurer male 5",
+        type = "chara",
         w = 48,
         x = 0,
         y = 48
@@ -235,6 +268,7 @@ return {
         h = 48,
         index = 34,
         name = "warrior of elea female",
+        type = "chara",
         w = 48,
         x = 48,
         y = 48
@@ -242,6 +276,7 @@ return {
         h = 48,
         index = 35,
         name = "adventurer male 6",
+        type = "chara",
         w = 48,
         x = 96,
         y = 48
@@ -249,6 +284,7 @@ return {
         h = 48,
         index = 36,
         name = "gangster female",
+        type = "chara",
         w = 48,
         x = 144,
         y = 48
@@ -256,6 +292,7 @@ return {
         h = 48,
         index = 37,
         name = "fallen soldier",
+        type = "chara",
         w = 48,
         x = 192,
         y = 48
@@ -263,6 +300,7 @@ return {
         h = 48,
         index = 38,
         name = "adventurer female 9",
+        type = "chara",
         w = 48,
         x = 240,
         y = 48
@@ -270,6 +308,7 @@ return {
         h = 48,
         index = 39,
         name = "adventurer male 7",
+        type = "chara",
         w = 48,
         x = 288,
         y = 48
@@ -277,6 +316,7 @@ return {
         h = 48,
         index = 40,
         name = "adventurer female 10",
+        type = "chara",
         w = 48,
         x = 336,
         y = 48
@@ -284,6 +324,7 @@ return {
         h = 48,
         index = 41,
         name = "arena master",
+        type = "chara",
         w = 48,
         x = 384,
         y = 48
@@ -291,6 +332,7 @@ return {
         h = 48,
         index = 42,
         name = "wizard of elea female",
+        type = "chara",
         w = 48,
         x = 432,
         y = 48
@@ -298,6 +340,7 @@ return {
         h = 48,
         index = 43,
         name = "adventurer male 8",
+        type = "chara",
         w = 48,
         x = 480,
         y = 48
@@ -305,6 +348,7 @@ return {
         h = 48,
         index = 44,
         name = "adventurer female 11",
+        type = "chara",
         w = 48,
         x = 528,
         y = 48
@@ -312,6 +356,7 @@ return {
         h = 48,
         index = 45,
         name = "adventurer male 9",
+        type = "chara",
         w = 48,
         x = 576,
         y = 48
@@ -319,6 +364,7 @@ return {
         h = 48,
         index = 46,
         name = "adventurer female 12",
+        type = "chara",
         w = 48,
         x = 624,
         y = 48
@@ -326,6 +372,7 @@ return {
         h = 48,
         index = 47,
         name = "wizard of elea male",
+        type = "chara",
         w = 48,
         x = 672,
         y = 48
@@ -333,6 +380,7 @@ return {
         h = 48,
         index = 48,
         name = "adventurer female 13",
+        type = "chara",
         w = 48,
         x = 720,
         y = 48
@@ -340,6 +388,7 @@ return {
         h = 48,
         index = 49,
         name = "adventurer male 10",
+        type = "chara",
         w = 48,
         x = 768,
         y = 48
@@ -347,6 +396,7 @@ return {
         h = 48,
         index = 50,
         name = "adventurer female 14",
+        type = "chara",
         w = 48,
         x = 816,
         y = 48
@@ -354,6 +404,7 @@ return {
         h = 48,
         index = 51,
         name = "adventurer male 11",
+        type = "chara",
         w = 48,
         x = 864,
         y = 48
@@ -361,6 +412,7 @@ return {
         h = 48,
         index = 52,
         name = "adventurer female 15",
+        type = "chara",
         w = 48,
         x = 912,
         y = 48
@@ -368,6 +420,7 @@ return {
         h = 48,
         index = 53,
         name = "adventurer male 12",
+        type = "chara",
         w = 48,
         x = 960,
         y = 48
@@ -375,6 +428,7 @@ return {
         h = 48,
         index = 54,
         name = "adventurer female 16",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 48
@@ -382,6 +436,7 @@ return {
         h = 48,
         index = 55,
         name = "adventurer male 13",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 48
@@ -389,6 +444,7 @@ return {
         h = 48,
         index = 56,
         name = "adventurer female 17",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 48
@@ -396,6 +452,7 @@ return {
         h = 48,
         index = 57,
         name = "mercenary archer",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 48
@@ -403,6 +460,7 @@ return {
         h = 48,
         index = 58,
         name = "adventurer female 18",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 48
@@ -410,6 +468,7 @@ return {
         h = 48,
         index = 59,
         name = "adventurer male 14",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 48
@@ -417,6 +476,7 @@ return {
         h = 48,
         index = 60,
         name = "adventurer female 19",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 48
@@ -424,6 +484,7 @@ return {
         h = 48,
         index = 61,
         name = "adventurer male 15",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 48
@@ -431,6 +492,7 @@ return {
         h = 48,
         index = 62,
         name = "adventurer female 20",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 48
@@ -438,6 +500,7 @@ return {
         h = 48,
         index = 63,
         name = "adventurer male 16",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 48
@@ -445,6 +508,7 @@ return {
         h = 48,
         index = 64,
         name = "adventurer female 21",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 48
@@ -452,6 +516,7 @@ return {
         h = 48,
         index = 65,
         name = "adventurer male 17",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 48
@@ -459,6 +524,7 @@ return {
         h = 48,
         index = 66,
         name = "dwarf",
+        type = "chara",
         w = 48,
         x = 0,
         y = 96
@@ -466,14 +532,17 @@ return {
         h = 48,
         index = 67,
         name = "dwarf",
+        type = "chara",
         w = 48,
         x = 48,
         y = 96
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 68,
         name = "chara68",
+        type = "chara",
         w = 48,
         x = 96,
         y = 96
@@ -481,6 +550,7 @@ return {
         h = 48,
         index = 69,
         name = "healer",
+        type = "chara",
         w = 48,
         x = 144,
         y = 96
@@ -488,6 +558,7 @@ return {
         h = 48,
         index = 70,
         name = "rich person female",
+        type = "chara",
         w = 48,
         x = 192,
         y = 96
@@ -495,6 +566,7 @@ return {
         h = 48,
         index = 71,
         name = "rich person male",
+        type = "chara",
         w = 48,
         x = 240,
         y = 96
@@ -502,6 +574,7 @@ return {
         h = 48,
         index = 72,
         name = "noble child female",
+        type = "chara",
         w = 48,
         x = 288,
         y = 96
@@ -509,6 +582,7 @@ return {
         h = 48,
         index = 73,
         name = "noble child male",
+        type = "chara",
         w = 48,
         x = 336,
         y = 96
@@ -516,6 +590,7 @@ return {
         h = 48,
         index = 74,
         name = "palmian elite soldier male",
+        type = "chara",
         w = 48,
         x = 384,
         y = 96
@@ -523,6 +598,7 @@ return {
         h = 48,
         index = 75,
         name = "palmian elite soldier female",
+        type = "chara",
         w = 48,
         x = 432,
         y = 96
@@ -530,6 +606,7 @@ return {
         h = 48,
         index = 76,
         name = "thief guild member male",
+        type = "chara",
         w = 48,
         x = 480,
         y = 96
@@ -537,6 +614,7 @@ return {
         h = 48,
         index = 77,
         name = "thief guild member female",
+        type = "chara",
         w = 48,
         x = 528,
         y = 96
@@ -544,6 +622,7 @@ return {
         h = 48,
         index = 78,
         name = "fighter guild member male",
+        type = "chara",
         w = 48,
         x = 576,
         y = 96
@@ -551,6 +630,7 @@ return {
         h = 48,
         index = 79,
         name = "fighter guild member female",
+        type = "chara",
         w = 48,
         x = 624,
         y = 96
@@ -558,6 +638,7 @@ return {
         h = 48,
         index = 80,
         name = "<Fray> the fighter guildmaster",
+        type = "chara",
         w = 48,
         x = 672,
         y = 96
@@ -565,6 +646,7 @@ return {
         h = 48,
         index = 81,
         name = "ninja male",
+        type = "chara",
         w = 48,
         x = 720,
         y = 96
@@ -572,6 +654,7 @@ return {
         h = 48,
         index = 82,
         name = "ninja female",
+        type = "chara",
         w = 48,
         x = 768,
         y = 96
@@ -579,6 +662,7 @@ return {
         h = 48,
         index = 83,
         name = "refugee male",
+        type = "chara",
         w = 48,
         x = 816,
         y = 96
@@ -586,6 +670,7 @@ return {
         h = 48,
         index = 84,
         name = "refugee female",
+        type = "chara",
         w = 48,
         x = 864,
         y = 96
@@ -593,6 +678,7 @@ return {
         h = 48,
         index = 85,
         name = "traveler male",
+        type = "chara",
         w = 48,
         x = 912,
         y = 96
@@ -600,6 +686,7 @@ return {
         h = 48,
         index = 86,
         name = "traveler female",
+        type = "chara",
         w = 48,
         x = 960,
         y = 96
@@ -607,6 +694,7 @@ return {
         h = 48,
         index = 87,
         name = "bounty hunter female",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 96
@@ -614,6 +702,7 @@ return {
         h = 48,
         index = 88,
         name = "<Siraha> the white cloth",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 96
@@ -621,6 +710,7 @@ return {
         h = 48,
         index = 89,
         name = "<Kuron> the black cloth",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 96
@@ -628,6 +718,7 @@ return {
         h = 48,
         index = 90,
         name = "Alchemist <Naplus>",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 96
@@ -635,6 +726,7 @@ return {
         h = 48,
         index = 91,
         name = "<Getuei> the ninja master",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 96
@@ -642,6 +734,7 @@ return {
         h = 48,
         index = 92,
         name = "<Eila> the fugitive Kunoichi",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 96
@@ -649,6 +742,7 @@ return {
         h = 48,
         index = 93,
         name = "white young lady",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 96
@@ -656,6 +750,7 @@ return {
         h = 48,
         index = 94,
         name = "abyss dweller",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 96
@@ -663,6 +758,7 @@ return {
         h = 48,
         index = 95,
         name = "abyss dweller",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 96
@@ -670,6 +766,7 @@ return {
         h = 48,
         index = 96,
         name = "gun spirit male",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 96
@@ -677,6 +774,7 @@ return {
         h = 48,
         index = 97,
         name = "gun spirit female",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 96
@@ -684,6 +782,7 @@ return {
         h = 48,
         index = 98,
         name = "abyss animal",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 96
@@ -691,6 +790,7 @@ return {
         h = 48,
         index = 99,
         name = "<Karam> the lonely wolf of Karune",
+        type = "chara",
         w = 48,
         x = 0,
         y = 144
@@ -698,6 +798,7 @@ return {
         h = 48,
         index = 100,
         name = "<Churruin> the mercenary wizard",
+        type = "chara",
         w = 48,
         x = 48,
         y = 144
@@ -705,6 +806,7 @@ return {
         h = 48,
         index = 101,
         name = "<Jin> the machine rebel",
+        type = "chara",
         w = 48,
         x = 96,
         y = 144
@@ -712,6 +814,7 @@ return {
         h = 48,
         index = 102,
         name = "beggar male",
+        type = "chara",
         w = 48,
         x = 144,
         y = 144
@@ -719,6 +822,7 @@ return {
         h = 48,
         index = 103,
         name = "beggar female",
+        type = "chara",
         w = 48,
         x = 192,
         y = 144
@@ -726,6 +830,7 @@ return {
         h = 48,
         index = 104,
         name = "stray soul",
+        type = "chara",
         w = 48,
         x = 240,
         y = 144
@@ -733,6 +838,7 @@ return {
         h = 48,
         index = 105,
         name = "<H sister>",
+        type = "chara",
         w = 48,
         x = 288,
         y = 144
@@ -740,6 +846,7 @@ return {
         h = 48,
         index = 106,
         name = "old person male",
+        type = "chara",
         w = 48,
         x = 336,
         y = 144
@@ -747,14 +854,17 @@ return {
         h = 48,
         index = 107,
         name = "old person female",
+        type = "chara",
         w = 48,
         x = 384,
         y = 144
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 108,
         name = "chara108",
+        type = "chara",
         w = 48,
         x = 432,
         y = 144
@@ -762,6 +872,7 @@ return {
         h = 48,
         index = 109,
         name = "<Shena> the draw",
+        type = "chara",
         w = 48,
         x = 480,
         y = 144
@@ -769,6 +880,7 @@ return {
         h = 48,
         index = 110,
         name = "casino staff male",
+        type = "chara",
         w = 48,
         x = 528,
         y = 144
@@ -776,6 +888,7 @@ return {
         h = 48,
         index = 111,
         name = "casino staff female",
+        type = "chara",
         w = 48,
         x = 576,
         y = 144
@@ -783,22 +896,27 @@ return {
         h = 48,
         index = 112,
         name = "punk male",
+        type = "chara",
         w = 48,
         x = 624,
         y = 144
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 113,
         name = "chara113",
+        type = "chara",
         w = 48,
         x = 672,
         y = 144
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 114,
         name = "chara114",
+        type = "chara",
         w = 48,
         x = 720,
         y = 144
@@ -806,6 +924,7 @@ return {
         h = 48,
         index = 115,
         name = "citizen",
+        type = "chara",
         w = 48,
         x = 768,
         y = 144
@@ -813,6 +932,7 @@ return {
         h = 48,
         index = 116,
         name = "<Xabi> the king of Palmia",
+        type = "chara",
         w = 48,
         x = 816,
         y = 144
@@ -820,14 +940,17 @@ return {
         h = 48,
         index = 117,
         name = "<Stersha> the queen of Palmia",
+        type = "chara",
         w = 48,
         x = 864,
         y = 144
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 118,
         name = "chara118",
+        type = "chara",
         w = 48,
         x = 912,
         y = 144
@@ -835,6 +958,7 @@ return {
         h = 48,
         index = 119,
         name = "captain",
+        type = "chara",
         w = 48,
         x = 960,
         y = 144
@@ -842,6 +966,7 @@ return {
         h = 48,
         index = 120,
         name = "sailor male",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 144
@@ -849,6 +974,7 @@ return {
         h = 48,
         index = 121,
         name = "sailor female",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 144
@@ -856,6 +982,7 @@ return {
         h = 48,
         index = 122,
         name = "chara122",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 144
@@ -863,6 +990,7 @@ return {
         h = 48,
         index = 123,
         name = "seraph",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 144
@@ -870,6 +998,7 @@ return {
         h = 48,
         index = 124,
         name = "memory empty man male",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 144
@@ -877,6 +1006,7 @@ return {
         h = 48,
         index = 125,
         name = "dominion male",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 144
@@ -884,6 +1014,7 @@ return {
         h = 48,
         index = 126,
         name = "dominion female",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 144
@@ -891,6 +1022,7 @@ return {
         h = 48,
         index = 127,
         name = "citizen of cyber dome male",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 144
@@ -898,6 +1030,7 @@ return {
         h = 48,
         index = 128,
         name = "citizen of cyber dome male 2",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 144
@@ -905,6 +1038,7 @@ return {
         h = 48,
         index = 129,
         name = "citizen of cyber dome female",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 144
@@ -912,6 +1046,7 @@ return {
         h = 48,
         index = 130,
         name = "<Milos> Of The Forgotten World",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 144
@@ -919,6 +1054,7 @@ return {
         h = 48,
         index = 131,
         name = "citizen of cyber dome female 2",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 144
@@ -926,6 +1062,7 @@ return {
         h = 48,
         index = 132,
         name = "child male",
+        type = "chara",
         w = 48,
         x = 0,
         y = 192
@@ -933,6 +1070,7 @@ return {
         h = 48,
         index = 133,
         name = "child female",
+        type = "chara",
         w = 48,
         x = 48,
         y = 192
@@ -940,6 +1078,7 @@ return {
         h = 48,
         index = 134,
         name = "citizen male",
+        type = "chara",
         w = 48,
         x = 96,
         y = 192
@@ -947,6 +1086,7 @@ return {
         h = 48,
         index = 135,
         name = "citizen female",
+        type = "chara",
         w = 48,
         x = 144,
         y = 192
@@ -954,6 +1094,7 @@ return {
         h = 48,
         index = 136,
         name = "citizen male 2",
+        type = "chara",
         w = 48,
         x = 192,
         y = 192
@@ -961,6 +1102,7 @@ return {
         h = 48,
         index = 137,
         name = "citizen female 2",
+        type = "chara",
         w = 48,
         x = 240,
         y = 192
@@ -968,6 +1110,7 @@ return {
         h = 48,
         index = 138,
         name = "baker",
+        type = "chara",
         w = 48,
         x = 288,
         y = 192
@@ -975,6 +1118,7 @@ return {
         h = 48,
         index = 139,
         name = "mercenary male",
+        type = "chara",
         w = 48,
         x = 336,
         y = 192
@@ -982,6 +1126,7 @@ return {
         h = 48,
         index = 140,
         name = "shopkeeper male",
+        type = "chara",
         w = 48,
         x = 384,
         y = 192
@@ -989,6 +1134,7 @@ return {
         h = 48,
         index = 141,
         name = "shopkeeper female",
+        type = "chara",
         w = 48,
         x = 432,
         y = 192
@@ -996,6 +1142,7 @@ return {
         h = 48,
         index = 142,
         name = "elder male",
+        type = "chara",
         w = 48,
         x = 480,
         y = 192
@@ -1003,6 +1150,7 @@ return {
         h = 48,
         index = 143,
         name = "elder female",
+        type = "chara",
         w = 48,
         x = 528,
         y = 192
@@ -1010,6 +1158,7 @@ return {
         h = 48,
         index = 144,
         name = "bartender male",
+        type = "chara",
         w = 48,
         x = 576,
         y = 192
@@ -1017,6 +1166,7 @@ return {
         h = 48,
         index = 145,
         name = "bartender female",
+        type = "chara",
         w = 48,
         x = 624,
         y = 192
@@ -1024,6 +1174,7 @@ return {
         h = 48,
         index = 146,
         name = "sales person male",
+        type = "chara",
         w = 48,
         x = 672,
         y = 192
@@ -1031,6 +1182,7 @@ return {
         h = 48,
         index = 147,
         name = "sales person female",
+        type = "chara",
         w = 48,
         x = 720,
         y = 192
@@ -1038,6 +1190,7 @@ return {
         h = 48,
         index = 148,
         name = "bard",
+        type = "chara",
         w = 48,
         x = 768,
         y = 192
@@ -1045,6 +1198,7 @@ return {
         h = 48,
         index = 149,
         name = "diabolic clown",
+        type = "chara",
         w = 48,
         x = 816,
         y = 192
@@ -1052,6 +1206,7 @@ return {
         h = 48,
         index = 150,
         name = "rogue boss male",
+        type = "chara",
         w = 48,
         x = 864,
         y = 192
@@ -1059,6 +1214,7 @@ return {
         h = 48,
         index = 151,
         name = "<Marka> the silver bear",
+        type = "chara",
         w = 48,
         x = 912,
         y = 192
@@ -1066,6 +1222,7 @@ return {
         h = 48,
         index = 152,
         name = "<Aikage> the shinobi mask",
+        type = "chara",
         w = 48,
         x = 960,
         y = 192
@@ -1073,14 +1230,17 @@ return {
         h = 48,
         index = 153,
         name = "citizen 3 male",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 192
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 154,
         name = "chara154",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 192
@@ -1088,6 +1248,7 @@ return {
         h = 48,
         index = 155,
         name = "memory empty man female",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 192
@@ -1095,6 +1256,7 @@ return {
         h = 48,
         index = 156,
         name = "red cross",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 192
@@ -1102,6 +1264,7 @@ return {
         h = 48,
         index = 157,
         name = "rogue wizard",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 192
@@ -1109,6 +1272,7 @@ return {
         h = 48,
         index = 158,
         name = "rogue archer",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 192
@@ -1116,6 +1280,7 @@ return {
         h = 48,
         index = 159,
         name = "mercenary warrior",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 192
@@ -1123,6 +1288,7 @@ return {
         h = 48,
         index = 160,
         name = "<Lend> the taker",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 192
@@ -1130,6 +1296,7 @@ return {
         h = 48,
         index = 161,
         name = "<Mary> the insect master",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 192
@@ -1137,6 +1304,7 @@ return {
         h = 48,
         index = 162,
         name = "<Melget> the informer",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 192
@@ -1144,14 +1312,17 @@ return {
         h = 48,
         index = 163,
         name = "sister",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 192
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 164,
         name = "chara164",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 192
@@ -1159,6 +1330,7 @@ return {
         h = 48,
         index = 165,
         name = "orc warrior",
+        type = "chara",
         w = 48,
         x = 0,
         y = 240
@@ -1166,6 +1338,7 @@ return {
         h = 48,
         index = 166,
         name = "thief",
+        type = "chara",
         w = 48,
         x = 48,
         y = 240
@@ -1173,6 +1346,7 @@ return {
         h = 48,
         index = 167,
         name = "zombie",
+        type = "chara",
         w = 48,
         x = 96,
         y = 240
@@ -1180,6 +1354,7 @@ return {
         h = 48,
         index = 168,
         name = "putit",
+        type = "chara",
         w = 48,
         x = 144,
         y = 240
@@ -1187,6 +1362,7 @@ return {
         h = 48,
         index = 169,
         name = "rabbit",
+        type = "chara",
         w = 48,
         x = 192,
         y = 240
@@ -1194,6 +1370,7 @@ return {
         h = 48,
         index = 170,
         name = "wild sheep",
+        type = "chara",
         w = 48,
         x = 240,
         y = 240
@@ -1201,6 +1378,7 @@ return {
         h = 48,
         index = 171,
         name = "kobold",
+        type = "chara",
         w = 48,
         x = 288,
         y = 240
@@ -1208,6 +1386,7 @@ return {
         h = 48,
         index = 172,
         name = "flying frog",
+        type = "chara",
         w = 48,
         x = 336,
         y = 240
@@ -1215,6 +1394,7 @@ return {
         h = 48,
         index = 173,
         name = "centipede",
+        type = "chara",
         w = 48,
         x = 384,
         y = 240
@@ -1222,6 +1402,7 @@ return {
         h = 48,
         index = 174,
         name = "snail",
+        type = "chara",
         w = 48,
         x = 432,
         y = 240
@@ -1229,6 +1410,7 @@ return {
         h = 48,
         index = 175,
         name = "mandrake",
+        type = "chara",
         w = 48,
         x = 480,
         y = 240
@@ -1236,6 +1418,7 @@ return {
         h = 48,
         index = 176,
         name = "beetle",
+        type = "chara",
         w = 48,
         x = 528,
         y = 240
@@ -1243,6 +1426,7 @@ return {
         h = 48,
         index = 177,
         name = "mushroom",
+        type = "chara",
         w = 48,
         x = 576,
         y = 240
@@ -1250,6 +1434,7 @@ return {
         h = 48,
         index = 178,
         name = "mercenary female",
+        type = "chara",
         w = 48,
         x = 624,
         y = 240
@@ -1257,6 +1442,7 @@ return {
         h = 48,
         index = 179,
         name = "farmer male",
+        type = "chara",
         w = 48,
         x = 672,
         y = 240
@@ -1264,6 +1450,7 @@ return {
         h = 48,
         index = 180,
         name = "farmer female",
+        type = "chara",
         w = 48,
         x = 720,
         y = 240
@@ -1271,6 +1458,7 @@ return {
         h = 48,
         index = 181,
         name = "nun male",
+        type = "chara",
         w = 48,
         x = 768,
         y = 240
@@ -1278,6 +1466,7 @@ return {
         h = 48,
         index = 182,
         name = "nun female",
+        type = "chara",
         w = 48,
         x = 816,
         y = 240
@@ -1285,6 +1474,7 @@ return {
         h = 48,
         index = 183,
         name = "rogue male",
+        type = "chara",
         w = 48,
         x = 864,
         y = 240
@@ -1292,6 +1482,7 @@ return {
         h = 48,
         index = 184,
         name = "rogue female",
+        type = "chara",
         w = 48,
         x = 912,
         y = 240
@@ -1299,6 +1490,7 @@ return {
         h = 48,
         index = 185,
         name = "artist male",
+        type = "chara",
         w = 48,
         x = 960,
         y = 240
@@ -1306,6 +1498,7 @@ return {
         h = 48,
         index = 186,
         name = "artist female",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 240
@@ -1313,6 +1506,7 @@ return {
         h = 48,
         index = 187,
         name = "miner male",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 240
@@ -1320,6 +1514,7 @@ return {
         h = 48,
         index = 188,
         name = "miner female",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 240
@@ -1327,6 +1522,7 @@ return {
         h = 48,
         index = 189,
         name = "noble male",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 240
@@ -1334,6 +1530,7 @@ return {
         h = 48,
         index = 190,
         name = "noble female",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 240
@@ -1341,6 +1538,7 @@ return {
         h = 48,
         index = 191,
         name = "mutant",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 240
@@ -1348,6 +1546,7 @@ return {
         h = 48,
         index = 192,
         name = "<Balzak> the janitor",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 240
@@ -1355,6 +1554,7 @@ return {
         h = 48,
         index = 193,
         name = "<Revlus> the mage guildmaster",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 240
@@ -1362,6 +1562,7 @@ return {
         h = 48,
         index = 194,
         name = "mage guild member female",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 240
@@ -1369,6 +1570,7 @@ return {
         h = 48,
         index = 195,
         name = "mage guild member male",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 240
@@ -1376,6 +1578,7 @@ return {
         h = 48,
         index = 196,
         name = "<Doria> the fighter watchman",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 240
@@ -1383,6 +1586,7 @@ return {
         h = 48,
         index = 197,
         name = "<Sin> the thief guildmaster",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 240
@@ -1390,6 +1594,7 @@ return {
         h = 48,
         index = 198,
         name = "iron maiden",
+        type = "chara",
         w = 48,
         x = 0,
         y = 288
@@ -1397,6 +1602,7 @@ return {
         h = 48,
         index = 199,
         name = "<Noel> the bomber",
+        type = "chara",
         w = 48,
         x = 48,
         y = 288
@@ -1404,6 +1610,7 @@ return {
         h = 48,
         index = 200,
         name = "bat",
+        type = "chara",
         w = 48,
         x = 96,
         y = 288
@@ -1411,6 +1618,7 @@ return {
         h = 96,
         index = 201,
         name = "ent",
+        type = "chara",
         w = 48,
         x = 144,
         y = 288
@@ -1418,6 +1626,7 @@ return {
         h = 48,
         index = 202,
         name = "lich",
+        type = "chara",
         w = 48,
         x = 192,
         y = 288
@@ -1425,6 +1634,7 @@ return {
         h = 48,
         index = 203,
         name = "hound",
+        type = "chara",
         w = 48,
         x = 240,
         y = 288
@@ -1432,6 +1642,7 @@ return {
         h = 48,
         index = 204,
         name = "giant squirrel",
+        type = "chara",
         w = 48,
         x = 288,
         y = 288
@@ -1439,6 +1650,7 @@ return {
         h = 48,
         index = 205,
         name = "ghost",
+        type = "chara",
         w = 48,
         x = 336,
         y = 288
@@ -1446,6 +1658,7 @@ return {
         h = 48,
         index = 206,
         name = "spirit",
+        type = "chara",
         w = 48,
         x = 384,
         y = 288
@@ -1453,6 +1666,7 @@ return {
         h = 48,
         index = 207,
         name = "floating eye",
+        type = "chara",
         w = 48,
         x = 432,
         y = 288
@@ -1460,6 +1674,7 @@ return {
         h = 48,
         index = 208,
         name = "nurse",
+        type = "chara",
         w = 48,
         x = 480,
         y = 288
@@ -1467,6 +1682,7 @@ return {
         h = 48,
         index = 209,
         name = "puppet",
+        type = "chara",
         w = 48,
         x = 528,
         y = 288
@@ -1474,6 +1690,7 @@ return {
         h = 48,
         index = 210,
         name = "wasp",
+        type = "chara",
         w = 48,
         x = 576,
         y = 288
@@ -1481,6 +1698,7 @@ return {
         h = 48,
         index = 211,
         name = "black cat",
+        type = "chara",
         w = 48,
         x = 624,
         y = 288
@@ -1488,6 +1706,7 @@ return {
         h = 48,
         index = 212,
         name = "imp",
+        type = "chara",
         w = 48,
         x = 672,
         y = 288
@@ -1495,6 +1714,7 @@ return {
         h = 48,
         index = 213,
         name = "hand",
+        type = "chara",
         w = 48,
         x = 720,
         y = 288
@@ -1502,6 +1722,7 @@ return {
         h = 48,
         index = 214,
         name = "nymph",
+        type = "chara",
         w = 48,
         x = 768,
         y = 288
@@ -1509,6 +1730,7 @@ return {
         h = 48,
         index = 215,
         name = "chaos flower",
+        type = "chara",
         w = 48,
         x = 816,
         y = 288
@@ -1516,6 +1738,7 @@ return {
         h = 48,
         index = 216,
         name = "snake",
+        type = "chara",
         w = 48,
         x = 864,
         y = 288
@@ -1523,6 +1746,7 @@ return {
         h = 48,
         index = 217,
         name = "fairy",
+        type = "chara",
         w = 48,
         x = 912,
         y = 288
@@ -1530,6 +1754,7 @@ return {
         h = 48,
         index = 218,
         name = "android male",
+        type = "chara",
         w = 48,
         x = 960,
         y = 288
@@ -1537,6 +1762,7 @@ return {
         h = 48,
         index = 219,
         name = "mummy",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 288
@@ -1544,6 +1770,7 @@ return {
         h = 48,
         index = 220,
         name = "goblin",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 288
@@ -1551,6 +1778,7 @@ return {
         h = 48,
         index = 221,
         name = "baptist",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 288
@@ -1558,6 +1786,7 @@ return {
         h = 48,
         index = 222,
         name = "bear",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 288
@@ -1565,6 +1794,7 @@ return {
         h = 48,
         index = 223,
         name = "armor",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 288
@@ -1572,6 +1802,7 @@ return {
         h = 48,
         index = 224,
         name = "medusa",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 288
@@ -1579,6 +1810,7 @@ return {
         h = 48,
         index = 225,
         name = "cupid",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 288
@@ -1586,6 +1818,7 @@ return {
         h = 48,
         index = 226,
         name = "phantom",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 288
@@ -1593,6 +1826,7 @@ return {
         h = 48,
         index = 227,
         name = "harpy",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 288
@@ -1600,6 +1834,7 @@ return {
         h = 96,
         index = 228,
         name = "dragon",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 288
@@ -1607,6 +1842,7 @@ return {
         h = 48,
         index = 229,
         name = "cerberus",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 288
@@ -1614,6 +1850,7 @@ return {
         h = 48,
         index = 230,
         name = "spider",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 288
@@ -1621,6 +1858,7 @@ return {
         h = 96,
         index = 231,
         name = "golem",
+        type = "chara",
         w = 48,
         x = 0,
         y = 336
@@ -1628,6 +1866,7 @@ return {
         h = 96,
         index = 232,
         name = "giant",
+        type = "chara",
         w = 48,
         x = 48,
         y = 336
@@ -1635,6 +1874,7 @@ return {
         h = 96,
         index = 233,
         name = "drake",
+        type = "chara",
         w = 48,
         x = 96,
         y = 336
@@ -1642,6 +1882,7 @@ return {
         h = 96,
         index = 235,
         name = "wyvern",
+        type = "chara",
         w = 48,
         x = 192,
         y = 336
@@ -1649,6 +1890,7 @@ return {
         h = 48,
         index = 236,
         name = "black angel",
+        type = "chara",
         w = 48,
         x = 240,
         y = 336
@@ -1656,6 +1898,7 @@ return {
         h = 48,
         index = 237,
         name = "crab",
+        type = "chara",
         w = 48,
         x = 288,
         y = 336
@@ -1663,6 +1906,7 @@ return {
         h = 48,
         index = 238,
         name = "wisp",
+        type = "chara",
         w = 48,
         x = 336,
         y = 336
@@ -1670,6 +1914,7 @@ return {
         h = 48,
         index = 239,
         name = "fire centipede",
+        type = "chara",
         w = 48,
         x = 384,
         y = 336
@@ -1677,6 +1922,7 @@ return {
         h = 48,
         index = 240,
         name = "cultist of fire",
+        type = "chara",
         w = 48,
         x = 432,
         y = 336
@@ -1684,6 +1930,7 @@ return {
         h = 48,
         index = 241,
         name = "skeleton",
+        type = "chara",
         w = 48,
         x = 480,
         y = 336
@@ -1691,6 +1938,7 @@ return {
         h = 48,
         index = 242,
         name = "defender",
+        type = "chara",
         w = 48,
         x = 528,
         y = 336
@@ -1698,6 +1946,7 @@ return {
         h = 48,
         index = 243,
         name = "missionary of darkness",
+        type = "chara",
         w = 48,
         x = 576,
         y = 336
@@ -1705,6 +1954,7 @@ return {
         h = 48,
         index = 244,
         name = "<Pawn>",
+        type = "chara",
         w = 48,
         x = 624,
         y = 336
@@ -1712,6 +1962,7 @@ return {
         h = 48,
         index = 245,
         name = "<Rook>",
+        type = "chara",
         w = 48,
         x = 672,
         y = 336
@@ -1719,6 +1970,7 @@ return {
         h = 48,
         index = 246,
         name = "<Bishop>",
+        type = "chara",
         w = 48,
         x = 720,
         y = 336
@@ -1726,6 +1978,7 @@ return {
         h = 48,
         index = 247,
         name = "<Knight>",
+        type = "chara",
         w = 48,
         x = 768,
         y = 336
@@ -1733,6 +1986,7 @@ return {
         h = 48,
         index = 248,
         name = "<Queen>",
+        type = "chara",
         w = 48,
         x = 816,
         y = 336
@@ -1740,6 +1994,7 @@ return {
         h = 48,
         index = 249,
         name = "<King>",
+        type = "chara",
         w = 48,
         x = 864,
         y = 336
@@ -1747,6 +2002,7 @@ return {
         h = 48,
         index = 250,
         name = "Yerles machine infantry",
+        type = "chara",
         w = 48,
         x = 912,
         y = 336
@@ -1754,6 +2010,7 @@ return {
         h = 48,
         index = 251,
         name = "rock thrower",
+        type = "chara",
         w = 48,
         x = 960,
         y = 336
@@ -1761,6 +2018,7 @@ return {
         h = 48,
         index = 252,
         name = "metal",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 336
@@ -1768,6 +2026,7 @@ return {
         h = 48,
         index = 253,
         name = "cat",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 336
@@ -1775,6 +2034,7 @@ return {
         h = 48,
         index = 254,
         name = "dog",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 336
@@ -1782,6 +2042,7 @@ return {
         h = 48,
         index = 255,
         name = "rat",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 336
@@ -1789,6 +2050,7 @@ return {
         h = 48,
         index = 256,
         name = "shell",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 336
@@ -1796,6 +2058,7 @@ return {
         h = 48,
         index = 257,
         name = "slime",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 336
@@ -1803,6 +2066,7 @@ return {
         h = 48,
         index = 258,
         name = "public performer",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 336
@@ -1810,6 +2074,7 @@ return {
         h = 48,
         index = 259,
         name = "twintail",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 336
@@ -1817,6 +2082,7 @@ return {
         h = 48,
         index = 260,
         name = "silver wolf",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 336
@@ -1824,6 +2090,7 @@ return {
         h = 48,
         index = 262,
         name = "horse",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 336
@@ -1831,6 +2098,7 @@ return {
         h = 48,
         index = 263,
         name = "<Icolle> the biologist",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 336
@@ -1838,6 +2106,7 @@ return {
         h = 48,
         index = 267,
         name = "golden knight",
+        type = "chara",
         w = 48,
         x = 144,
         y = 384
@@ -1845,6 +2114,7 @@ return {
         h = 48,
         index = 269,
         name = "exile",
+        type = "chara",
         w = 48,
         x = 240,
         y = 384
@@ -1852,6 +2122,7 @@ return {
         h = 48,
         index = 270,
         name = "machine",
+        type = "chara",
         w = 48,
         x = 288,
         y = 384
@@ -1859,6 +2130,7 @@ return {
         h = 48,
         index = 271,
         name = "deformed eye",
+        type = "chara",
         w = 48,
         x = 336,
         y = 384
@@ -1866,6 +2138,7 @@ return {
         h = 48,
         index = 272,
         name = "wisp",
+        type = "chara",
         w = 48,
         x = 384,
         y = 384
@@ -1873,6 +2146,7 @@ return {
         h = 48,
         index = 273,
         name = "shining hedgehog",
+        type = "chara",
         w = 48,
         x = 432,
         y = 384
@@ -1880,6 +2154,7 @@ return {
         h = 48,
         index = 274,
         name = "chicken",
+        type = "chara",
         w = 48,
         x = 480,
         y = 384
@@ -1887,6 +2162,7 @@ return {
         h = 48,
         index = 275,
         name = "pumpkin",
+        type = "chara",
         w = 48,
         x = 528,
         y = 384
@@ -1894,6 +2170,7 @@ return {
         h = 48,
         index = 276,
         name = "stalker",
+        type = "chara",
         w = 48,
         x = 576,
         y = 384
@@ -1901,6 +2178,7 @@ return {
         h = 48,
         index = 277,
         name = "Shub-Niggurath",
+        type = "chara",
         w = 48,
         x = 624,
         y = 384
@@ -1908,6 +2186,7 @@ return {
         h = 48,
         index = 278,
         name = "gagu",
+        type = "chara",
         w = 48,
         x = 672,
         y = 384
@@ -1915,6 +2194,7 @@ return {
         h = 48,
         index = 279,
         name = "silver eyed witch",
+        type = "chara",
         w = 48,
         x = 720,
         y = 384
@@ -1922,6 +2202,7 @@ return {
         h = 96,
         index = 280,
         name = "shade",
+        type = "chara",
         w = 48,
         x = 768,
         y = 384
@@ -1929,6 +2210,7 @@ return {
         h = 48,
         index = 281,
         name = "quickling",
+        type = "chara",
         w = 48,
         x = 816,
         y = 384
@@ -1936,6 +2218,7 @@ return {
         h = 48,
         index = 282,
         name = "cube",
+        type = "chara",
         w = 48,
         x = 864,
         y = 384
@@ -1943,6 +2226,7 @@ return {
         h = 48,
         index = 283,
         name = "alien",
+        type = "chara",
         w = 48,
         x = 912,
         y = 384
@@ -1950,6 +2234,7 @@ return {
         h = 48,
         index = 284,
         name = "fanatic female",
+        type = "chara",
         w = 48,
         x = 960,
         y = 384
@@ -1957,6 +2242,7 @@ return {
         h = 48,
         index = 285,
         name = "fanatic male",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 384
@@ -1964,6 +2250,7 @@ return {
         h = 48,
         index = 286,
         name = "android female",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 384
@@ -1971,6 +2258,7 @@ return {
         h = 48,
         index = 287,
         name = "older sister",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 384
@@ -1978,6 +2266,7 @@ return {
         h = 48,
         index = 288,
         name = "older dog sister",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 384
@@ -1985,6 +2274,7 @@ return {
         h = 48,
         index = 289,
         name = "<Heinrich> the iron colonel",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 384
@@ -1992,6 +2282,7 @@ return {
         h = 48,
         index = 290,
         name = "<Zernard> the capable mercenary",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 384
@@ -1999,6 +2290,7 @@ return {
         h = 48,
         index = 291,
         name = "<Milis> Captain of the Special Forces",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 384
@@ -2006,6 +2298,7 @@ return {
         h = 48,
         index = 292,
         name = "Security Officer <Orville>",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 384
@@ -2013,6 +2306,7 @@ return {
         h = 48,
         index = 293,
         name = "Naive <Kyle>",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 384
@@ -2020,6 +2314,7 @@ return {
         h = 48,
         index = 294,
         name = "<Mefan> the bard",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 384
@@ -2027,6 +2322,7 @@ return {
         h = 48,
         index = 295,
         name = "<Caim> the mad rich",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 384
@@ -2034,6 +2330,7 @@ return {
         h = 48,
         index = 296,
         name = "<Murder Knight>",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 384
@@ -2041,6 +2338,7 @@ return {
         h = 96,
         index = 297,
         name = "<Zeome> the false prophet",
+        type = "chara",
         w = 48,
         x = 0,
         y = 432
@@ -2048,6 +2346,7 @@ return {
         h = 48,
         index = 298,
         name = "swimmer",
+        type = "chara",
         w = 48,
         x = 48,
         y = 432
@@ -2055,6 +2354,7 @@ return {
         h = 48,
         index = 299,
         name = "military putit",
+        type = "chara",
         w = 48,
         x = 96,
         y = 432
@@ -2062,6 +2362,7 @@ return {
         h = 48,
         index = 300,
         name = "gambler male",
+        type = "chara",
         w = 48,
         x = 144,
         y = 432
@@ -2069,6 +2370,7 @@ return {
         h = 48,
         index = 301,
         name = "gambler female",
+        type = "chara",
         w = 48,
         x = 192,
         y = 432
@@ -2076,6 +2378,7 @@ return {
         h = 48,
         index = 302,
         name = "infected yerles soldier",
+        type = "chara",
         w = 48,
         x = 240,
         y = 432
@@ -2083,6 +2386,7 @@ return {
         h = 48,
         index = 303,
         name = "war spirit male",
+        type = "chara",
         w = 48,
         x = 288,
         y = 432
@@ -2090,6 +2394,7 @@ return {
         h = 48,
         index = 304,
         name = "war spirit female",
+        type = "chara",
         w = 48,
         x = 336,
         y = 432
@@ -2097,6 +2402,7 @@ return {
         h = 48,
         index = 305,
         name = "magic spirit male",
+        type = "chara",
         w = 48,
         x = 384,
         y = 432
@@ -2104,6 +2410,7 @@ return {
         h = 48,
         index = 306,
         name = "magic spirit female",
+        type = "chara",
         w = 48,
         x = 432,
         y = 432
@@ -2111,6 +2418,7 @@ return {
         h = 48,
         index = 307,
         name = "sister cat",
+        type = "chara",
         w = 48,
         x = 480,
         y = 432
@@ -2118,6 +2426,7 @@ return {
         h = 48,
         index = 308,
         name = "Lead Developer <Dr. Gavela>",
+        type = "chara",
         w = 48,
         x = 528,
         y = 432
@@ -2125,6 +2434,7 @@ return {
         h = 48,
         index = 309,
         name = "chupacabura",
+        type = "chara",
         w = 48,
         x = 576,
         y = 432
@@ -2132,6 +2442,7 @@ return {
         h = 48,
         index = 310,
         name = "carmilla",
+        type = "chara",
         w = 48,
         x = 624,
         y = 432
@@ -2139,6 +2450,7 @@ return {
         h = 48,
         index = 311,
         name = "vampire",
+        type = "chara",
         w = 48,
         x = 672,
         y = 432
@@ -2146,6 +2458,7 @@ return {
         h = 48,
         index = 312,
         name = "fire dragon child",
+        type = "chara",
         w = 48,
         x = 720,
         y = 432
@@ -2153,6 +2466,7 @@ return {
         h = 48,
         index = 314,
         name = "<Arma> the tour guide",
+        type = "chara",
         w = 48,
         x = 816,
         y = 432
@@ -2160,6 +2474,7 @@ return {
         h = 48,
         index = 315,
         name = "Big sister",
+        type = "chara",
         w = 48,
         x = 864,
         y = 432
@@ -2167,6 +2482,7 @@ return {
         h = 48,
         index = 316,
         name = "mimic male",
+        type = "chara",
         w = 48,
         x = 912,
         y = 432
@@ -2174,6 +2490,7 @@ return {
         h = 48,
         index = 317,
         name = "mimic female",
+        type = "chara",
         w = 48,
         x = 960,
         y = 432
@@ -2181,6 +2498,7 @@ return {
         h = 48,
         index = 318,
         name = "fisherman male",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 432
@@ -2188,6 +2506,7 @@ return {
         h = 48,
         index = 319,
         name = "fisherman female",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 432
@@ -2195,6 +2514,7 @@ return {
         h = 48,
         index = 320,
         name = "citizen 3 female",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 432
@@ -2202,6 +2522,7 @@ return {
         h = 48,
         index = 321,
         name = "H sister",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 432
@@ -2209,6 +2530,7 @@ return {
         h = 48,
         index = 322,
         name = "gokiburi",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 432
@@ -2216,6 +2538,7 @@ return {
         h = 48,
         index = 323,
         name = "Yerles combat plane",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 432
@@ -2223,6 +2546,7 @@ return {
         h = 48,
         index = 324,
         name = "Quantum creature",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 432
@@ -2230,6 +2554,7 @@ return {
         h = 48,
         index = 325,
         name = "<Siva> the destruction",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 432
@@ -2237,6 +2562,7 @@ return {
         h = 48,
         index = 326,
         name = "goose",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 432
@@ -2244,6 +2570,7 @@ return {
         h = 48,
         index = 327,
         name = "<Lune> the maid chief",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 432
@@ -2251,6 +2578,7 @@ return {
         h = 48,
         index = 328,
         name = "maidsann",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 432
@@ -2258,6 +2586,7 @@ return {
         h = 48,
         index = 329,
         name = "maidsann 2",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 432
@@ -2265,6 +2594,7 @@ return {
         h = 48,
         index = 331,
         name = "<Orphe> the prince of lost kingdom",
+        type = "chara",
         w = 48,
         x = 48,
         y = 480
@@ -2272,6 +2602,7 @@ return {
         h = 48,
         index = 332,
         name = "<Mad scientist>",
+        type = "chara",
         w = 48,
         x = 96,
         y = 480
@@ -2279,6 +2610,7 @@ return {
         h = 48,
         index = 333,
         name = "<Isca> the fallen angel",
+        type = "chara",
         w = 48,
         x = 144,
         y = 480
@@ -2286,6 +2618,7 @@ return {
         h = 48,
         index = 334,
         name = "<Bethel> the white hawk",
+        type = "chara",
         w = 48,
         x = 192,
         y = 480
@@ -2293,6 +2626,7 @@ return {
         h = 48,
         index = 335,
         name = "gizoku",
+        type = "chara",
         w = 48,
         x = 240,
         y = 480
@@ -2300,6 +2634,7 @@ return {
         h = 48,
         index = 336,
         name = "bobble bubble",
+        type = "chara",
         w = 48,
         x = 288,
         y = 480
@@ -2307,6 +2642,7 @@ return {
         h = 48,
         index = 337,
         name = "<Loyter> the crimson of Zanan",
+        type = "chara",
         w = 48,
         x = 336,
         y = 480
@@ -2314,6 +2650,7 @@ return {
         h = 96,
         index = 338,
         name = "<Vesda> the fire dragon",
+        type = "chara",
         w = 48,
         x = 384,
         y = 480
@@ -2321,6 +2658,7 @@ return {
         h = 96,
         index = 339,
         name = "<Issizzle> the dark abomination",
+        type = "chara",
         w = 48,
         x = 432,
         y = 480
@@ -2328,6 +2666,7 @@ return {
         h = 48,
         index = 340,
         name = "<Erystia> the scholar of history",
+        type = "chara",
         w = 48,
         x = 480,
         y = 480
@@ -2335,6 +2674,7 @@ return {
         h = 96,
         index = 341,
         name = "<Wynan> the lord of the Ancient Castle",
+        type = "chara",
         w = 48,
         x = 528,
         y = 480
@@ -2342,6 +2682,7 @@ return {
         h = 96,
         index = 342,
         name = "<Corgon> the steel dragon",
+        type = "chara",
         w = 48,
         x = 576,
         y = 480
@@ -2349,6 +2690,7 @@ return {
         h = 96,
         index = 343,
         name = "<Quruiza> the red-eyed Deceiver",
+        type = "chara",
         w = 48,
         x = 624,
         y = 480
@@ -2356,6 +2698,7 @@ return {
         h = 48,
         index = 344,
         name = "<Dungeon cleaner>",
+        type = "chara",
         w = 48,
         x = 672,
         y = 480
@@ -2363,6 +2706,7 @@ return {
         h = 48,
         index = 345,
         name = "<Larnneire> the listener of wind",
+        type = "chara",
         w = 48,
         x = 720,
         y = 480
@@ -2370,6 +2714,7 @@ return {
         h = 48,
         index = 346,
         name = "<Lomias> the messenger from Vindale",
+        type = "chara",
         w = 48,
         x = 768,
         y = 480
@@ -2377,6 +2722,7 @@ return {
         h = 48,
         index = 347,
         name = "at",
+        type = "chara",
         w = 48,
         x = 816,
         y = 480
@@ -2384,6 +2730,7 @@ return {
         h = 48,
         index = 348,
         name = "<Frisia> the cat queen",
+        type = "chara",
         w = 48,
         x = 864,
         y = 480
@@ -2391,6 +2738,7 @@ return {
         h = 96,
         index = 349,
         name = "<Utima> the destroyer of Xeren",
+        type = "chara",
         w = 48,
         x = 912,
         y = 480
@@ -2398,6 +2746,7 @@ return {
         h = 48,
         index = 350,
         name = "master of pet arena",
+        type = "chara",
         w = 48,
         x = 960,
         y = 480
@@ -2405,6 +2754,7 @@ return {
         h = 96,
         index = 351,
         name = "<Ebon> the fire giant",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 480
@@ -2412,6 +2762,7 @@ return {
         h = 48,
         index = 352,
         name = "<Garok> the legendary smith",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 480
@@ -2419,6 +2770,7 @@ return {
         h = 48,
         index = 353,
         name = "<Miral> the legendary smith",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 480
@@ -2426,6 +2778,7 @@ return {
         h = 48,
         index = 354,
         name = "younger cat sister",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 480
@@ -2433,6 +2786,7 @@ return {
         h = 48,
         index = 355,
         name = "young lady",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 480
@@ -2440,6 +2794,7 @@ return {
         h = 48,
         index = 356,
         name = "<Gwen> the innocent",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 480
@@ -2447,6 +2802,7 @@ return {
         h = 48,
         index = 357,
         name = "town child",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 480
@@ -2454,6 +2810,7 @@ return {
         h = 48,
         index = 358,
         name = "Lonely <Pael>",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 480
@@ -2461,6 +2818,7 @@ return {
         h = 48,
         index = 359,
         name = "Pael's mom <Lily>",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 480
@@ -2468,6 +2826,7 @@ return {
         h = 48,
         index = 360,
         name = "Pael's mom <Lily> masked",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 480
@@ -2475,6 +2834,7 @@ return {
         h = 48,
         index = 361,
         name = "<Raphael> the womanizer",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 480
@@ -2482,6 +2842,7 @@ return {
         h = 48,
         index = 362,
         name = "<Ainc> the novice knight",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 480
@@ -2489,6 +2850,7 @@ return {
         h = 48,
         index = 363,
         name = "guard",
+        type = "chara",
         w = 48,
         x = 0,
         y = 528
@@ -2496,6 +2858,7 @@ return {
         h = 48,
         index = 364,
         name = "<Poppy> the little dog",
+        type = "chara",
         w = 48,
         x = 48,
         y = 528
@@ -2503,6 +2866,7 @@ return {
         h = 48,
         index = 365,
         name = "<Rilian> the dog lover",
+        type = "chara",
         w = 48,
         x = 96,
         y = 528
@@ -2510,6 +2874,7 @@ return {
         h = 48,
         index = 366,
         name = "<Tam> the cat hater",
+        type = "chara",
         w = 48,
         x = 144,
         y = 528
@@ -2517,6 +2882,7 @@ return {
         h = 48,
         index = 367,
         name = "carbuncle",
+        type = "chara",
         w = 48,
         x = 192,
         y = 528
@@ -2524,6 +2890,7 @@ return {
         h = 48,
         index = 368,
         name = "lion",
+        type = "chara",
         w = 48,
         x = 240,
         y = 528
@@ -2531,6 +2898,7 @@ return {
         h = 48,
         index = 369,
         name = "<Cacy> the cat tamer",
+        type = "chara",
         w = 48,
         x = 288,
         y = 528
@@ -2538,6 +2906,7 @@ return {
         h = 48,
         index = 370,
         name = "<Colonel Gilbert> the frontier warrior",
+        type = "chara",
         w = 48,
         x = 336,
         y = 528
@@ -2545,6 +2914,7 @@ return {
         h = 48,
         index = 373,
         name = "yerles self-propelled gun",
+        type = "chara",
         w = 48,
         x = 480,
         y = 528
@@ -2552,6 +2922,7 @@ return {
         h = 48,
         index = 377,
         name = "juere infantry",
+        type = "chara",
         w = 48,
         x = 672,
         y = 528
@@ -2559,6 +2930,7 @@ return {
         h = 48,
         index = 378,
         name = "yeek hard worker",
+        type = "chara",
         w = 48,
         x = 720,
         y = 528
@@ -2566,6 +2938,7 @@ return {
         h = 48,
         index = 379,
         name = "hot spring maniac male",
+        type = "chara",
         w = 48,
         x = 768,
         y = 528
@@ -2573,6 +2946,7 @@ return {
         h = 48,
         index = 380,
         name = "hot spring maniac female",
+        type = "chara",
         w = 48,
         x = 816,
         y = 528
@@ -2580,6 +2954,7 @@ return {
         h = 48,
         index = 381,
         name = "<Rodlob> the yeek chief",
+        type = "chara",
         w = 48,
         x = 864,
         y = 528
@@ -2587,6 +2962,7 @@ return {
         h = 48,
         index = 383,
         name = "<Arnord> the injured soldier",
+        type = "chara",
         w = 48,
         x = 960,
         y = 528
@@ -2594,6 +2970,7 @@ return {
         h = 48,
         index = 385,
         name = "kamikaze samurai",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 528
@@ -2601,6 +2978,7 @@ return {
         h = 48,
         index = 386,
         name = "bomb rock",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 528
@@ -2608,6 +2986,7 @@ return {
         h = 48,
         index = 387,
         name = "silver cat",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 528
@@ -2615,6 +2994,7 @@ return {
         h = 48,
         index = 388,
         name = "<Mia> the cat freak",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 528
@@ -2622,6 +3002,7 @@ return {
         h = 96,
         index = 389,
         name = "dinosaur",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 528
@@ -2629,6 +3010,7 @@ return {
         h = 48,
         index = 390,
         name = "fairy",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 528
@@ -2636,6 +3018,7 @@ return {
         h = 96,
         index = 391,
         name = "troll",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 528
@@ -2643,6 +3026,7 @@ return {
         h = 48,
         index = 392,
         name = "<Renton> the suffering wizard",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 528
@@ -2650,6 +3034,7 @@ return {
         h = 96,
         index = 393,
         name = "<Devastate Lulwy>",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 528
@@ -2657,6 +3042,7 @@ return {
         h = 48,
         index = 394,
         name = "<Marks> the great thief",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 528
@@ -2664,6 +3050,7 @@ return {
         h = 48,
         index = 395,
         name = "ancient coffin",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 528
@@ -2671,6 +3058,7 @@ return {
         h = 48,
         index = 396,
         name = "scorpion",
+        type = "chara",
         w = 48,
         x = 0,
         y = 576
@@ -2678,6 +3066,7 @@ return {
         h = 48,
         index = 397,
         name = "lizard man",
+        type = "chara",
         w = 48,
         x = 48,
         y = 576
@@ -2685,6 +3074,7 @@ return {
         h = 96,
         index = 398,
         name = "minotaur",
+        type = "chara",
         w = 48,
         x = 96,
         y = 576
@@ -2692,6 +3082,7 @@ return {
         h = 48,
         index = 399,
         name = "spore mushroom",
+        type = "chara",
         w = 48,
         x = 144,
         y = 576
@@ -2699,6 +3090,7 @@ return {
         h = 48,
         index = 400,
         name = "bubble",
+        type = "chara",
         w = 48,
         x = 192,
         y = 576
@@ -2706,6 +3098,7 @@ return {
         h = 48,
         index = 401,
         name = "mass monster",
+        type = "chara",
         w = 48,
         x = 240,
         y = 576
@@ -2713,6 +3106,7 @@ return {
         h = 96,
         index = 402,
         name = "<Blessed Jure>",
+        type = "chara",
         w = 48,
         x = 288,
         y = 576
@@ -2720,6 +3114,7 @@ return {
         h = 48,
         index = 403,
         name = "<Conery> Palmian major general",
+        type = "chara",
         w = 48,
         x = 336,
         y = 576
@@ -2727,6 +3122,7 @@ return {
         h = 96,
         index = 404,
         name = "executioner",
+        type = "chara",
         w = 48,
         x = 384,
         y = 576
@@ -2734,6 +3130,7 @@ return {
         h = 96,
         index = 405,
         name = "asura",
+        type = "chara",
         w = 48,
         x = 432,
         y = 576
@@ -2741,6 +3138,7 @@ return {
         h = 48,
         index = 406,
         name = "hungry sea lion",
+        type = "chara",
         w = 48,
         x = 480,
         y = 576
@@ -2748,6 +3146,7 @@ return {
         h = 48,
         index = 407,
         name = "mad gaze",
+        type = "chara",
         w = 48,
         x = 528,
         y = 576
@@ -2755,6 +3154,7 @@ return {
         h = 96,
         index = 408,
         name = "<Big Daddy>",
+        type = "chara",
         w = 48,
         x = 576,
         y = 576
@@ -2762,6 +3162,7 @@ return {
         h = 48,
         index = 409,
         name = "<Little Sister>",
+        type = "chara",
         w = 48,
         x = 624,
         y = 576
@@ -2769,6 +3170,7 @@ return {
         h = 48,
         index = 410,
         name = "cleaner",
+        type = "chara",
         w = 48,
         x = 672,
         y = 576
@@ -2776,6 +3178,7 @@ return {
         h = 48,
         index = 411,
         name = "hard gay",
+        type = "chara",
         w = 48,
         x = 720,
         y = 576
@@ -2783,6 +3186,7 @@ return {
         h = 48,
         index = 412,
         name = "<Strange scientist>",
+        type = "chara",
         w = 48,
         x = 768,
         y = 576
@@ -2790,6 +3194,7 @@ return {
         h = 96,
         index = 413,
         name = "<Ehekatl>",
+        type = "chara",
         w = 48,
         x = 816,
         y = 576
@@ -2797,6 +3202,7 @@ return {
         h = 48,
         index = 414,
         name = "guild trainer female",
+        type = "chara",
         w = 48,
         x = 864,
         y = 576
@@ -2804,6 +3210,7 @@ return {
         h = 48,
         index = 415,
         name = "guild trainer male",
+        type = "chara",
         w = 48,
         x = 912,
         y = 576
@@ -2811,6 +3218,7 @@ return {
         h = 48,
         index = 416,
         name = "<Mysterious Producer>",
+        type = "chara",
         w = 48,
         x = 960,
         y = 576
@@ -2818,6 +3226,7 @@ return {
         h = 48,
         index = 417,
         name = "prostitute female",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 576
@@ -2825,6 +3234,7 @@ return {
         h = 48,
         index = 418,
         name = "prostitute male",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 576
@@ -2832,6 +3242,7 @@ return {
         h = 48,
         index = 419,
         name = "prisoner male",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 576
@@ -2839,6 +3250,7 @@ return {
         h = 48,
         index = 420,
         name = "prisoner female",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 576
@@ -2846,6 +3258,7 @@ return {
         h = 48,
         index = 421,
         name = "<Dog cop>",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 576
@@ -2853,6 +3266,7 @@ return {
         h = 48,
         index = 423,
         name = "eulderna summonknight",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 576
@@ -2860,6 +3274,7 @@ return {
         h = 48,
         index = 425,
         name = "bounty hunter male",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 576
@@ -2867,6 +3282,7 @@ return {
         h = 48,
         index = 427,
         name = "<Snail> the android rider",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 576
@@ -2874,6 +3290,7 @@ return {
         h = 48,
         index = 428,
         name = "<Reconciled cleaner>",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 576
@@ -2881,6 +3298,7 @@ return {
         h = 96,
         index = 429,
         name = "yith",
+        type = "chara",
         w = 48,
         x = 0,
         y = 624
@@ -2888,6 +3306,7 @@ return {
         h = 96,
         index = 430,
         name = "spiral king",
+        type = "chara",
         w = 48,
         x = 48,
         y = 624
@@ -2895,6 +3314,7 @@ return {
         h = 96,
         index = 432,
         name = "<Buildup Opatos>",
+        type = "chara",
         w = 48,
         x = 144,
         y = 624
@@ -2902,6 +3322,7 @@ return {
         h = 96,
         index = 433,
         name = "<Insane Kumiromi>",
+        type = "chara",
         w = 48,
         x = 192,
         y = 624
@@ -2909,6 +3330,7 @@ return {
         h = 48,
         index = 434,
         name = "mine dog",
+        type = "chara",
         w = 48,
         x = 240,
         y = 624
@@ -2916,6 +3338,7 @@ return {
         h = 96,
         index = 436,
         name = "tsathoggua",
+        type = "chara",
         w = 48,
         x = 336,
         y = 624
@@ -2923,6 +3346,7 @@ return {
         h = 96,
         index = 439,
         name = "mammoth",
+        type = "chara",
         w = 48,
         x = 480,
         y = 624
@@ -2930,6 +3354,7 @@ return {
         h = 48,
         index = 440,
         name = "Yerles latest outfit soldier",
+        type = "chara",
         w = 48,
         x = 528,
         y = 624
@@ -2937,6 +3362,7 @@ return {
         h = 96,
         index = 442,
         name = "holy beast",
+        type = "chara",
         w = 48,
         x = 624,
         y = 624
@@ -2944,6 +3370,7 @@ return {
         h = 48,
         index = 443,
         name = "caravan master",
+        type = "chara",
         w = 48,
         x = 672,
         y = 624
@@ -2951,6 +3378,7 @@ return {
         h = 48,
         index = 444,
         name = "<Bamboo Sprout>",
+        type = "chara",
         w = 48,
         x = 720,
         y = 624
@@ -2958,6 +3386,7 @@ return {
         h = 48,
         index = 445,
         name = "wing snail",
+        type = "chara",
         w = 48,
         x = 768,
         y = 624
@@ -2965,6 +3394,7 @@ return {
         h = 96,
         index = 447,
         name = "<Mani>",
+        type = "chara",
         w = 48,
         x = 864,
         y = 624
@@ -2972,6 +3402,7 @@ return {
         h = 48,
         index = 448,
         name = "skull beast",
+        type = "chara",
         w = 48,
         x = 912,
         y = 624
@@ -2979,6 +3410,7 @@ return {
         h = 96,
         index = 449,
         name = "dragon skeleton of death eye",
+        type = "chara",
         w = 48,
         x = 960,
         y = 624
@@ -2986,6 +3418,7 @@ return {
         h = 96,
         index = 450,
         name = "five head god",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 624
@@ -2993,6 +3426,7 @@ return {
         h = 96,
         index = 451,
         name = "suzaku",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 624
@@ -3000,6 +3434,7 @@ return {
         h = 96,
         index = 452,
         name = "unicorn",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 624
@@ -3007,6 +3442,7 @@ return {
         h = 96,
         index = 453,
         name = "Rudras",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 624
@@ -3014,6 +3450,7 @@ return {
         h = 96,
         index = 454,
         name = "<Yerleswood> the savage machine",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 624
@@ -3021,6 +3458,7 @@ return {
         h = 96,
         index = 455,
         name = "giraffe",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 624
@@ -3028,6 +3466,7 @@ return {
         h = 96,
         index = 456,
         name = "<Metal Vesda> the fire machine",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 624
@@ -3035,6 +3474,7 @@ return {
         h = 96,
         index = 457,
         name = "<Anubis> the master of death",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 624
@@ -3042,6 +3482,7 @@ return {
         h = 96,
         index = 458,
         name = "kirin",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 624
@@ -3049,6 +3490,7 @@ return {
         h = 96,
         index = 459,
         name = "<Meshera plant>",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 624
@@ -3056,6 +3498,7 @@ return {
         h = 96,
         index = 460,
         name = "meshera",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 624
@@ -3063,6 +3506,7 @@ return {
         h = 96,
         index = 461,
         name = "<Meshera Alpha> the deformed angel",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 624
@@ -3070,6 +3514,7 @@ return {
         h = 48,
         index = 464,
         name = "<Mizuki> The Abyss Princess",
+        type = "chara",
         w = 48,
         x = 96,
         y = 672
@@ -3077,6 +3522,7 @@ return {
         h = 48,
         index = 467,
         name = "pudding spirit",
+        type = "chara",
         w = 48,
         x = 240,
         y = 672
@@ -3084,6 +3530,7 @@ return {
         h = 48,
         index = 468,
         name = "<Grief Shield>",
+        type = "chara",
         w = 48,
         x = 288,
         y = 672
@@ -3091,6 +3538,7 @@ return {
         h = 48,
         index = 470,
         name = "<Kaneda Bike>",
+        type = "chara",
         w = 48,
         x = 384,
         y = 672
@@ -3098,6 +3546,7 @@ return {
         h = 48,
         index = 471,
         name = "cub",
+        type = "chara",
         w = 48,
         x = 432,
         y = 672
@@ -3105,6 +3554,7 @@ return {
         h = 48,
         index = 473,
         name = "part time worker",
+        type = "chara",
         w = 48,
         x = 528,
         y = 672
@@ -3112,6 +3562,7 @@ return {
         h = 48,
         index = 474,
         name = "Bankrupt <Guo>",
+        type = "chara",
         w = 48,
         x = 576,
         y = 672
@@ -3119,6 +3570,7 @@ return {
         h = 48,
         index = 476,
         name = "festival tourist female",
+        type = "chara",
         w = 48,
         x = 672,
         y = 672
@@ -3126,6 +3578,7 @@ return {
         h = 48,
         index = 477,
         name = "festival tourist male",
+        type = "chara",
         w = 48,
         x = 720,
         y = 672
@@ -3133,6 +3586,7 @@ return {
         h = 48,
         index = 478,
         name = "<The leopard warrior>",
+        type = "chara",
         w = 48,
         x = 768,
         y = 672
@@ -3140,6 +3594,7 @@ return {
         h = 48,
         index = 479,
         name = "<Silvia> The princess",
+        type = "chara",
         w = 48,
         x = 816,
         y = 672
@@ -3147,6 +3602,7 @@ return {
         h = 48,
         index = 481,
         name = "<Lityou>",
+        type = "chara",
         w = 48,
         x = 912,
         y = 672
@@ -3154,6 +3610,7 @@ return {
         h = 96,
         index = 495,
         name = "<Yacatect>",
+        type = "chara",
         w = 48,
         x = 0,
         y = 720
@@ -3161,14 +3618,17 @@ return {
         h = 96,
         index = 496,
         name = "<Itzpalt>",
+        type = "chara",
         w = 48,
         x = 48,
         y = 720
       }, {
         h = 96,
         has_name = false,
+        type = "chara",
         index = 497,
         name = "chara497",
+        type = "chara",
         w = 48,
         x = 96,
         y = 720
@@ -3176,6 +3636,7 @@ return {
         h = 96,
         index = 498,
         name = "shoebill",
+        type = "chara",
         w = 48,
         x = 144,
         y = 720
@@ -3183,6 +3644,7 @@ return {
         h = 48,
         index = 499,
         name = "<Leiki>",
+        type = "chara",
         w = 48,
         x = 192,
         y = 720
@@ -3190,6 +3652,7 @@ return {
         h = 48,
         index = 500,
         name = "wrang-wrang male",
+        type = "chara",
         w = 48,
         x = 240,
         y = 720
@@ -3197,6 +3660,7 @@ return {
         h = 48,
         index = 501,
         name = "wrang-wrang female",
+        type = "chara",
         w = 48,
         x = 288,
         y = 720
@@ -3204,6 +3668,7 @@ return {
         h = 96,
         index = 502,
         name = "element dragon",
+        type = "chara",
         w = 48,
         x = 336,
         y = 720
@@ -3211,6 +3676,7 @@ return {
         h = 48,
         index = 503,
         name = "lazy older sister",
+        type = "chara",
         w = 48,
         x = 384,
         y = 720
@@ -3218,6 +3684,7 @@ return {
         h = 48,
         index = 504,
         name = "ek chuah",
+        type = "chara",
         w = 48,
         x = 432,
         y = 720
@@ -3225,6 +3692,7 @@ return {
         h = 48,
         index = 505,
         name = "old humankind female 1",
+        type = "chara",
         w = 48,
         x = 480,
         y = 720
@@ -3232,6 +3700,7 @@ return {
         h = 48,
         index = 506,
         name = "old humankind male 1",
+        type = "chara",
         w = 48,
         x = 528,
         y = 720
@@ -3239,6 +3708,7 @@ return {
         h = 48,
         index = 507,
         name = "old humankind female 2",
+        type = "chara",
         w = 48,
         x = 576,
         y = 720
@@ -3246,6 +3716,7 @@ return {
         h = 48,
         index = 508,
         name = "old humankind male 2",
+        type = "chara",
         w = 48,
         x = 624,
         y = 720
@@ -3253,6 +3724,7 @@ return {
         h = 48,
         index = 509,
         name = "old humankind female 3",
+        type = "chara",
         w = 48,
         x = 672,
         y = 720
@@ -3260,6 +3732,7 @@ return {
         h = 48,
         index = 510,
         name = "old humankind male 3",
+        type = "chara",
         w = 48,
         x = 720,
         y = 720
@@ -3267,6 +3740,7 @@ return {
         h = 48,
         index = 511,
         name = "new citizen",
+        type = "chara",
         w = 48,
         x = 768,
         y = 720
@@ -3274,6 +3748,7 @@ return {
         h = 48,
         index = 512,
         name = "flying leech",
+        type = "chara",
         w = 48,
         x = 816,
         y = 720
@@ -3281,6 +3756,7 @@ return {
         h = 48,
         index = 513,
         name = "<Gwen> the pitiless",
+        type = "chara",
         w = 48,
         x = 864,
         y = 720
@@ -3288,6 +3764,7 @@ return {
         h = 48,
         index = 514,
         name = "black gauntlet <Leold>",
+        type = "chara",
         w = 48,
         x = 912,
         y = 720
@@ -3295,6 +3772,7 @@ return {
         h = 48,
         index = 515,
         name = "Xeren electric tank",
+        type = "chara",
         w = 48,
         x = 960,
         y = 720
@@ -3302,6 +3780,7 @@ return {
         h = 48,
         index = 516,
         name = "Xeren satellite unit",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 720
@@ -3309,6 +3788,7 @@ return {
         h = 48,
         index = 517,
         name = "chaos spirit male",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 720
@@ -3316,6 +3796,7 @@ return {
         h = 48,
         index = 518,
         name = "chaos spirit female",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 720
@@ -3323,6 +3804,7 @@ return {
         h = 48,
         index = 519,
         name = "summer older sister",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 720
@@ -3330,6 +3812,7 @@ return {
         h = 48,
         index = 520,
         name = "<Mobile Communication Equipment>",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 720
@@ -3337,6 +3820,7 @@ return {
         h = 96,
         index = 521,
         name = "big black cat",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 720
@@ -3344,6 +3828,7 @@ return {
         h = 96,
         index = 522,
         name = "oyaukamui",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 720
@@ -3351,6 +3836,7 @@ return {
         h = 96,
         index = 523,
         name = "<Amurdad>",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 720
@@ -3358,6 +3844,7 @@ return {
         h = 96,
         index = 524,
         name = "<Ether Generator>",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 720
@@ -3365,6 +3852,7 @@ return {
         h = 96,
         index = 525,
         name = "<Garziem>",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 720
@@ -3372,6 +3860,7 @@ return {
         h = 96,
         index = 526,
         name = "gun glyph",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 720
@@ -3379,6 +3868,7 @@ return {
         h = 96,
         index = 527,
         name = "dark demon dragon",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 720
@@ -3386,6 +3876,7 @@ return {
         h = 48,
         index = 532,
         name = "<Rovid>",
+        type = "chara",
         w = 48,
         x = 192,
         y = 768
@@ -3393,6 +3884,7 @@ return {
         h = 48,
         index = 533,
         name = "<Karavika>",
+        type = "chara",
         w = 48,
         x = 240,
         y = 768
@@ -3400,6 +3892,7 @@ return {
         h = 48,
         index = 534,
         name = "<Sinaha>",
+        type = "chara",
         w = 48,
         x = 288,
         y = 768
@@ -3407,6 +3900,7 @@ return {
         h = 48,
         index = 536,
         name = "<Sophia> The Wise",
+        type = "chara",
         w = 48,
         x = 384,
         y = 768
@@ -3414,6 +3908,7 @@ return {
         h = 48,
         index = 537,
         name = "<Urcaguary>",
+        type = "chara",
         w = 48,
         x = 432,
         y = 768
@@ -3421,6 +3916,7 @@ return {
         h = 48,
         index = 538,
         name = "<Arasiel>",
+        type = "chara",
         w = 48,
         x = 480,
         y = 768
@@ -3428,6 +3924,7 @@ return {
         h = 48,
         index = 539,
         name = "demon male",
+        type = "chara",
         w = 48,
         x = 528,
         y = 768
@@ -3435,6 +3932,7 @@ return {
         h = 48,
         index = 540,
         name = "demon female",
+        type = "chara",
         w = 48,
         x = 576,
         y = 768
@@ -3442,6 +3940,7 @@ return {
         h = 48,
         index = 541,
         name = "dryas",
+        type = "chara",
         w = 48,
         x = 624,
         y = 768
@@ -3449,6 +3948,7 @@ return {
         h = 48,
         index = 542,
         name = "<Nazuna> the instructor",
+        type = "chara",
         w = 48,
         x = 672,
         y = 768
@@ -3456,6 +3956,7 @@ return {
         h = 96,
         index = 543,
         name = "<Estork> the doggod",
+        type = "chara",
         w = 48,
         x = 720,
         y = 768
@@ -3463,6 +3964,7 @@ return {
         h = 48,
         index = 544,
         name = "<part time worker>",
+        type = "chara",
         w = 48,
         x = 768,
         y = 768
@@ -3470,6 +3972,7 @@ return {
         h = 96,
         index = 545,
         name = "sei-ryu",
+        type = "chara",
         w = 48,
         x = 816,
         y = 768
@@ -3477,6 +3980,7 @@ return {
         h = 48,
         index = 546,
         name = "cockroach",
+        type = "chara",
         w = 48,
         x = 864,
         y = 768
@@ -3484,6 +3988,7 @@ return {
         h = 48,
         index = 547,
         name = "<King Cockroach>",
+        type = "chara",
         w = 48,
         x = 912,
         y = 768
@@ -3491,6 +3996,7 @@ return {
         h = 48,
         index = 548,
         name = "pro-jet",
+        type = "chara",
         w = 48,
         x = 960,
         y = 768
@@ -3498,6 +4004,7 @@ return {
         h = 48,
         index = 549,
         name = "royal putit",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 768
@@ -3505,6 +4012,7 @@ return {
         h = 48,
         index = 550,
         name = "bird archer",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 768
@@ -3512,6 +4020,7 @@ return {
         h = 48,
         index = 551,
         name = "arktouros",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 768
@@ -3519,6 +4028,7 @@ return {
         h = 48,
         index = 552,
         name = "strike eagle",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 768
@@ -3526,6 +4036,7 @@ return {
         h = 48,
         index = 553,
         name = "small older sister",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 768
@@ -3533,6 +4044,7 @@ return {
         h = 96,
         index = 561,
         name = "<Grandmaster>",
+        type = "chara",
         w = 48,
         x = 0,
         y = 816
@@ -3540,6 +4052,7 @@ return {
         h = 96,
         index = 562,
         name = "dragon centipede",
+        type = "chara",
         w = 48,
         x = 48,
         y = 816
@@ -3547,6 +4060,7 @@ return {
         h = 48,
         index = 563,
         name = "kabuterion",
+        type = "chara",
         w = 48,
         x = 96,
         y = 816
@@ -3554,6 +4068,7 @@ return {
         h = 48,
         index = 564,
         name = "stag god",
+        type = "chara",
         w = 48,
         x = 144,
         y = 816
@@ -3561,6 +4076,7 @@ return {
         h = 96,
         index = 565,
         name = "giant eater flower",
+        type = "chara",
         w = 48,
         x = 192,
         y = 816
@@ -3568,6 +4084,7 @@ return {
         h = 48,
         index = 566,
         name = "Yerles cyborg soldier",
+        type = "chara",
         w = 48,
         x = 240,
         y = 816
@@ -3575,6 +4092,7 @@ return {
         h = 48,
         index = 567,
         name = "yandere sister",
+        type = "chara",
         w = 48,
         x = 288,
         y = 816
@@ -3582,6 +4100,7 @@ return {
         h = 48,
         index = 568,
         name = "nanook",
+        type = "chara",
         w = 48,
         x = 336,
         y = 816
@@ -3589,6 +4108,7 @@ return {
         h = 48,
         index = 569,
         name = "cat princess",
+        type = "chara",
         w = 48,
         x = 384,
         y = 816
@@ -3596,6 +4116,7 @@ return {
         h = 48,
         index = 570,
         name = "gryffon child",
+        type = "chara",
         w = 48,
         x = 432,
         y = 816
@@ -3603,6 +4124,7 @@ return {
         h = 96,
         index = 571,
         name = "griffon",
+        type = "chara",
         w = 48,
         x = 480,
         y = 816
@@ -3610,6 +4132,7 @@ return {
         h = 48,
         index = 572,
         name = "anubis",
+        type = "chara",
         w = 48,
         x = 528,
         y = 816
@@ -3617,6 +4140,7 @@ return {
         h = 48,
         index = 573,
         name = "littler girl",
+        type = "chara",
         w = 48,
         x = 576,
         y = 816
@@ -3624,6 +4148,7 @@ return {
         h = 48,
         index = 574,
         name = "miss vampire",
+        type = "chara",
         w = 48,
         x = 624,
         y = 816
@@ -3631,6 +4156,7 @@ return {
         h = 48,
         index = 575,
         name = "witch",
+        type = "chara",
         w = 48,
         x = 672,
         y = 816
@@ -3638,6 +4164,7 @@ return {
         h = 96,
         index = 577,
         name = "dragon zombie",
+        type = "chara",
         w = 48,
         x = 768,
         y = 816
@@ -3645,6 +4172,7 @@ return {
         h = 96,
         index = 579,
         name = "flaming fire dragon",
+        type = "chara",
         w = 48,
         x = 864,
         y = 816
@@ -3652,6 +4180,7 @@ return {
         h = 48,
         index = 580,
         name = "machine storm",
+        type = "chara",
         w = 48,
         x = 912,
         y = 816
@@ -3659,6 +4188,7 @@ return {
         h = 48,
         index = 581,
         name = "fox brother",
+        type = "chara",
         w = 48,
         x = 960,
         y = 816
@@ -3666,6 +4196,7 @@ return {
         h = 48,
         index = 582,
         name = "jaguar warrior",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 816
@@ -3673,6 +4204,7 @@ return {
         h = 96,
         index = 583,
         name = "hypomyces",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 816
@@ -3680,6 +4212,7 @@ return {
         h = 48,
         index = 584,
         name = "nyarlathotep",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 816
@@ -3687,6 +4220,7 @@ return {
         h = 48,
         index = 585,
         name = "high-magician male",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 816
@@ -3694,6 +4228,7 @@ return {
         h = 48,
         index = 586,
         name = "high-magician female",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 816
@@ -3701,6 +4236,7 @@ return {
         h = 48,
         index = 587,
         name = "hel",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 816
@@ -3708,6 +4244,7 @@ return {
         h = 48,
         index = 588,
         name = "super-dragonewt",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 816
@@ -3715,6 +4252,7 @@ return {
         h = 96,
         index = 589,
         name = "<Lazasye> the destroy",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 816
@@ -3722,6 +4260,7 @@ return {
         h = 96,
         index = 590,
         name = "<Inqtual> the revenge",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 816
@@ -3729,6 +4268,7 @@ return {
         h = 96,
         index = 591,
         name = "<Roatonis> the infections",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 816
@@ -3736,6 +4276,7 @@ return {
         h = 96,
         index = 592,
         name = "baphomet",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 816
@@ -3743,6 +4284,7 @@ return {
         h = 96,
         index = 593,
         name = "vayu",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 816
@@ -3750,6 +4292,7 @@ return {
         h = 48,
         index = 596,
         name = "sheepdog",
+        type = "chara",
         w = 48,
         x = 96,
         y = 864
@@ -3757,6 +4300,7 @@ return {
         h = 48,
         index = 597,
         name = "<Raizel> the old wizard",
+        type = "chara",
         w = 48,
         x = 144,
         y = 864
@@ -3764,6 +4308,7 @@ return {
         h = 48,
         index = 599,
         name = "uncursed",
+        type = "chara",
         w = 48,
         x = 240,
         y = 864
@@ -3771,6 +4316,7 @@ return {
         h = 48,
         index = 600,
         name = "chaos mimic male",
+        type = "chara",
         w = 48,
         x = 288,
         y = 864
@@ -3778,6 +4324,7 @@ return {
         h = 48,
         index = 601,
         name = "chaos mimic female",
+        type = "chara",
         w = 48,
         x = 336,
         y = 864
@@ -3785,14 +4332,17 @@ return {
         h = 48,
         index = 602,
         name = "<Aile> the attendant",
+        type = "chara",
         w = 48,
         x = 384,
         y = 864
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 603,
         name = "chara603",
+        type = "chara",
         w = 48,
         x = 432,
         y = 864
@@ -3800,6 +4350,7 @@ return {
         h = 48,
         index = 605,
         name = "arkhai male",
+        type = "chara",
         w = 48,
         x = 528,
         y = 864
@@ -3807,6 +4358,7 @@ return {
         h = 48,
         index = 606,
         name = "arkhai female",
+        type = "chara",
         w = 48,
         x = 576,
         y = 864
@@ -3814,6 +4366,7 @@ return {
         h = 48,
         index = 607,
         name = "<Nein> the flying witch",
+        type = "chara",
         w = 48,
         x = 624,
         y = 864
@@ -3821,6 +4374,7 @@ return {
         h = 48,
         index = 608,
         name = "<Lenas> the mage reporter",
+        type = "chara",
         w = 48,
         x = 672,
         y = 864
@@ -3828,6 +4382,7 @@ return {
         h = 48,
         index = 609,
         name = "valkryie",
+        type = "chara",
         w = 48,
         x = 720,
         y = 864
@@ -3835,6 +4390,7 @@ return {
         h = 48,
         index = 611,
         name = "slime girl",
+        type = "chara",
         w = 48,
         x = 816,
         y = 864
@@ -3842,6 +4398,7 @@ return {
         h = 48,
         index = 613,
         name = "roper",
+        type = "chara",
         w = 48,
         x = 912,
         y = 864
@@ -3849,6 +4406,7 @@ return {
         h = 48,
         index = 614,
         name = "ultimate chick",
+        type = "chara",
         w = 48,
         x = 960,
         y = 864
@@ -3856,6 +4414,7 @@ return {
         h = 48,
         index = 615,
         name = "moai",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 864
@@ -3863,6 +4422,7 @@ return {
         h = 48,
         index = 617,
         name = "nine-tailed fox brother",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 864
@@ -3870,6 +4430,7 @@ return {
         h = 48,
         index = 618,
         name = "dangerous blade",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 864
@@ -3877,6 +4438,7 @@ return {
         h = 48,
         index = 619,
         name = "ambystoma",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 864
@@ -3884,6 +4446,7 @@ return {
         h = 48,
         index = 620,
         name = "seiashin",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 864
@@ -3891,6 +4454,7 @@ return {
         h = 48,
         index = 621,
         name = "fire fox brother",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 864
@@ -3898,6 +4462,7 @@ return {
         h = 48,
         index = 627,
         name = "cockatrice",
+        type = "chara",
         w = 48,
         x = 0,
         y = 912
@@ -3905,6 +4470,7 @@ return {
         h = 96,
         index = 628,
         name = "mishaguzi",
+        type = "chara",
         w = 48,
         x = 48,
         y = 912
@@ -3912,6 +4478,7 @@ return {
         h = 96,
         index = 629,
         name = "king scorpion",
+        type = "chara",
         w = 48,
         x = 96,
         y = 912
@@ -3919,6 +4486,7 @@ return {
         h = 96,
         index = 630,
         name = "mega mole",
+        type = "chara",
         w = 48,
         x = 144,
         y = 912
@@ -3926,6 +4494,7 @@ return {
         h = 48,
         index = 631,
         name = "knight of Elea male",
+        type = "chara",
         w = 48,
         x = 192,
         y = 912
@@ -3933,6 +4502,7 @@ return {
         h = 48,
         index = 632,
         name = "knight of Elea female",
+        type = "chara",
         w = 48,
         x = 240,
         y = 912
@@ -3940,6 +4510,7 @@ return {
         h = 48,
         index = 633,
         name = "sage of Elea male",
+        type = "chara",
         w = 48,
         x = 288,
         y = 912
@@ -3947,6 +4518,7 @@ return {
         h = 48,
         index = 634,
         name = "sage of Elea female",
+        type = "chara",
         w = 48,
         x = 336,
         y = 912
@@ -3954,6 +4526,7 @@ return {
         h = 48,
         index = 635,
         name = "Ragnarock",
+        type = "chara",
         w = 48,
         x = 384,
         y = 912
@@ -3961,6 +4534,7 @@ return {
         h = 48,
         index = 636,
         name = "badger",
+        type = "chara",
         w = 48,
         x = 432,
         y = 912
@@ -3968,6 +4542,7 @@ return {
         h = 48,
         index = 637,
         name = "capybara",
+        type = "chara",
         w = 48,
         x = 480,
         y = 912
@@ -3975,6 +4550,7 @@ return {
         h = 96,
         index = 638,
         name = "indigo lobster",
+        type = "chara",
         w = 48,
         x = 528,
         y = 912
@@ -3982,6 +4558,7 @@ return {
         h = 96,
         index = 639,
         name = "the king in yellow",
+        type = "chara",
         w = 48,
         x = 576,
         y = 912
@@ -3989,6 +4566,7 @@ return {
         h = 96,
         index = 640,
         name = "spread wyvern",
+        type = "chara",
         w = 48,
         x = 624,
         y = 912
@@ -3996,6 +4574,7 @@ return {
         h = 96,
         index = 641,
         name = "<Alice> the big ant",
+        type = "chara",
         w = 48,
         x = 672,
         y = 912
@@ -4003,6 +4582,7 @@ return {
         h = 96,
         index = 642,
         name = "gi-ant",
+        type = "chara",
         w = 48,
         x = 720,
         y = 912
@@ -4010,6 +4590,7 @@ return {
         h = 96,
         index = 643,
         name = "alien queen",
+        type = "chara",
         w = 48,
         x = 768,
         y = 912
@@ -4017,6 +4598,7 @@ return {
         h = 96,
         index = 644,
         name = "<chestnut giant>",
+        type = "chara",
         w = 48,
         x = 816,
         y = 912
@@ -4024,6 +4606,7 @@ return {
         h = 96,
         index = 645,
         name = "sand worm",
+        type = "chara",
         w = 48,
         x = 864,
         y = 912
@@ -4031,6 +4614,7 @@ return {
         h = 96,
         index = 646,
         name = "lava golem",
+        type = "chara",
         w = 48,
         x = 912,
         y = 912
@@ -4038,6 +4622,7 @@ return {
         h = 96,
         index = 647,
         name = "flaming flower dragon burst",
+        type = "chara",
         w = 48,
         x = 960,
         y = 912
@@ -4045,6 +4630,7 @@ return {
         h = 96,
         index = 648,
         name = "phantom of end",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 912
@@ -4052,6 +4638,7 @@ return {
         h = 96,
         index = 649,
         name = "<Yerleswood Neo>",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 912
@@ -4059,6 +4646,7 @@ return {
         h = 96,
         index = 650,
         name = "<Nine Head Dragon> the abyss",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 912
@@ -4066,6 +4654,7 @@ return {
         h = 96,
         index = 651,
         name = "castle golem",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 912
@@ -4073,6 +4662,7 @@ return {
         h = 96,
         index = 652,
         name = "metal zilla",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 912
@@ -4080,6 +4670,7 @@ return {
         h = 96,
         index = 653,
         name = "mana monolith",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 912
@@ -4087,6 +4678,7 @@ return {
         h = 96,
         index = 654,
         name = "cloudragon",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 912
@@ -4094,6 +4686,7 @@ return {
         h = 96,
         index = 655,
         name = "sepa",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 912
@@ -4101,6 +4694,7 @@ return {
         h = 96,
         index = 656,
         name = "<Ungaga> the minotaur king",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 912
@@ -4108,6 +4702,7 @@ return {
         h = 96,
         index = 657,
         name = "momotuka",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 912
@@ -4115,6 +4710,7 @@ return {
         h = 96,
         index = 658,
         name = "<Egelveil> the bind",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 912
@@ -4122,6 +4718,7 @@ return {
         h = 96,
         index = 659,
         name = "Yerleswood type M",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 912
@@ -4129,6 +4726,7 @@ return {
         h = 48,
         index = 664,
         name = "<Dain> the elder of hill",
+        type = "chara",
         w = 48,
         x = 192,
         y = 960
@@ -4136,6 +4734,7 @@ return {
         h = 48,
         index = 665,
         name = "<Irma> the indomitable smith",
+        type = "chara",
         w = 48,
         x = 240,
         y = 960
@@ -4143,6 +4742,7 @@ return {
         h = 48,
         index = 666,
         name = "hill child male",
+        type = "chara",
         w = 48,
         x = 288,
         y = 960
@@ -4150,6 +4750,7 @@ return {
         h = 48,
         index = 667,
         name = "hill child female",
+        type = "chara",
         w = 48,
         x = 336,
         y = 960
@@ -4157,6 +4758,7 @@ return {
         h = 48,
         index = 668,
         name = "<Thalia> the star viewer",
+        type = "chara",
         w = 48,
         x = 384,
         y = 960
@@ -4164,6 +4766,7 @@ return {
         h = 48,
         index = 669,
         name = "hill shopkeeper male",
+        type = "chara",
         w = 48,
         x = 432,
         y = 960
@@ -4171,6 +4774,7 @@ return {
         h = 48,
         index = 670,
         name = "hill shopkeeper female",
+        type = "chara",
         w = 48,
         x = 480,
         y = 960
@@ -4178,6 +4782,7 @@ return {
         h = 48,
         index = 693,
         name = "user graphic 1",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1008
@@ -4185,6 +4790,7 @@ return {
         h = 48,
         index = 694,
         name = "user graphic 2",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1008
@@ -4192,6 +4798,7 @@ return {
         h = 48,
         index = 695,
         name = "user graphic 3",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1008
@@ -4199,6 +4806,7 @@ return {
         h = 48,
         index = 696,
         name = "user graphic 4",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1008
@@ -4206,6 +4814,7 @@ return {
         h = 48,
         index = 697,
         name = "user graphic 5",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1008
@@ -4213,6 +4822,7 @@ return {
         h = 48,
         index = 698,
         name = "user graphic 6",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1008
@@ -4220,6 +4830,7 @@ return {
         h = 48,
         index = 699,
         name = "user graphic 7",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1008
@@ -4227,6 +4838,7 @@ return {
         h = 48,
         index = 700,
         name = "user graphic 8",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1008
@@ -4234,6 +4846,7 @@ return {
         h = 48,
         index = 701,
         name = "user graphic 9",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1008
@@ -4241,6 +4854,7 @@ return {
         h = 48,
         index = 702,
         name = "user graphic 10",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1008
@@ -4248,6 +4862,7 @@ return {
         h = 48,
         index = 703,
         name = "user graphic 11",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1008
@@ -4255,6 +4870,7 @@ return {
         h = 48,
         index = 704,
         name = "user graphic 12",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1008
@@ -4262,6 +4878,7 @@ return {
         h = 48,
         index = 705,
         name = "user graphic 13",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1008
@@ -4269,6 +4886,7 @@ return {
         h = 48,
         index = 706,
         name = "user graphic 14",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1008
@@ -4276,6 +4894,7 @@ return {
         h = 48,
         index = 707,
         name = "user graphic 15",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1008
@@ -4283,6 +4902,7 @@ return {
         h = 48,
         index = 708,
         name = "user graphic 16",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1008
@@ -4290,6 +4910,7 @@ return {
         h = 96,
         index = 709,
         name = "user graphic 17",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1008
@@ -4297,6 +4918,7 @@ return {
         h = 96,
         index = 710,
         name = "user graphic 18",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1008
@@ -4304,6 +4926,7 @@ return {
         h = 96,
         index = 711,
         name = "user graphic 19",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1008
@@ -4311,6 +4934,7 @@ return {
         h = 96,
         index = 712,
         name = "user graphic 20",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1008
@@ -4318,6 +4942,7 @@ return {
         h = 96,
         index = 713,
         name = "user graphic 21",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1008
@@ -4325,6 +4950,7 @@ return {
         h = 96,
         index = 714,
         name = "user graphic 22",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1008
@@ -4332,6 +4958,7 @@ return {
         h = 96,
         index = 715,
         name = "user graphic 23",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1008
@@ -4339,6 +4966,7 @@ return {
         h = 96,
         index = 716,
         name = "user graphic 24",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1008
@@ -4346,6 +4974,7 @@ return {
         h = 96,
         index = 717,
         name = "user graphic 25",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1008
@@ -4353,6 +4982,7 @@ return {
         h = 96,
         index = 718,
         name = "user graphic 26",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1008
@@ -4360,6 +4990,7 @@ return {
         h = 96,
         index = 719,
         name = "user graphic 27",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1008
@@ -4367,6 +4998,7 @@ return {
         h = 96,
         index = 720,
         name = "user graphic 28",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1008
@@ -4374,6 +5006,7 @@ return {
         h = 96,
         index = 721,
         name = "user graphic 29",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1008
@@ -4381,6 +5014,7 @@ return {
         h = 96,
         index = 722,
         name = "user graphic 30",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1008
@@ -4388,6 +5022,7 @@ return {
         h = 96,
         index = 723,
         name = "user graphic 31",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1008
@@ -4395,6 +5030,7 @@ return {
         h = 96,
         index = 724,
         name = "user graphic 32",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1008
@@ -4402,6 +5038,7 @@ return {
         h = 48,
         index = 726,
         name = "putit tank",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1056
@@ -4409,6 +5046,7 @@ return {
         h = 48,
         index = 727,
         name = "<Norne> the guide",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1056
@@ -4416,6 +5054,7 @@ return {
         h = 48,
         index = 728,
         name = "magus of elea female",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1056
@@ -4423,6 +5062,7 @@ return {
         h = 48,
         index = 729,
         name = "merciful warrior of elea female",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1056
@@ -4430,6 +5070,7 @@ return {
         h = 48,
         index = 730,
         name = "dark koala",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1056
@@ -4437,6 +5078,7 @@ return {
         h = 48,
         index = 731,
         name = "shopkeeper crow",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1056
@@ -4444,6 +5086,7 @@ return {
         h = 48,
         index = 732,
         name = "halloween night head",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1056
@@ -4451,6 +5094,7 @@ return {
         h = 48,
         index = 733,
         name = "fire rat",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1056
@@ -4458,6 +5102,7 @@ return {
         h = 48,
         index = 734,
         name = "tree sparrow",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1056
@@ -4465,6 +5110,7 @@ return {
         h = 48,
         index = 735,
         name = "spaghetti monster",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1056
@@ -4472,6 +5118,7 @@ return {
         h = 48,
         index = 736,
         name = "soulbee",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1056
@@ -4479,6 +5126,7 @@ return {
         h = 48,
         index = 737,
         name = "mushrooman",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1056
@@ -4486,6 +5134,7 @@ return {
         h = 48,
         index = 738,
         name = "lamia",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1056
@@ -4493,6 +5142,7 @@ return {
         h = 48,
         index = 739,
         name = "<Spipha> the dragon hunter",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1056
@@ -4500,6 +5150,7 @@ return {
         h = 48,
         index = 740,
         name = "juere demon soldier",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1056
@@ -4507,6 +5158,7 @@ return {
         h = 48,
         index = 741,
         name = "cub toraizu",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1056
@@ -4514,6 +5166,7 @@ return {
         h = 48,
         index = 759,
         name = "werewolf",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1104
@@ -4521,6 +5174,7 @@ return {
         h = 48,
         index = 760,
         name = "werewolf detective",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1104
@@ -4528,6 +5182,7 @@ return {
         h = 48,
         index = 761,
         name = "worker-02",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1104
@@ -4535,6 +5190,7 @@ return {
         h = 48,
         index = 762,
         name = "worker-01",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1104
@@ -4542,6 +5198,7 @@ return {
         h = 48,
         index = 763,
         name = "R cleaner",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1104
@@ -4549,6 +5206,7 @@ return {
         h = 48,
         index = 764,
         name = "fox spirit",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1104
@@ -4556,6 +5214,7 @@ return {
         h = 48,
         index = 765,
         name = "sunbararian",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1104
@@ -4563,6 +5222,7 @@ return {
         h = 48,
         index = 766,
         name = "cthugha",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1104
@@ -4570,6 +5230,7 @@ return {
         h = 48,
         index = 767,
         name = "black box",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1104
@@ -4577,6 +5238,7 @@ return {
         h = 48,
         index = 768,
         name = "yomagntho",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1104
@@ -4584,6 +5246,7 @@ return {
         h = 48,
         index = 769,
         name = "small stone golem",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1104
@@ -4591,6 +5254,7 @@ return {
         h = 48,
         index = 770,
         name = "small wooden golem",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1104
@@ -4598,6 +5262,7 @@ return {
         h = 48,
         index = 771,
         name = "<Kuroya> the looking universe",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1104
@@ -4605,6 +5270,7 @@ return {
         h = 48,
         index = 772,
         name = "<Fron> the tour planner",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1104
@@ -4612,6 +5278,7 @@ return {
         h = 48,
         index = 773,
         name = "<Regulus> the altered",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1104
@@ -4619,6 +5286,7 @@ return {
         h = 48,
         index = 774,
         name = "<Neres> the amnesiac",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1104
@@ -4626,6 +5294,7 @@ return {
         h = 48,
         index = 775,
         name = "<Ryutye> the amnesiac",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1104
@@ -4633,6 +5302,7 @@ return {
         h = 48,
         index = 776,
         name = "Zanan heavily armed",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1104
@@ -4640,6 +5310,7 @@ return {
         h = 48,
         index = 777,
         name = "<Boyciana>",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1104
@@ -4647,6 +5318,7 @@ return {
         h = 48,
         index = 778,
         name = "bearga",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1104
@@ -4654,6 +5326,7 @@ return {
         h = 48,
         index = 779,
         name = "necro lancer",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1104
@@ -4661,6 +5334,7 @@ return {
         h = 48,
         index = 780,
         name = "necro dancer",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1104
@@ -4668,6 +5342,7 @@ return {
         h = 48,
         index = 781,
         name = "detective",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1104
@@ -4675,6 +5350,7 @@ return {
         h = 48,
         index = 782,
         name = "effect butterfly",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1104
@@ -4682,6 +5358,7 @@ return {
         h = 48,
         index = 783,
         name = "mimic 5",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1104
@@ -4689,6 +5366,7 @@ return {
         h = 48,
         index = 784,
         name = "space horned owl",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1104
@@ -4696,6 +5374,7 @@ return {
         h = 48,
         index = 785,
         name = "nightmare shark",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1104
@@ -4703,6 +5382,7 @@ return {
         h = 48,
         index = 786,
         name = "jellyfish kraken",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1104
@@ -4710,6 +5390,7 @@ return {
         h = 48,
         index = 787,
         name = "steel armor spider",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1104
@@ -4717,6 +5398,7 @@ return {
         h = 48,
         index = 788,
         name = "smash ogre male",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1104
@@ -4724,6 +5406,7 @@ return {
         h = 48,
         index = 789,
         name = "smash ogre female",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1104
@@ -4731,6 +5414,7 @@ return {
         h = 48,
         index = 790,
         name = "arachnid",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1104
@@ -4738,6 +5422,7 @@ return {
         h = 48,
         index = 791,
         name = "sylbunny",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1104
@@ -4745,6 +5430,7 @@ return {
         h = 48,
         index = 792,
         name = "blood",
+        type = "special",
         w = 288,
         x = 48,
         y = 1152
@@ -4752,6 +5438,7 @@ return {
         h = 48,
         index = 799,
         name = "fragments",
+        type = "special",
         w = 192,
         x = 336,
         y = 1152
@@ -4759,6 +5446,7 @@ return {
         h = 48,
         index = 803,
         name = "kesalanpatharan",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1152
@@ -4766,6 +5454,7 @@ return {
         h = 48,
         index = 804,
         name = "black angel hair",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1152
@@ -4773,6 +5462,7 @@ return {
         h = 48,
         index = 805,
         name = "scholar male",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1152
@@ -4780,6 +5470,7 @@ return {
         h = 48,
         index = 806,
         name = "scholar female",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1152
@@ -4787,6 +5478,7 @@ return {
         h = 48,
         index = 807,
         name = "teacher male",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1152
@@ -4794,6 +5486,7 @@ return {
         h = 48,
         index = 808,
         name = "teacher female",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1152
@@ -4801,6 +5494,7 @@ return {
         h = 48,
         index = 809,
         name = "big boar",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1152
@@ -4808,6 +5502,7 @@ return {
         h = 48,
         index = 810,
         name = "child boar",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1152
@@ -4815,6 +5510,7 @@ return {
         h = 48,
         index = 811,
         name = "hedgehog",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1152
@@ -4822,6 +5518,7 @@ return {
         h = 48,
         index = 812,
         name = "hungry sea lion",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1152
@@ -4829,6 +5526,7 @@ return {
         h = 48,
         index = 813,
         name = "chicken",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1152
@@ -4836,6 +5534,7 @@ return {
         h = 48,
         index = 814,
         name = "skeleton hero",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1152
@@ -4843,6 +5542,7 @@ return {
         h = 48,
         index = 815,
         name = "hamster",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1152
@@ -4850,6 +5550,7 @@ return {
         h = 48,
         index = 816,
         name = "kiwi",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1152
@@ -4857,6 +5558,7 @@ return {
         h = 48,
         index = 817,
         name = "<Spipha> the dragon hunter (run wildly)",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1152
@@ -4864,6 +5566,7 @@ return {
         h = 48,
         index = 818,
         name = "hill citizen male",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1152
@@ -4871,6 +5574,7 @@ return {
         h = 48,
         index = 819,
         name = "hill citizen female",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1152
@@ -4878,6 +5582,7 @@ return {
         h = 48,
         index = 820,
         name = "wise hill citizen male",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1152
@@ -4885,6 +5590,7 @@ return {
         h = 48,
         index = 821,
         name = "wise hill citizen female",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1152
@@ -4892,6 +5598,7 @@ return {
         h = 48,
         index = 822,
         name = "chaos hunter",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1152
@@ -4899,6 +5606,7 @@ return {
         h = 48,
         index = 823,
         name = "chaos paladin",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1152
@@ -4906,6 +5614,7 @@ return {
         h = 48,
         index = 824,
         name = "chaos shaman",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1152
@@ -4913,6 +5622,7 @@ return {
         h = 48,
         index = 825,
         name = "ghost princess",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1200
@@ -4920,6 +5630,7 @@ return {
         h = 48,
         index = 826,
         name = "halloween children female 1",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1200
@@ -4927,6 +5638,7 @@ return {
         h = 48,
         index = 827,
         name = "halloween children female 2",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1200
@@ -4934,6 +5646,7 @@ return {
         h = 48,
         index = 828,
         name = "halloween children male 2",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1200
@@ -4941,6 +5654,7 @@ return {
         h = 48,
         index = 829,
         name = "sheep",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1200
@@ -4948,6 +5662,7 @@ return {
         h = 48,
         index = 830,
         name = "magic archer",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1200
@@ -4955,6 +5670,7 @@ return {
         h = 48,
         index = 831,
         name = "rogue boss female",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1200
@@ -4962,6 +5678,7 @@ return {
         h = 48,
         index = 832,
         name = "wandering penguin",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1200
@@ -4969,6 +5686,7 @@ return {
         h = 48,
         index = 833,
         name = "king penguin",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1200
@@ -4976,6 +5694,7 @@ return {
         h = 48,
         index = 834,
         name = "zombie queen",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1200
@@ -4983,6 +5702,7 @@ return {
         h = 48,
         index = 835,
         name = "gothic",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1200
@@ -4990,6 +5710,7 @@ return {
         h = 48,
         index = 836,
         name = "zombie girl",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1200
@@ -4997,6 +5718,7 @@ return {
         h = 48,
         index = 837,
         name = "slug",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1200
@@ -5004,6 +5726,7 @@ return {
         h = 48,
         index = 838,
         name = "metalslug",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1200
@@ -5011,6 +5734,7 @@ return {
         h = 48,
         index = 839,
         name = "<Shuraida> the expert merc",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1200
@@ -5018,6 +5742,7 @@ return {
         h = 48,
         index = 840,
         name = "necro chimera",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1200
@@ -5025,6 +5750,7 @@ return {
         h = 48,
         index = 841,
         name = "cross moai",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1200
@@ -5032,6 +5758,7 @@ return {
         h = 48,
         index = 842,
         name = "spirit of bread",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1200
@@ -5039,6 +5766,7 @@ return {
         h = 48,
         index = 843,
         name = "araonibi",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1200
@@ -5046,6 +5774,7 @@ return {
         h = 48,
         index = 844,
         name = "kentaurs male",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1200
@@ -5053,6 +5782,7 @@ return {
         h = 48,
         index = 845,
         name = "kentaurs female",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1200
@@ -5060,6 +5790,7 @@ return {
         h = 48,
         index = 846,
         name = "mastallion",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1200
@@ -5067,6 +5798,7 @@ return {
         h = 48,
         index = 847,
         name = "pig boar",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1200
@@ -5074,6 +5806,7 @@ return {
         h = 48,
         index = 848,
         name = "cattle",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1200
@@ -5081,6 +5814,7 @@ return {
         h = 48,
         index = 849,
         name = "disaster",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1200
@@ -5088,6 +5822,7 @@ return {
         h = 48,
         index = 850,
         name = "triceratops",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1200
@@ -5095,6 +5830,7 @@ return {
         h = 48,
         index = 851,
         name = "wild rabbit",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1200
@@ -5102,6 +5838,7 @@ return {
         h = 48,
         index = 852,
         name = "hakutoshin",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1200
@@ -5109,6 +5846,7 @@ return {
         h = 48,
         index = 853,
         name = "vorpal bunny",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1200
@@ -5116,6 +5854,7 @@ return {
         h = 48,
         index = 854,
         name = "terrorism squirrel",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1200
@@ -5123,6 +5862,7 @@ return {
         h = 48,
         index = 855,
         name = "<Ssil> the undead witch",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1200
@@ -5130,6 +5870,7 @@ return {
         h = 48,
         index = 856,
         name = "Sylph",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1200
@@ -5137,6 +5878,7 @@ return {
         h = 48,
         index = 857,
         name = "<Aribel> the white arms",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1200
@@ -5144,6 +5886,7 @@ return {
         h = 48,
         index = 858,
         name = "musical notadpole",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1248
@@ -5151,6 +5894,7 @@ return {
         h = 48,
         index = 859,
         name = "frognrolla",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1248
@@ -5158,6 +5902,7 @@ return {
         h = 48,
         index = 860,
         name = "salamander",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1248
@@ -5165,6 +5910,7 @@ return {
         h = 48,
         index = 861,
         name = "omega herakles",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1248
@@ -5172,6 +5918,7 @@ return {
         h = 48,
         index = 862,
         name = "fallen angel",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1248
@@ -5179,6 +5926,7 @@ return {
         h = 48,
         index = 863,
         name = "cupid inspector",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1248
@@ -5186,6 +5934,7 @@ return {
         h = 48,
         index = 864,
         name = "<Renai> the over meshera",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1248
@@ -5193,6 +5942,7 @@ return {
         h = 48,
         index = 865,
         name = "<Renai> the over meshera uncontrol",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1248
@@ -5200,6 +5950,7 @@ return {
         h = 48,
         index = 866,
         name = "gigantic fairy",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1248
@@ -5207,6 +5958,7 @@ return {
         h = 48,
         index = 867,
         name = "titania",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1248
@@ -5214,6 +5966,7 @@ return {
         h = 48,
         index = 868,
         name = "lizard mage",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1248
@@ -5221,6 +5974,7 @@ return {
         h = 48,
         index = 869,
         name = "claymore dragonewt",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1248
@@ -5228,6 +5982,7 @@ return {
         h = 48,
         index = 870,
         name = "<Belphat> the cosmic sword",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1248
@@ -5235,6 +5990,7 @@ return {
         h = 48,
         index = 871,
         name = "phoenixian",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1248
@@ -5242,6 +5998,7 @@ return {
         h = 48,
         index = 872,
         name = "flare chick",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1248
@@ -5249,6 +6006,7 @@ return {
         h = 96,
         index = 873,
         name = "dhwty",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1248
@@ -5256,6 +6014,7 @@ return {
         h = 96,
         index = 874,
         name = "tentacle worm",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1248
@@ -5263,6 +6022,7 @@ return {
         h = 96,
         index = 875,
         name = "<Saimef> the doggod",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1248
@@ -5270,6 +6030,7 @@ return {
         h = 96,
         index = 876,
         name = "orcinus orca",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1248
@@ -5277,6 +6038,7 @@ return {
         h = 48,
         index = 877,
         name = "nine dart garfish",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1248
@@ -5284,6 +6046,7 @@ return {
         h = 96,
         index = 878,
         name = "sea fallen angel",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1248
@@ -5291,6 +6054,7 @@ return {
         h = 48,
         index = 879,
         name = "aroma-locaris",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1248
@@ -5298,6 +6062,7 @@ return {
         h = 96,
         index = 880,
         name = "death maneki",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1248
@@ -5305,6 +6070,7 @@ return {
         h = 48,
         index = 881,
         name = "dark dome",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1248
@@ -5312,6 +6078,7 @@ return {
         h = 48,
         index = 882,
         name = "lothrian agent",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1248
@@ -5319,6 +6086,7 @@ return {
         h = 48,
         index = 883,
         name = "dark elea",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1248
@@ -5326,6 +6094,7 @@ return {
         h = 48,
         index = 884,
         name = "hill citizen male",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1248
@@ -5333,6 +6102,7 @@ return {
         h = 48,
         index = 885,
         name = "<Rianna> the daydreamer",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1248
@@ -5340,6 +6110,7 @@ return {
         h = 48,
         index = 886,
         name = "archayeek gunner",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1248
@@ -5347,6 +6118,7 @@ return {
         h = 96,
         index = 887,
         name = "unitdead-jack",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1248
@@ -5354,6 +6126,7 @@ return {
         h = 96,
         index = 888,
         name = "unitdead-king",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1248
@@ -5361,6 +6134,7 @@ return {
         h = 48,
         index = 889,
         name = "unitdead-joker",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1248
@@ -5368,6 +6142,7 @@ return {
         h = 48,
         index = 890,
         name = "large bike",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1248
@@ -5375,6 +6150,7 @@ return {
         h = 48,
         index = 891,
         name = "<Maile> the marionette shaman",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1296
@@ -5382,6 +6158,7 @@ return {
         h = 48,
         index = 892,
         name = "mad scratcher",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1296
@@ -5389,6 +6166,7 @@ return {
         h = 48,
         index = 893,
         name = "devotee of oblivion",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1296
@@ -5396,6 +6174,7 @@ return {
         h = 48,
         index = 894,
         name = "zap mandrake",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1296
@@ -5403,6 +6182,7 @@ return {
         h = 48,
         index = 895,
         name = "cucumber horse",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1296
@@ -5410,6 +6190,7 @@ return {
         h = 48,
         index = 896,
         name = "jack-king",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1296
@@ -5417,6 +6198,7 @@ return {
         h = 48,
         index = 897,
         name = "performaid pinchief",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1296
@@ -5424,6 +6206,7 @@ return {
         h = 48,
         index = 898,
         name = "performaid bloodress",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1296
@@ -5431,6 +6214,7 @@ return {
         h = 48,
         index = 899,
         name = "performaid bitchiack",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1296
@@ -5438,6 +6222,7 @@ return {
         h = 48,
         index = 900,
         name = "killing anteater",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1296
@@ -5445,6 +6230,7 @@ return {
         h = 48,
         index = 901,
         name = "<Fashionable Kunoichi>",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1296
@@ -5452,6 +6238,7 @@ return {
         h = 48,
         index = 902,
         name = "gunfish",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1296
@@ -5459,6 +6246,7 @@ return {
         h = 48,
         index = 903,
         name = "flight fish",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1296
@@ -5466,6 +6254,7 @@ return {
         h = 48,
         index = 904,
         name = "abysstar",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1296
@@ -5473,6 +6262,7 @@ return {
         h = 48,
         index = 905,
         name = "flower coral",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1296
@@ -5480,6 +6270,7 @@ return {
         h = 48,
         index = 910,
         name = "manta rayarn",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1296
@@ -5487,6 +6278,7 @@ return {
         h = 48,
         index = 912,
         name = "king woodlouse",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1296
@@ -5494,6 +6286,7 @@ return {
         h = 48,
         index = 914,
         name = "<Manytia> the adventure merchant",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1296
@@ -5501,6 +6294,7 @@ return {
         h = 48,
         index = 915,
         name = "<Lankata> the lightning of blue",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1296
@@ -5508,6 +6302,7 @@ return {
         h = 48,
         index = 916,
         name = "zanan old soldier",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1296
@@ -5515,6 +6310,7 @@ return {
         h = 48,
         index = 917,
         name = "grass dancer",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1296
@@ -5522,6 +6318,7 @@ return {
         h = 48,
         index = 918,
         name = "archayeek",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1296
@@ -5529,6 +6326,7 @@ return {
         h = 48,
         index = 919,
         name = "unitdead-queen",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1296
@@ -5536,6 +6334,7 @@ return {
         h = 48,
         index = 922,
         name = "<Halion> the extremist",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1296
@@ -5543,6 +6342,7 @@ return {
         h = 48,
         index = 923,
         name = "ride cleric",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1296
@@ -5550,6 +6350,7 @@ return {
         h = 96,
         index = 924,
         name = "buildion",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1344
@@ -5557,6 +6358,7 @@ return {
         h = 96,
         index = 925,
         name = "zoibo",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1344
@@ -5564,6 +6366,7 @@ return {
         h = 96,
         index = 926,
         name = "konigs katze",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1344
@@ -5571,6 +6374,7 @@ return {
         h = 96,
         index = 927,
         name = "banyan monster",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1344
@@ -5578,6 +6382,7 @@ return {
         h = 96,
         index = 928,
         name = "dragon tree",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1344
@@ -5585,6 +6390,7 @@ return {
         h = 96,
         index = 929,
         name = "rats bringer",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1344
@@ -5592,6 +6398,7 @@ return {
         h = 96,
         index = 930,
         name = "chaos serpent",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1344
@@ -5599,6 +6406,7 @@ return {
         h = 96,
         index = 931,
         name = "<Tezcatlipoca>",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1344
@@ -5606,6 +6414,7 @@ return {
         h = 96,
         index = 932,
         name = "brontosaurus",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1344
@@ -5613,6 +6422,7 @@ return {
         h = 96,
         index = 933,
         name = "ganesa",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1344
@@ -5620,6 +6430,7 @@ return {
         h = 96,
         index = 934,
         name = "shin gorilla",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1344
@@ -5627,6 +6438,7 @@ return {
         h = 96,
         index = 935,
         name = "ninetails",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1344
@@ -5634,6 +6446,7 @@ return {
         h = 96,
         index = 936,
         name = "wild wyrm",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1344
@@ -5641,6 +6454,7 @@ return {
         h = 48,
         index = 937,
         name = "battle puppet",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1344
@@ -5648,6 +6462,7 @@ return {
         h = 96,
         index = 938,
         name = "<Enthumesis>",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1344
@@ -5655,6 +6470,7 @@ return {
         h = 48,
         index = 939,
         name = "zanan assassin",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1344
@@ -5662,6 +6478,7 @@ return {
         h = 48,
         index = 940,
         name = "skeleton magician",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1344
@@ -5669,6 +6486,7 @@ return {
         h = 48,
         index = 941,
         name = "peace maker",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1344
@@ -5676,6 +6494,7 @@ return {
         h = 96,
         index = 942,
         name = "lord armor",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1344
@@ -5683,6 +6502,7 @@ return {
         h = 96,
         index = 943,
         name = "<Gilphem> the magic steel",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1344
@@ -5690,6 +6510,7 @@ return {
         h = 96,
         index = 944,
         name = "gasyadokuro",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1344
@@ -5697,6 +6518,7 @@ return {
         h = 96,
         index = 945,
         name = "<Jaldabaoth>The Chaos Child",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1344
@@ -5704,6 +6526,7 @@ return {
         h = 48,
         index = 946,
         name = "oblivion beast",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1344
@@ -5711,6 +6534,7 @@ return {
         h = 96,
         index = 947,
         name = "<Sunrise> the archipelago dragon",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1344
@@ -5718,6 +6542,7 @@ return {
         h = 48,
         index = 948,
         name = "performaid cocruel",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1344
@@ -5725,6 +6550,7 @@ return {
         h = 96,
         index = 949,
         name = "<Graveed> the gravity valley",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1344
@@ -5732,6 +6558,7 @@ return {
         h = 96,
         index = 950,
         name = "<Beilgena> the artificial dragon",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1344
@@ -5739,6 +6566,7 @@ return {
         h = 48,
         index = 951,
         name = "king kobold",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1344
@@ -5746,6 +6574,7 @@ return {
         h = 48,
         index = 952,
         name = "silver skull majesty",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1344
@@ -5753,6 +6582,7 @@ return {
         h = 96,
         index = 953,
         name = "king orc",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1344
@@ -5760,6 +6590,7 @@ return {
         h = 96,
         index = 954,
         name = "asura king",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1344
@@ -5767,14 +6598,17 @@ return {
         h = 48,
         index = 955,
         name = "<Talka> the long twintail",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1344
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 956,
         name = "chara956",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1344
@@ -5782,6 +6616,7 @@ return {
         h = 48,
         index = 970,
         name = "indomitable general",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1392
@@ -5789,6 +6624,7 @@ return {
         h = 48,
         index = 972,
         name = "<Alsapia> the murderer mask",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1392
@@ -5796,6 +6632,7 @@ return {
         h = 48,
         index = 973,
         name = "ochimusha armor",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1392
@@ -5803,6 +6640,7 @@ return {
         h = 48,
         index = 974,
         name = "arrow duck",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1392
@@ -5810,6 +6648,7 @@ return {
         h = 48,
         index = 979,
         name = "oblivion rude beast",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1392
@@ -5817,6 +6656,7 @@ return {
         h = 48,
         index = 981,
         name = "performaid desweeper",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1392
@@ -5824,6 +6664,7 @@ return {
         h = 48,
         index = 984,
         name = "porc",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1392
@@ -5831,6 +6672,7 @@ return {
         h = 48,
         index = 985,
         name = "black porc",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1392
@@ -5838,6 +6680,7 @@ return {
         h = 48,
         index = 988,
         name = "hogweeder",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1392
@@ -5845,6 +6688,7 @@ return {
         h = 48,
         index = 989,
         name = "alraune",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1392
@@ -5852,6 +6696,7 @@ return {
         h = 48,
         index = 990,
         name = "<Alfred> the cangnan wind",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1440
@@ -5859,6 +6704,7 @@ return {
         h = 48,
         index = 991,
         name = "yokoshima enaga",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1440
@@ -5866,6 +6712,7 @@ return {
         h = 48,
         index = 992,
         name = "skogsra",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1440
@@ -5873,6 +6720,7 @@ return {
         h = 48,
         index = 993,
         name = "magic hawk moth",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1440
@@ -5880,6 +6728,7 @@ return {
         h = 48,
         index = 994,
         name = "<Zisilion> the mine king",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1440
@@ -5887,6 +6736,7 @@ return {
         h = 48,
         index = 995,
         name = "chaos seed",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1440
@@ -5894,6 +6744,7 @@ return {
         h = 48,
         index = 996,
         name = "<Ajetalio> the seminar lecturer",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1440
@@ -5901,6 +6752,7 @@ return {
         h = 48,
         index = 997,
         name = "<Cresce> the seminar lecturer",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1440
@@ -5908,6 +6760,7 @@ return {
         h = 48,
         index = 998,
         name = "<Iduru> the seminar lecturer",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1440
@@ -5915,6 +6768,7 @@ return {
         h = 48,
         index = 999,
         name = "<Mito> the seminar lecturer",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1440
@@ -5922,6 +6776,7 @@ return {
         h = 48,
         index = 1000,
         name = "<Part time worker> the red sword",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1440
@@ -5929,14 +6784,17 @@ return {
         h = 48,
         index = 1001,
         name = "forest assassin",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1440
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1002,
         name = "chara1002",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1440
@@ -5944,6 +6802,7 @@ return {
         h = 48,
         index = 1003,
         name = "<Karata> the seminar mascot",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1440
@@ -5951,6 +6810,7 @@ return {
         h = 48,
         index = 1004,
         name = "nursing moth",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1440
@@ -5958,6 +6818,7 @@ return {
         h = 48,
         index = 1005,
         name = "assault red dragonfly",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1440
@@ -5965,6 +6826,7 @@ return {
         h = 48,
         index = 1006,
         name = "battle hopper",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1440
@@ -5972,6 +6834,7 @@ return {
         h = 48,
         index = 1007,
         name = "caterpillar sniper",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1440
@@ -5979,6 +6842,7 @@ return {
         h = 48,
         index = 1008,
         name = "talon soldier",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1440
@@ -5986,6 +6850,7 @@ return {
         h = 48,
         index = 1009,
         name = "fin crocodile",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1440
@@ -5993,6 +6858,7 @@ return {
         h = 48,
         index = 1010,
         name = "knightceros",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1440
@@ -6000,6 +6866,7 @@ return {
         h = 48,
         index = 1011,
         name = "inconeet",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1440
@@ -6007,6 +6874,7 @@ return {
         h = 48,
         index = 1012,
         name = "fallen bird",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1440
@@ -6014,6 +6882,7 @@ return {
         h = 48,
         index = 1013,
         name = "electric hippopotamus",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1440
@@ -6021,22 +6890,27 @@ return {
         h = 48,
         index = 1014,
         name = "<Melugast AO-I> the dimension driver",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1440
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1015,
         name = "chara1015",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1440
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1016,
         name = "chara1016",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1440
@@ -6044,6 +6918,7 @@ return {
         h = 48,
         index = 1017,
         name = "formless spawn",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1440
@@ -6051,6 +6926,7 @@ return {
         h = 48,
         index = 1018,
         name = "silver fox brother",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1440
@@ -6058,6 +6934,7 @@ return {
         h = 48,
         index = 1019,
         name = "sickfull older brother",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1440
@@ -6065,6 +6942,7 @@ return {
         h = 48,
         index = 1020,
         name = "angry burger",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1440
@@ -6072,6 +6950,7 @@ return {
         h = 48,
         index = 1021,
         name = "<Dorothia> standing in the wetland",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1440
@@ -6079,6 +6958,7 @@ return {
         h = 48,
         index = 1022,
         name = "last dancer",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1440
@@ -6086,6 +6966,7 @@ return {
         h = 96,
         index = 1023,
         name = "old bell",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1488
@@ -6093,6 +6974,7 @@ return {
         h = 48,
         index = 1024,
         name = "<Loyter> the crimson of Dole",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1488
@@ -6100,6 +6982,7 @@ return {
         h = 48,
         index = 1025,
         name = "<Cray> the curious adventurer",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1488
@@ -6107,6 +6990,7 @@ return {
         h = 48,
         index = 1026,
         name = "bakery clerk",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1488
@@ -6114,6 +6998,7 @@ return {
         h = 48,
         index = 1027,
         name = "<Jenna> the mythical mania",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1488
@@ -6121,6 +7006,7 @@ return {
         h = 48,
         index = 1028,
         name = "fox",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1488
@@ -6128,14 +7014,17 @@ return {
         h = 48,
         index = 1029,
         name = "lion",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1488
       }, {
         h = 96,
         has_name = false,
+        type = "chara",
         index = 1030,
         name = "chara1030",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1488
@@ -6143,6 +7032,7 @@ return {
         h = 96,
         index = 1031,
         name = "kobold blaster",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1488
@@ -6150,6 +7040,7 @@ return {
         h = 48,
         index = 1032,
         name = "<Toni> the angler",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1488
@@ -6157,6 +7048,7 @@ return {
         h = 48,
         index = 1033,
         name = "<Nancy> the wanderlust",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1488
@@ -6164,6 +7056,7 @@ return {
         h = 48,
         index = 1034,
         name = "<Mary> the flower picking",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1488
@@ -6171,6 +7064,7 @@ return {
         h = 48,
         index = 1035,
         name = "desktop birdie",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1488
@@ -6178,6 +7072,7 @@ return {
         h = 96,
         index = 1036,
         name = "fang fungus",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1488
@@ -6185,6 +7080,7 @@ return {
         h = 96,
         index = 1037,
         name = "<Mikraanesis>",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1488
@@ -6192,6 +7088,7 @@ return {
         h = 48,
         index = 1038,
         name = "horus eye",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1488
@@ -6199,6 +7096,7 @@ return {
         h = 48,
         index = 1039,
         name = "providence gaze",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1488
@@ -6206,6 +7104,7 @@ return {
         h = 96,
         index = 1040,
         name = "many eyes",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1488
@@ -6213,6 +7112,7 @@ return {
         h = 96,
         index = 1041,
         name = "god talon soldier",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1488
@@ -6220,6 +7120,7 @@ return {
         h = 96,
         index = 1042,
         name = "janken king",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1488
@@ -6227,6 +7128,7 @@ return {
         h = 96,
         index = 1043,
         name = "clinghost",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1488
@@ -6234,6 +7136,7 @@ return {
         h = 96,
         index = 1044,
         name = "hellabyrinth ruler",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1488
@@ -6241,14 +7144,17 @@ return {
         h = 96,
         index = 1045,
         name = "<Oxode> the queen bee",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1488
       }, {
         h = 96,
         has_name = false,
+        type = "chara",
         index = 1046,
         name = "chara1046",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1488
@@ -6256,6 +7162,7 @@ return {
         h = 96,
         index = 1047,
         name = "mag count",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1488
@@ -6263,6 +7170,7 @@ return {
         h = 96,
         index = 1048,
         name = "dark artificial giant",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1488
@@ -6270,6 +7178,7 @@ return {
         h = 96,
         index = 1049,
         name = "eighty shaku",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1488
@@ -6277,6 +7186,7 @@ return {
         h = 96,
         index = 1050,
         name = "crimson dark guardian",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1488
@@ -6284,6 +7194,7 @@ return {
         h = 96,
         index = 1051,
         name = "blue dark guardian",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1488
@@ -6291,6 +7202,7 @@ return {
         h = 96,
         index = 1052,
         name = "green dark guardian",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1488
@@ -6298,22 +7210,27 @@ return {
         h = 96,
         index = 1053,
         name = "hinocchio",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1488
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1054,
         name = "chara1054",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1488
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1055,
         name = "chara1055",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1488
@@ -6321,6 +7238,7 @@ return {
         h = 48,
         index = 1057,
         name = "clerk",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1536
@@ -6328,6 +7246,7 @@ return {
         h = 48,
         index = 1058,
         name = "<Bonyac> the general vendor",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1536
@@ -6335,6 +7254,7 @@ return {
         h = 48,
         index = 1059,
         name = "guild broker",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1536
@@ -6342,6 +7262,7 @@ return {
         h = 48,
         index = 1060,
         name = "<Bysymlha> the amber eyes",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1536
@@ -6349,6 +7270,7 @@ return {
         h = 48,
         index = 1061,
         name = "boar",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1536
@@ -6356,6 +7278,7 @@ return {
         h = 48,
         index = 1062,
         name = "wolf",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1536
@@ -6363,6 +7286,7 @@ return {
         h = 48,
         index = 1065,
         name = "<Carter> the skilled foot",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1536
@@ -6370,6 +7294,7 @@ return {
         h = 48,
         index = 1066,
         name = "<Manson> the careful adventurer",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1536
@@ -6377,6 +7302,7 @@ return {
         h = 48,
         index = 1067,
         name = "orichal-co",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1536
@@ -6384,38 +7310,47 @@ return {
         h = 48,
         index = 1068,
         name = "desktop navy",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1536
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1071,
         name = "chara1071",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1536
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1072,
         name = "chara1072",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1536
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1087,
         name = "chara1087",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1536
       }, {
         h = 48,
         has_name = false,
+        type = "chara",
         index = 1088,
         name = "chara1088",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1536
@@ -6423,6 +7358,7 @@ return {
         h = 48,
         index = 1089,
         name = "bisque doll",
+        type = "chara",
         w = 48,
         x = 0,
         y = 1584
@@ -6430,6 +7366,7 @@ return {
         h = 48,
         index = 1090,
         name = "vestige male",
+        type = "chara",
         w = 48,
         x = 48,
         y = 1584
@@ -6437,6 +7374,7 @@ return {
         h = 48,
         index = 1091,
         name = "vestige female",
+        type = "chara",
         w = 48,
         x = 96,
         y = 1584
@@ -6444,6 +7382,7 @@ return {
         h = 48,
         index = 1092,
         name = "little boy",
+        type = "chara",
         w = 48,
         x = 144,
         y = 1584
@@ -6451,6 +7390,7 @@ return {
         h = 48,
         index = 1093,
         name = "S boy",
+        type = "chara",
         w = 48,
         x = 192,
         y = 1584
@@ -6458,6 +7398,7 @@ return {
         h = 48,
         index = 1094,
         name = "butler",
+        type = "chara",
         w = 48,
         x = 240,
         y = 1584
@@ -6465,6 +7406,7 @@ return {
         h = 48,
         index = 1095,
         name = "old butler",
+        type = "chara",
         w = 48,
         x = 288,
         y = 1584
@@ -6472,6 +7414,7 @@ return {
         h = 48,
         index = 1096,
         name = "scout boy",
+        type = "chara",
         w = 48,
         x = 336,
         y = 1584
@@ -6479,6 +7422,7 @@ return {
         h = 48,
         index = 1097,
         name = "battle boy",
+        type = "chara",
         w = 48,
         x = 384,
         y = 1584
@@ -6486,6 +7430,7 @@ return {
         h = 48,
         index = 1098,
         name = "sheep butler",
+        type = "chara",
         w = 48,
         x = 432,
         y = 1584
@@ -6493,6 +7438,7 @@ return {
         h = 48,
         index = 1099,
         name = "bisque dolls",
+        type = "chara",
         w = 48,
         x = 480,
         y = 1584
@@ -6500,6 +7446,7 @@ return {
         h = 48,
         index = 1100,
         name = "universe invader",
+        type = "chara",
         w = 48,
         x = 528,
         y = 1584
@@ -6507,6 +7454,7 @@ return {
         h = 48,
         index = 1101,
         name = "kobolina",
+        type = "chara",
         w = 48,
         x = 576,
         y = 1584
@@ -6514,6 +7462,7 @@ return {
         h = 48,
         index = 1102,
         name = "rushroom",
+        type = "chara",
         w = 48,
         x = 624,
         y = 1584
@@ -6521,6 +7470,7 @@ return {
         h = 48,
         index = 1103,
         name = "matangoddess",
+        type = "chara",
         w = 48,
         x = 672,
         y = 1584
@@ -6528,6 +7478,7 @@ return {
         h = 48,
         index = 1104,
         name = "cthulhick",
+        type = "chara",
         w = 48,
         x = 720,
         y = 1584
@@ -6535,6 +7486,7 @@ return {
         h = 48,
         index = 1105,
         name = "cthulhime",
+        type = "chara",
         w = 48,
         x = 768,
         y = 1584
@@ -6542,6 +7494,7 @@ return {
         h = 48,
         index = 1106,
         name = "evil eye girl",
+        type = "chara",
         w = 48,
         x = 816,
         y = 1584
@@ -6549,6 +7502,7 @@ return {
         h = 48,
         index = 1107,
         name = "cipiltontli",
+        type = "chara",
         w = 48,
         x = 864,
         y = 1584
@@ -6556,6 +7510,7 @@ return {
         h = 48,
         index = 1108,
         name = "<Aime> the story teller",
+        type = "chara",
         w = 48,
         x = 912,
         y = 1584
@@ -6563,6 +7518,7 @@ return {
         h = 48,
         index = 1109,
         name = "pale inviter",
+        type = "chara",
         w = 48,
         x = 960,
         y = 1584
@@ -6570,6 +7526,7 @@ return {
         h = 48,
         index = 1110,
         name = "ooteguchi",
+        type = "chara",
         w = 48,
         x = 1008,
         y = 1584
@@ -6577,6 +7534,7 @@ return {
         h = 48,
         index = 1111,
         name = "catgod hand",
+        type = "chara",
         w = 48,
         x = 1056,
         y = 1584
@@ -6584,6 +7542,7 @@ return {
         h = 48,
         index = 1112,
         name = "death fog",
+        type = "chara",
         w = 48,
         x = 1104,
         y = 1584
@@ -6591,6 +7550,7 @@ return {
         h = 48,
         index = 1113,
         name = "wall hack cheatah",
+        type = "chara",
         w = 48,
         x = 1152,
         y = 1584
@@ -6598,6 +7558,7 @@ return {
         h = 48,
         index = 1114,
         name = "<Telhureza> the house guard",
+        type = "chara",
         w = 48,
         x = 1200,
         y = 1584
@@ -6605,6 +7566,7 @@ return {
         h = 48,
         index = 1115,
         name = "<Imarituka> the zasiki warai",
+        type = "chara",
         w = 48,
         x = 1248,
         y = 1584
@@ -6612,6 +7574,7 @@ return {
         h = 48,
         index = 1116,
         name = "magic bee",
+        type = "chara",
         w = 48,
         x = 1296,
         y = 1584
@@ -6619,6 +7582,7 @@ return {
         h = 48,
         index = 1117,
         name = "<Scard> the happy swallow",
+        type = "chara",
         w = 48,
         x = 1344,
         y = 1584
@@ -6626,6 +7590,7 @@ return {
         h = 48,
         index = 1118,
         name = "young swallow",
+        type = "chara",
         w = 48,
         x = 1392,
         y = 1584
@@ -6633,6 +7598,7 @@ return {
         h = 48,
         index = 1119,
         name = "<Yonorne> the rookie guide",
+        type = "chara",
         w = 48,
         x = 1440,
         y = 1584
@@ -6640,6 +7606,7 @@ return {
         h = 48,
         index = 1120,
         name = "crystalian",
+        type = "chara",
         w = 48,
         x = 1488,
         y = 1584
@@ -6647,6 +7614,7 @@ return {
         h = 48,
         index = 1121,
         name = "<Sist> the older sister",
+        type = "chara",
         w = 48,
         x = 1536,
         y = 1584
