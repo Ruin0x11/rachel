@@ -10,6 +10,7 @@ local config = require("config")
 local fs = require("lib.fs")
 local tile_picker = require("app.tile_picker")
 local chips = require("lib.chips")
+local suffix_dialog = require("dialog.suffix_dialog")
 
 local ID = require("lib.ids")
 
@@ -253,56 +254,7 @@ function app:on_menu_close(_)
 end
 
 function app:get_suffix(cb)
-	local dialog = wx.wxDialog(wx.NULL, wx.wxID_ANY, "Enter filename suffix", wx.wxDefaultPosition, wx.wxDefaultSize)
-	local panel = wx.wxPanel(dialog, wx.wxID_ANY)
-	local static_text = wx.wxStaticText(panel, wx.wxID_ANY, "Suffix: ")
-	local text_ctrl = wx.wxTextCtrl(
-		panel,
-		ID.SUFFIX_TEXT,
-		"",
-		wx.wxDefaultPosition,
-		wx.wxDefaultSize,
-		wx.wxTE_PROCESS_ENTER
-	)
-
-	local text_w, text_h = text_ctrl:GetTextExtent("00000.00000")
-	text_ctrl:SetInitialSize(wx.wxSize(text_w, -1))
-	local flex_grid_sizer = wx.wxFlexGridSizer(0, 3, 0, 0)
-	flex_grid_sizer:AddGrowableCol(1, 0)
-	flex_grid_sizer:Add(static_text, 0, wx.wxALIGN_CENTER_VERTICAL + wx.wxALL, 5)
-	flex_grid_sizer:Add(text_ctrl, 0, wx.wxGROW + wx.wxALIGN_CENTER + wx.wxALL, 5)
-	local sizer = wx.wxBoxSizer(wx.wxVERTICAL)
-
-	local button_sizer = wx.wxBoxSizer(wx.wxHORIZONTAL)
-	local ok_button = wx.wxButton(panel, ID.SUFFIX_OK, "&OK")
-	local cancel_button = wx.wxButton(panel, ID.SUFFIX_CANCEL, "&Cancel")
-	button_sizer:Add(ok_button, 0, wx.wxALIGN_CENTER + wx.wxALL, 5)
-	button_sizer:Add(cancel_button, 0, wx.wxALIGN_CENTER + wx.wxALL, 5)
-
-	sizer:Add(flex_grid_sizer, 1, wx.wxGROW + wx.wxALIGN_CENTER + wx.wxALL, 5)
-	sizer:Add(button_sizer, 0, wx.wxALIGN_CENTER + wx.wxALL, 5)
-
-	panel:SetSizer(sizer)
-	sizer:SetSizeHints(dialog)
-
-	dialog:Connect(wx.wxID_ANY, wx.wxEVT_COMMAND_TEXT_ENTER, function(event)
-		dialog:ProcessEvent(wx.wxCommandEvent(wx.wxEVT_COMMAND_BUTTON_CLICKED, ID.SUFFIX_OK))
-	end)
-
-	dialog:Connect(ID.SUFFIX_OK, wx.wxEVT_COMMAND_BUTTON_CLICKED, function(event)
-		dialog:Destroy()
-		cb(text_ctrl:GetValue())
-	end)
-
-	dialog:Connect(ID.SUFFIX_CANCEL, wx.wxEVT_COMMAND_BUTTON_CLICKED, function(event)
-		dialog:Destroy()
-	end)
-
-	dialog:Connect(wx.wxEVT_CLOSE_WINDOW, function(event)
-		dialog:Destroy()
-		event:Skip()
-	end)
-
+	local dialog = suffix_dialog.create(self.frame, cb)
 	dialog:Centre()
 	dialog:Show(true)
 end
@@ -354,7 +306,7 @@ function app:on_menu_export_tilesheet(event)
 	local path = fs.normalize(file_dialog:GetPath())
 	page.image:SaveFile(path, wx.wxBITMAP_TYPE_BMP)
 
-	self.app.frame:SetStatusText(("Exported to %s."):format(path))
+	self.frame:SetStatusText(("Exported to %s."):format(path))
 end
 
 function app:on_menu_export_graphic_folder(event)
